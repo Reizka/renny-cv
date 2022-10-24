@@ -9,15 +9,19 @@
 </script>
 
 <Router>
-	<!--
+	
 	<nav class="navbar">
-		<Link to="about">About</Link>
-		<Link to="resume">Resume</Link>
-        <Link to="portfolio">Portfolio</Link>
-		<Link to="contact">Contact</Link>
-        <Link to="publications">Publications</Link>
+		<!--wrapper required for being able to apply css in the Link components:https://github.com/mefechoel/svelte-navigator#faq -->
+		<div class="wrapper">
+			<Link class="my-a-link" to="about">About</Link>
+			<Link class="my-a-link" to="resume">Resume</Link>
+			<Link class="my-a-link" to="portfolio">Portfolio</Link>
+			<Link class="my-a-link" to="contact">Contact</Link>
+			<Link class="my-a-link" to="publications">Publications</Link>
+		</div>	
+		
 	</nav>
-	-->
+
 	<div>
 		<Route path="/">
 			<About />
@@ -32,6 +36,25 @@
 </Router>
 
 <style>
+
+/* 
+	 .wrapper :global(a:link) {
+		background-color: yellow;
+	 }
+	 
+	 .wrapper :global(a:visited) {
+  		background-color: cyan;
+	}
+
+	.wrapper :global(a:hover) {
+		background-color: lightgreen;
+	}
+
+	.wrapper :global(a:active) {
+	background-color: hotpink;
+	}  
+*/
+
 	.navbar{
 		flex-grow:1;
 		background-color: lightblue;
@@ -40,6 +63,9 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+	
+
+	
 	
 
 </style>
