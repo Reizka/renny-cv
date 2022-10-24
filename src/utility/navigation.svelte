@@ -5,16 +5,19 @@
 	import Portfolio from "../pages/Portfolio.svelte";
 	import Contact from "../pages/Contact.svelte";
     import Publications from "../pages/Publications.svelte";
+
 </script>
 
 <Router>
-	<nav>
+	<!--
+	<nav class="navbar">
 		<Link to="about">About</Link>
 		<Link to="resume">Resume</Link>
         <Link to="portfolio">Portfolio</Link>
 		<Link to="contact">Contact</Link>
         <Link to="publications">Publications</Link>
 	</nav>
+	-->
 	<div>
 		<Route path="/">
 			<About />
@@ -25,4 +28,18 @@
         <Route path="contact" component={Contact}/>
         <Route path="publications" component={Publications}/>
     </div>
+	
 </Router>
+
+<style>
+	.navbar{
+		flex-grow:1;
+		background-color: lightblue;
+		padding-bottom:20px;
+		padding-top:20px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+
+</style>
