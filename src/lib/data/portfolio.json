@@ -1,0 +1,112 @@
+[
+    {
+      "title": "Website",
+      "keywords": [
+        "HTML, CSS, JavaScript"
+      ],
+      "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Freelance"
+    },
+    {
+      "title": "Nosville",
+      "keywords": [
+        "HTML",
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Firebase",
+        "NodeJS",
+        "Multilanguage support (english/dutch/french/finnish)"
+      ],
+      "short_description": "A fully functional help request tool where users could ask and receive help to their requests",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "CityWe",
+      "keywords": [
+        "Unity3D",
+        "C#",
+        "Firebase",
+        "Json",
+        "Photon (Unity plugin)",
+        "multiplayer"
+      ],
+      "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "Truebiters",
+      "keywords": [
+        "Unity3D",
+        "C#",
+        "multiplayer",
+        "Multilanguage support (english/dutch/french)"
+      ],
+      "short_description": "A digital educational game intended for teaching basics of learning about booleans. The game also had a multiplayer game over bluetooth. The game was functional and made available on Android and IOS stores",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "Minerva",
+      "keywords": [
+        "Unity3D",
+        "C#",
+        "Java",
+        "springboot",
+        "MySQL",
+        "Json",
+        "Multilanguage support (english/korean)"
+      ],
+      "short_description": "An adaptive educational game that changed depending on players learning and play styles",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "Zombie Slayer",
+      "keywords": [
+        "Unity3D",
+        "C#",
+        "pixel art"
+      ],
+      "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "Leometry AR",
+      "keywords": [
+        "Java"
+      ],
+      "short_description": "A simple educational game built for Android platform that also utilized AR for launching certain ingame events",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "Website",
+      "keywords": [
+        "HTML, CSS, JavaScript"
+      ],
+      "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Freelance"
+    }
+  ]
