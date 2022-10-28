@@ -16,25 +16,30 @@
 </script>
 
 
-<div class="border-2 border-black rounded-xl shadow-xl bg-gray-400">
-    {#if imageName === ""}
-       <image src={placeholder} alt="image placeholder" class="w-1/2 justify-center bg-white"/>
+<div class="flex-col h-1/2 rounded-xl shadow-xl">
+    <div class="relative flex bg-white justify-center">
+        {#if imageName === ""}
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img src={placeholder} alt="image placeholder" class="w-1/2"/>
 
-    {:else}
-        <image src={"$lib/images/"+{imageName}} alt="image of portfolio"/>
-      
-    {/if}
-        <h1>{title}</h1>
-        <h2>{type}</h2>
-        <p>{short_description}</p>
-        <p>{keywords}</p>
-        <p>{url}</p>
-   <!--
-
-    {long_description}
-    {imageName}
-
-   --> 
-   
+        {:else}
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src={"$lib/images/"+{imageName}} alt="image of portfolio"/>
+        
+        {/if}
+        <h1 class="absolute bottom-0 left-1/2 -translate-x-1/2 border-3 bg-white p-2 pw-5">{title}</h1>
+    </div>
     
+    <div class="flex-grow border-2 border-black rounded-xl shadow-xl bg-gray-400">
+            <h2>{type}</h2>
+            <p>{short_description}</p>
+            <p>{keywords}</p>
+            <p>{url}</p>
+    <!--
+
+        {long_description}
+        {imageName}
+
+    --> 
+    </div>
 </div>
