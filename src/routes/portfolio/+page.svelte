@@ -1,22 +1,26 @@
 <script>
 import pf from "$lib/data/portfolio.json" 
-//import List from "./listHandler.svelte"
+import ItemTypeOne from './portfolioComponent.svelte';
+import List from './ListHandler.svelte';
 
-console.log(pf);
-
+    const mapped = pf.map((x)=>{
+        let p ={
+            title: x.title,
+            short_description: x.short_description,
+            type:x.type,
+            keywords:  x.keywords,
+            long_description: x.long_description,
+            imageName: x.imageName,
+            url: x.url,
+            type: x.type,
+            component: ItemTypeOne
+        }
+        return p;
+    })
 </script>
 
-<main>
-    <div>
-    
-    <h1>Portfolio</h1>
-    <p> This page is a summary of my past work experience
-   
-    </div>
-  
-
-    {#each pf as item}
-	<svelte:component this={item.title} {...item} />
-    {/each}
-
-</main>
+<h1>
+	Items
+    {mapped.length}
+</h1>
+<List items={mapped} />

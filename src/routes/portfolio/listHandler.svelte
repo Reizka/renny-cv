@@ -1,13 +1,11 @@
 <script>
-	import List from './List.svelte';
-	
-	const items = [
-		{ value: 'I am red!', component: ItemTypeOne },
-		{ value: 'I am blue!', component: ItemTypeTwo }
-	];
+	export let items = undefined;
 </script>
 
-<h1>
-	Items
-</h1>
-<List {items} />
+
+<div class="grid grid-cols-2 gap-4">
+	{#each items as item, i}
+	<svelte:component this={item.component} props={item}/>
+	{/each}
+</div>
+
