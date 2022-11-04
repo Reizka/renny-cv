@@ -1,14 +1,14 @@
 [
     {
-      "title": "Website",
+      "title": "Game engine",
       "keywords": [
-        "HTML, CSS, JavaScript"
+        "C++"
       ],
-      "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
+      "short_description": "current project to create a simple 3D game engine. Project is still very much work in progress and due to its nature this is unlikely to change anytime soon",
       "long_description": "",
       "imageName": "",
       "url": "",
-      "type": "Freelance"
+      "type": "Hobby"
     },
     {
       "title": "Nosville",
@@ -38,6 +38,18 @@
         "multiplayer"
       ],
       "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
+      "title": "AR Math education",
+      "keywords": [
+        "Unity3D",
+        "C#"
+      ],
+      "short_description": "Worked together in a cooperation between VUB and Lulea University developing a story focused educational game that also utilzed AR techniques to teach some basic math topics to elementary students",
       "long_description": "",
       "imageName": "",
       "url": "",

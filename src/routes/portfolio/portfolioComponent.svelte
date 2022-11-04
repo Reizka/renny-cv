@@ -4,7 +4,6 @@
 
     import placeholder from "$lib/images/no-photos.png";
 
-    console.log("PROPS",props)
     const title = props.title;
     const short_description = props.short_description;
     const type = props.type;

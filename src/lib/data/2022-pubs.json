@@ -1,0 +1,525 @@
+[
+  {
+    "@score": "2",
+    "@id": "549371",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          }
+        ]
+      },
+      "title": "Towards an Up to Date list of Design Guidelines for Elderly Users.",
+      "venue": "CHI Greece",
+      "pages": "8:1-8:7",
+      "year": "2021",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/chigreece/LindbergT21",
+      "doi": "10.1145/3489410.3489418",
+      "ee": "https://doi.org/10.1145/3489410.3489418",
+      "url": "https://dblp.org/rec/conf/chigreece/LindbergT21"
+    },
+    "url": "URL#549371"
+  },
+  {
+    "@score": "2",
+    "@id": "855511",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          },
+          {
+            "@pid": "248/4183",
+            "text": "Jan Maushagen"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "263/7611",
+            "text": "David Breckx"
+          }
+        ]
+      },
+      "title": "Playful Learning with a Location-Based Digital Card Environment: A Promising Tool for Informal, Non-Formal, and Formal Learning.",
+      "venue": "Inf.",
+      "volume": "11",
+      "number": "3",
+      "pages": "157",
+      "year": "2020",
+      "type": "Journal Articles",
+      "access": "open",
+      "key": "journals/information/TroyerMLB20",
+      "doi": "10.3390/INFO11030157",
+      "ee": "https://doi.org/10.3390/info11030157",
+      "url": "https://dblp.org/rec/journals/information/TroyerMLB20"
+    },
+    "url": "URL#855511"
+  },
+  {
+    "@score": "2",
+    "@id": "940611",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          }
+        ]
+      },
+      "title": "Designing Engaging Games for Education: A Systematic Literature Review on Game Motivators and Design Principles.",
+      "venue": "IEEE Trans. Learn. Technol.",
+      "volume": "13",
+      "number": "4",
+      "pages": "804-821",
+      "year": "2020",
+      "type": "Journal Articles",
+      "access": "closed",
+      "key": "journals/tlt/LaineL20",
+      "doi": "10.1109/TLT.2020.3018503",
+      "ee": "https://doi.org/10.1109/TLT.2020.3018503",
+      "url": "https://dblp.org/rec/journals/tlt/LaineL20"
+    },
+    "url": "URL#940611"
+  },
+  {
+    "@score": "2",
+    "@id": "1012826",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          }
+        ]
+      },
+      "title": "Towards a Reference Model of Guidelines for the Elderly Based on Technology Adoption Factors.",
+      "venue": "GOODTECHS",
+      "pages": "30-35",
+      "year": "2020",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/goodtechs/LindbergT20",
+      "doi": "10.1145/3411170.3411240",
+      "ee": "https://doi.org/10.1145/3411170.3411240",
+      "url": "https://dblp.org/rec/conf/goodtechs/LindbergT20"
+    },
+    "url": "URL#1012826"
+  },
+  {
+    "@score": "2",
+    "@id": "1031027",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "204/1679",
+            "text": "Samuli Laato"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          },
+          {
+            "@pid": "275/2339",
+            "text": "Phuong Bui"
+          },
+          {
+            "@pid": "230/5162",
+            "text": "Boglárka Brezovszky"
+          },
+          {
+            "@pid": "192/6189",
+            "text": "Lauri Koivunen"
+          },
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          },
+          {
+            "@pid": "83/449",
+            "text": "Erno Lehtinen"
+          }
+        ]
+      },
+      "title": "Evaluation of the Pedagogical Quality of Mobile Math Games in App Marketplaces.",
+      "venue": "ICE/ITMC",
+      "pages": "1-8",
+      "year": "2020",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/ice-itmc/LaatoLLBBKTL20",
+      "doi": "10.1109/ICE/ITMC49519.2020.9198621",
+      "ee": "https://doi.org/10.1109/ICE/ITMC49519.2020.9198621",
+      "url": "https://dblp.org/rec/conf/ice-itmc/LaatoLLBBKTL20"
+    },
+    "url": "URL#1031027"
+  },
+  {
+    "@score": "2",
+    "@id": "1226731",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          },
+          {
+            "@pid": "141/9250",
+            "text": "Lassi Haaranen"
+          }
+        ]
+      },
+      "title": "Gamifying programming education in K-12: A review of programming curricula in seven countries and programming games.",
+      "venue": "Br. J. Educ. Technol.",
+      "volume": "50",
+      "number": "4",
+      "pages": "1979-1995",
+      "year": "2019",
+      "type": "Journal Articles",
+      "access": "closed",
+      "key": "journals/bjet/LindbergLH19",
+      "doi": "10.1111/BJET.12685",
+      "ee": "https://doi.org/10.1111/bjet.12685",
+      "url": "https://dblp.org/rec/journals/bjet/LindbergLH19"
+    },
+    "url": "URL#1226731"
+  },
+  {
+    "@score": "2",
+    "@id": "1332072",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "143/5348",
+            "text": "Pejman Sajjadi"
+          }
+        ]
+      },
+      "title": "TrueBiters, an educational game to practice the truth tables of propositional logic: Development, evaluation, and lessons learned.",
+      "venue": "Smart Learn. Environ.",
+      "volume": "6",
+      "number": "1",
+      "pages": "27",
+      "year": "2019",
+      "type": "Journal Articles",
+      "access": "open",
+      "key": "journals/sle/TroyerLS19",
+      "doi": "10.1186/S40561-019-0105-2",
+      "ee": "https://doi.org/10.1186/s40561-019-0105-2",
+      "url": "https://dblp.org/rec/journals/sle/TroyerLS19"
+    },
+    "url": "URL#1332072"
+  },
+  {
+    "@score": "2",
+    "@id": "1435186",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "248/4183",
+            "text": "Jan Maushagen"
+          },
+          {
+            "@pid": "143/5348",
+            "text": "Pejman Sajjadi"
+          }
+        ]
+      },
+      "title": "Development and Evaluation of an Educational Game to Practice the Truth Tables of Logic.",
+      "venue": "ICALT",
+      "pages": "92-96",
+      "year": "2019",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/icalt/TroyerLMS19",
+      "doi": "10.1109/ICALT.2019.00032",
+      "ee": "https://doi.org/10.1109/ICALT.2019.00032",
+      "url": "https://dblp.org/rec/conf/icalt/TroyerLMS19"
+    },
+    "url": "URL#1435186"
+  },
+  {
+    "@score": "2",
+    "@id": "1435187",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          },
+          {
+            "@pid": "248/4183",
+            "text": "Jan Maushagen"
+          },
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "248/4159",
+            "text": "Jaël Muls"
+          },
+          {
+            "@pid": "05/2783",
+            "text": "Beat Signer"
+          },
+          {
+            "@pid": "230/4853",
+            "text": "Koen Lombaerts"
+          }
+        ]
+      },
+      "title": "A Playful Mobile Digital Environment to Tackle School Burnout using Micro Learning, Persuasion &amp; Gamification.",
+      "venue": "ICALT",
+      "pages": "81-83",
+      "year": "2019",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/icalt/TroyerMLMSL19",
+      "doi": "10.1109/ICALT.2019.00027",
+      "ee": "https://doi.org/10.1109/ICALT.2019.00027",
+      "url": "https://dblp.org/rec/conf/icalt/TroyerMLMSL19"
+    },
+    "url": "URL#1435187"
+  },
+  {
+    "@score": "2",
+    "@id": "1471889",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "248/4183",
+            "text": "Jan Maushagen"
+          },
+          {
+            "@pid": "57/2745",
+            "text": "Olga De Troyer"
+          }
+        ]
+      },
+      "title": "Combining a Gamified Civic Engagement Platform with a Digital Game in a Loosely Way to Increase Retention.",
+      "venue": "iiWAS",
+      "pages": "679-683",
+      "year": "2019",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/iiwas/LindbergMT19",
+      "doi": "10.1145/3366030.3366117",
+      "ee": "https://doi.org/10.1145/3366030.3366117",
+      "url": "https://dblp.org/rec/conf/iiwas/LindbergMT19"
+    },
+    "url": "URL#1471889"
+  },
+  {
+    "@score": "2",
+    "@id": "1674173",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          }
+        ]
+      },
+      "title": "Formative evaluation of an adaptive game for engaging learners of programming concepts in K-12.",
+      "venue": "Int. J. Serious Games",
+      "volume": "5",
+      "number": "2",
+      "pages": "3-24",
+      "year": "2018",
+      "type": "Journal Articles",
+      "access": "open",
+      "key": "journals/ijsg/LindbergL18",
+      "doi": "10.17083/IJSG.V5I2.220",
+      "ee": "https://doi.org/10.17083/ijsg.v5i2.220",
+      "url": "https://dblp.org/rec/journals/ijsg/LindbergL18"
+    },
+    "url": "URL#1674173"
+  },
+  {
+    "@score": "2",
+    "@id": "2144901",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "201/4276",
+            "text": "Aziz Hasanov"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          }
+        ]
+      },
+      "title": "Improving Play and Learning Style Adaptation in a Programming Education Game.",
+      "venue": "CSEDU",
+      "pages": "450-457",
+      "year": "2017",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/csedu/LindbergHL17",
+      "doi": "10.5220/0006350304500457",
+      "ee": "https://doi.org/10.5220/0006350304500457",
+      "url": "https://dblp.org/rec/conf/csedu/LindbergHL17"
+    },
+    "url": "URL#2144901"
+  },
+  {
+    "@score": "2",
+    "@id": "2426109",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "160/5733",
+            "text": "Jungryul Seo"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          }
+        ]
+      },
+      "title": "Enhancing Physical Education with Exergames and Wearable Technology.",
+      "venue": "IEEE Trans. Learn. Technol.",
+      "volume": "9",
+      "number": "4",
+      "pages": "328-341",
+      "year": "2016",
+      "type": "Journal Articles",
+      "access": "closed",
+      "key": "journals/tlt/LindbergSL16",
+      "doi": "10.1109/TLT.2016.2556671",
+      "ee": "https://doi.org/10.1109/TLT.2016.2556671",
+      "url": "https://dblp.org/rec/journals/tlt/LindbergSL16"
+    },
+    "url": "URL#2426109"
+  },
+  {
+    "@score": "2",
+    "@id": "2468451",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          }
+        ]
+      },
+      "title": "Detecting Play and Learning Styles for Adaptive Educational Games.",
+      "venue": "CSEDU",
+      "pages": "181-189",
+      "year": "2016",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/csedu/LindbergL16",
+      "doi": "10.5220/0005858501810189",
+      "ee": "https://doi.org/10.5220/0005858501810189",
+      "url": "https://dblp.org/rec/conf/csedu/LindbergL16"
+    },
+    "url": "URL#2468451"
+  },
+  {
+    "@score": "2",
+    "@id": "2468452",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "Renny S. N. Lindberg"
+          },
+          {
+            "@pid": "72/8222",
+            "text": "Teemu Henrikki Laine"
+          }
+        ]
+      },
+      "title": "Approaches to Detecting and Utilizing Play and Learning Styles in Adaptive Educational Games.",
+      "venue": "CSEDU",
+      "pages": "336-358",
+      "year": "2016",
+      "type": "Conference and Workshop Papers",
+      "access": "closed",
+      "key": "conf/csedu/LindbergL16a",
+      "doi": "10.1007/978-3-319-63184-4_18",
+      "ee": "https://doi.org/10.1007/978-3-319-63184-4_18",
+      "url": "https://dblp.org/rec/conf/csedu/LindbergL16a"
+    },
+    "url": "URL#2468452"
+  }
+]
