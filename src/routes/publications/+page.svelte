@@ -1,7 +1,7 @@
 <!--PUBLICATIONS-->
 <script>
-import pf from "$lib/data/publications.json" 
-
+import pf from "$lib/data/2022-pubs.json" 
+console.log(pf)
 
 </script>
 <main>
