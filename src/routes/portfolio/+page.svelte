@@ -1,8 +1,6 @@
 <script>
 	import pf from '$lib/data/portfolio.json';
 	import ItemTypeOne from './portfolioComponent.svelte';
-	import List from './ListHandler.svelte';
-
 	const mapped = pf.map((x) => {
 		let p = {
 			title: x.title,
@@ -20,4 +18,9 @@
 </script>
 
 <h2 class="text-6xl relative postion-left-0 pb-10 underline">Technical portfolio</h2>
-<List items={mapped} />
+
+<div class="grid grid-cols-2 gap-8">
+	{#each mapped as item, i}
+		<svelte:component this={item.component} props={item} />
+	{/each}
+</div>

@@ -1,6 +1,6 @@
 [
     {
-      "title": "Game engine",
+      "title": "Pangoling Game engine",
       "keywords": [
         "C++"
       ],
@@ -19,7 +19,7 @@
         "Tailwind",
         "Firebase",
         "NodeJS",
-        "Multilanguage support (english/dutch/french/finnish)"
+        "Multilanguage"
       ],
       "short_description": "A fully functional help request tool where users could ask and receive help to their requests",
       "long_description": "",
@@ -34,7 +34,6 @@
         "C#",
         "Firebase",
         "Json",
-        "Photon (Unity plugin)",
         "multiplayer"
       ],
       "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
@@ -61,7 +60,7 @@
         "Unity3D",
         "C#",
         "multiplayer",
-        "Multilanguage support (english/dutch/french)"
+        "Multilanguage"
       ],
       "short_description": "A digital educational game intended for teaching basics of learning about booleans. The game also had a multiplayer game over bluetooth. The game was functional and made available on Android and IOS stores",
       "long_description": "",
@@ -78,7 +77,7 @@
         "springboot",
         "MySQL",
         "Json",
-        "Multilanguage support (english/korean)"
+        "Multilanguage"
       ],
       "short_description": "An adaptive educational game that changed depending on players learning and play styles",
       "long_description": "",
@@ -87,11 +86,24 @@
       "type": "Research"
     },
     {
+      "title": "Running Othello 2",
+      "keywords": [
+        "Android",
+        "Java",
+        "multiplayer",
+        "NFC"
+      ],
+      "short_description": "An educational take on Running Othello game where players make their moves on NFC tags placed on the ground. The player would need to solve an educational task before they could take another move. The game supports 2 player game over two separate gameboards",
+      "long_description": "",
+      "imageName": "",
+      "url": "",
+      "type": "Research"
+    },
+    {
       "title": "Zombie Slayer",
       "keywords": [
         "Unity3D",
-        "C#",
-        "pixel art"
+        "C#"
       ],
       "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself",
       "long_description": "",
@@ -113,7 +125,7 @@
     {
       "title": "Website",
       "keywords": [
-        "HTML, CSS, JavaScript"
+        "HTML","JavaScript"
       ],
       "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
       "long_description": "",

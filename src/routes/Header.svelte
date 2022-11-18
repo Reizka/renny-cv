@@ -6,7 +6,7 @@
 
 <header>
 	<div class="corner">
-	<p>corner text</p>
+		<p>corner text</p>
 	</div>
 
 	<nav>
@@ -20,13 +20,12 @@
 			<li class:active={$page.url.pathname === '/publications'}>
 				<a href="/publications">Publications</a>
 			</li>
-			<li class:active={$page.url.pathname === '/resume'}>
-				<a href="/resume">Resume</a>
+			<li class:active={$page.url.pathname === '/skills'}>
+				<a href="/skills">Technical Skills</a>
 			</li>
 			<li class:active={$page.url.pathname === '/contact'}>
 				<a href="/contact">Contact</a>
 			</li>
-
 		</ul>
 	</nav>
 

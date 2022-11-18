@@ -2,6 +2,7 @@
 	export let props = undefined;
 
 	import placeholder from '$lib/images/no-photos.png';
+	import GetLogo from './GetLogo.svelte';
 
 	const title = props.title;
 	const short_description = props.short_description;
@@ -45,41 +46,8 @@
 		<h2>{type}</h2>
 		<p>{short_description}</p>
 		<div class="flex flex-row">
-			{#each keywords as kw}
-				<div class="w-10 h-10 flex-col m-4">
-					{#if kw === 'Unity3D'}
-						<DiUnitySmall />
-					{:else if kw === 'C#'}
-						<img src={'/images/hashtag.png'} />
-						<a href="https://www.flaticon.com/free-icons/hashtag" title="hashtag icons"
-							>Hashtag icons created by Freepik - Flaticon</a
-						>
-					{:else if kw === 'MySQL'}
-						<DiMysql />
-					{:else if kw === 'Java'}
-						<DiJava />
-					{:else if kw === 'Firebase'}
-						<DiFirebase />
-					{:else if kw === 'springboot'}
-						<svg src={'/images/springbootLogo.svg'} />
-					{:else if kw === 'JavaScript'}
-						<DiJsBadge />
-					{:else if kw === 'React'}
-						<DiReact />
-					{:else if kw === 'NodeJS'}
-						<DiNodejsSmall />
-					{:else if kw === 'Tailwind'}
-						<svg src={'/images/tailwind-css.svg'} />
-					{:else if kw === 'HTML'}
-						<DiHtml5 />
-					{:else if kw === 'C++'}
-						<img src={'/images/cPlusPlusIcon.png'} />
-					{/if}
-					<h3>{kw}</h3>
-				</div>
-			{/each}
+			<GetLogo {keywords} />
 		</div>
-		<p class="mt-4">{keywords}</p>
 		<p>{url}</p>
 		<!--
 
