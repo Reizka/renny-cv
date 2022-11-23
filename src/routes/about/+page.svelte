@@ -4,6 +4,10 @@
 	const css = 'p-2 shadow-2xl border-solid w-1/2 h-50 mt-12 border-2 border-black rounded-md';
 	let y = 0;
 	console.log(y);
+
+	//https://v2.tailwindcss.com/docs/transform
+	//https://www.w3schools.com/Css/css3_2dtransforms.asp
+	//https://svelte.dev/tutorial/svelte-window-bindings
 </script>
 
 <svelte:head>
