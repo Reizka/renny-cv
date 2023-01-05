@@ -5,20 +5,50 @@
 	let y = 0;
 	console.log(y);
 	let calc = (y * 2) / 3;
+	let keycount = 0;
 
+	let zArray = [10,9,8,7,6,5,4,3]
+	let zBool =[false,false,false,false,false,false,false,false]
+
+	function handleKeydown(event) {
+		let key = event.key;
+		let code = event.code;
+		if(code==="ArrowDown"){
+			keycount++
+			if(keycount === 10){
+				keycount =0;
+			}
+			for (let i = 0; i < zArray.length; i++) {
+				if(zArray[i]===10){
+					zBool[i]=true;
+					zArray[i]=0;
+				}else{
+					zBool[i]=false;
+					let x = zArray[i];
+					x++
+					zArray[i]=x;
+				}
+				
+		
+			}
+			console.log(zArray);
+			console.log(zBool);
+		}
+	}
 	//https://v2.tailwindcss.com/docs/transform
 	//https://www.w3schools.com/Css/css3_2dtransforms.asp
 	//https://svelte.dev/tutorial/svelte-window-bindings
+
 </script>
 
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-<svelte:window bind:scrollY={y} class="absolute" />
+<svelte:window bind:scrollY={y} class="absolute" on:keydown={handleKeydown}/>
 <div id="wrapper" class="max-w-[100%]">
-	<div class="text-container z-[10]">
-		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me</h2>
+	<div class="test-{keycount} text-container z-[{zArray[0]}]">
+		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me {keycount}</h2>
 		<div class=" bg-yellow-400 ">
 			<img
 				class="shadow-xl max-w-[20em] max-h-[20em] flex"
@@ -65,7 +95,7 @@
 	<div class="">
 		<h2 class="text-6xl pb-10 underline absolute bottom-10 ">My life</h2>
 
-		<div class="bg-blue-400 text-container pt-2 pb-8 z-[9]" style="transform: translate(0,{24}em)">
+		<div class="bg-blue-400 text-container pt-2 pb-8 {zArray[1]}" style="transform: translate(0,{24}em)">
 			<h1>1986: The beginning</h1>
 			<h3>Several historical events happened that year</h3>
 			<ul>
@@ -77,7 +107,7 @@
 			</ul>
 		</div>
 
-		<div class="bg-red-400 p-10 text-container z-[8]" style="transform: translate(0,{30}em)">
+		<div class="bg-red-400 p-10 text-container z-[{zArray[2]}]" style="transform: translate(0,{30}em)">
 			<h1>2006:Upper Secondary School</h1>
 			<p>
 				Graduated from upper Secondary school (Lukio) with grades that weren't bad, but also not
@@ -85,7 +115,7 @@
 			</p>
 		</div>
 
-		<div class="bg-amber-400 p-10 text-container z-[7]" style="transform: translate(0,{31}em)">
+		<div class="bg-amber-400 p-10 text-container z-[{zArray[3]}]" style="transform: translate(0,{31}em)">
 			<h1>2007: Army</h1>
 			<p>
 				Spending 6 months in (and mostly around) forest areas and learning the concept "Hurry to
@@ -93,7 +123,7 @@
 			</p>
 		</div>
 
-		<div class="bg-green-400 p-10 text-container z-[6]" style="transform: translate(0,{30.5}em)">
+		<div class="bg-green-400 p-10 text-container z-[{zArray[4]}]" style="transform: translate(0,{30.5}em)">
 			<h1>2008 - 2011: Travelling</h1>
 			<p>
 				Spent nearly four years travelling Oceania and South-east Asia. I started off with a working
@@ -102,7 +132,7 @@
 			</p>
 		</div>
 
-		<div class="bg-blue-400 text-container p-10 z-[5]" style="transform: translate(0,{30}em)">
+		<div class="bg-blue-400 text-container p-10 z-[{zArray[5]}]" style="transform: translate(0,{30}em)">
 			<h1>2012 - 2014: Haaga-Helia</h1>
 			<p>
 				Comeleted my studies in Business Information Tech, a degree program intended to teach both
@@ -115,7 +145,7 @@
 			</p>
 		</div>
 
-		<div class="bg-cyan-400 text-container p-10 z-[4]" style="transform: translate(0,{29.5}em)">
+		<div class="bg-cyan-400 text-container p-10 z-[{zArray[6]}]" style="transform: translate(0,{29.5}em)">
 			<h1>2015 - 2017: Ajou Univeristy South Korea</h1>
 			<p>CALC`</p>
 			<p>
@@ -130,7 +160,7 @@
 			</p>
 		</div>
 
-		<div class="bg-pink-400 text-container z-5 p-10" style="transform: translate(0,{29}em)">
+		<div class="bg-pink-400 text-container z-[{zArray[7]}] p-10" style="transform: translate(0,{29}em)">
 			<h1>2017 - 2022: VUB Belgium</h1>
 			<p>
 				After my Msc, I was not ready to start real work and instead had yet another very lucky
@@ -168,14 +198,11 @@
 		margin-top: 2em;
 	}
 
-	div {
-		width: 100px;
-		height: 100px;
-		background-color: red;
-		position: relative;
+	.test-1{
+
 		animation-name: example;
 		animation-duration: 4s;
-		animation-iteration-count: infinite;
+		animation-iteration-count:initial;
 	}
 
 	@keyframes example {
