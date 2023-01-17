@@ -30,7 +30,7 @@
 	<div class="part-3, {css}">
 		<h1>2006: Army</h1>
 		<p>
-			Spending 6 months in (and mostly around) forest areas and learning the concept "Hurry to wait"
+			Spending 6 months in Eastern-finnish forests and learning the concept "Hurry to wait"
 			thoroughly.
 		</p>
 	</div>
