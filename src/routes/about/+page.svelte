@@ -1,11 +1,14 @@
 <script>
 	import About from './About.svelte';
-	import MyLife from './myLife.svelte';
+	import PartOne from './myLife/partOne.svelte';
+	import PartTwo from "./myLife/partTwo.svelte";
+
+
 	const css = 'p-2 shadow-2xl border-solid w-1/2 h-50 mt-12 border-2 border-black rounded-md';
 	let y = 0;
 	console.log(y);
 	let calc = (y * 2) / 3;
-	let keycount = 0;
+	let keycount= 0;
 
 	let zArray = [10,9,8,7,6,5,4,3]
 	let zBool =[false,false,false,false,false,false,false,false]
@@ -35,6 +38,13 @@
 			console.log(zBool);
 		}
 	}
+
+	function checkCount(expected, given){
+		if(expected !== given){
+			return 0;
+		}
+		return given;
+	}
 	//https://v2.tailwindcss.com/docs/transform
 	//https://www.w3schools.com/Css/css3_2dtransforms.asp
 	//https://svelte.dev/tutorial/svelte-window-bindings
@@ -45,85 +55,79 @@
 	<title>About</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+
 <svelte:window bind:scrollY={y} class="absolute" on:keydown={handleKeydown}/>
 <div id="wrapper" class="max-w-[100%]">
-	<div class="test-{keycount} text-container z-[{zArray[0]}]">
-		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me {keycount}</h2>
-		<div class=" bg-yellow-400 ">
-			<img
-				class="shadow-xl max-w-[20em] max-h-[20em] flex"
-				src="/main-portrait-cropped.jpg"
-				alt="main portrait"
-			/>
+	{#if keycount === 0}
+	<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me </h2>
+	<div class=" bg-yellow-400 ">
+		<img
+			class="shadow-xl max-w-[20em] max-h-[20em] flex"
+			src="/main-portrait-cropped.jpg"
+			alt="main portrait"
+		/>
 
-			<div class="flex p-6 m-2 border-solid ">
-				<div class="font-sans bg-white">
-					<p>
-						Hello and welcome to my homepage! This site is mainly intended to work as an online CV
-						and show off some of my old projects and know how.
-					</p>
+		<div class="flex p-6 m-2 border-solid ">
+			<div class="font-sans bg-white">
+				<h2>1</h2>
+				<p>
+					Hello and welcome to my homepage! This site is mainly intended to work as an online CV
+					and show off some of my old projects and know how.
+				</p>
 
-					<p>
-						It is not easy to nail down my exact are of focus in terms of employment as I mainly
-						hail from academia. My main passion though mostly revoles around games and game
-						development. But I have picked up some android and web development skills on the way as
-						well
-					</p>
+				<p>
+					It is not easy to nail down my exact are of focus in terms of employment as I mainly
+					hail from academia. My main passion though mostly revoles around games and game
+					development. But I have picked up some android and web development skills on the way as
+					well
+				</p>
 
-					<p>
-						Before starting my studies I spent four years travelling around Ocenia, South-east Asia
-						and Israel. I worked in various different jobs during this time and during the second
-						half of my trip acquired my scuba-diving instructor license.
-					</p>
+				<p>
+					Before starting my studies I spent four years travelling around Ocenia, South-east Asia
+					and Israel. I worked in various different jobs during this time and during the second
+					half of my trip acquired my scuba-diving instructor license.
+				</p>
 
-					<p>
-						After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia, where I
-						completed the Business Information Technology (BITe) in 2½ years (it is normally a 3½
-						year program)
-					</p>
-					<p>
-						I continued directly to Msc studies after completing my Bachelor studies and moved to
-						South Korea for 2 years where I studied at Ajou University
-					</p>
-					<p>
-						Lastly, I moved to Belgium to start my PhD, which I succesfully defended in July 2022.
-					</p>
-				</div>
+				<p>
+					After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia, where I
+					completed the Business Information Technology (BITe) in 2½ years (it is normally a 3½
+					year program)
+				</p>
+				<p>
+					I continued directly to Msc studies after completing my Bachelor studies and moved to
+					South Korea for 2 years where I studied at Ajou University
+				</p>
+				<p>
+					Lastly, I moved to Belgium to start my PhD, which I succesfully defended in July 2022.
+				</p>
 			</div>
 		</div>
 	</div>
-	<div class="">
-		<h2 class="text-6xl pb-10 underline absolute bottom-10 ">My life</h2>
-
-		<div class="bg-blue-400 text-container pt-2 pb-8 {zArray[1]}" style="transform: translate(0,{24}em)">
-			<h1>1986: The beginning</h1>
-			<h3>Several historical events happened that year</h3>
-			<ul>
-				<li>Chernobyl</li>
-				<li>Space shuttle Challenger</li>
-				<li>Halley's Comet</li>
-				<li>Mad cow disease</li>
-				<li>Me</li>
-			</ul>
+	{/if}
+	<h2 class="text-6xl relative postion-left-0 pb-10 underline ">My Life</h2>
+		{#if keycount ===2 }
+			
+		<div class=" test-{checkCount(2,keycount)} text-container">
+				<PartOne style={"bg-blue-400 pt-2 pb-8"}/>
+			</div>
+			
+		{:else if keycount === 3}
+		<PartOne style={"bg-blue-400 pt-2 pb-8"}/>
+		<div class=" test-{checkCount(3,keycount)} text-container">
+			<PartTwo style={"bg-red-400 pt-2 pb-8"}/>
 		</div>
-
-		<div class="bg-red-400 p-10 text-container z-[{zArray[2]}]" style="transform: translate(0,{30}em)">
-			<h1>2006:Upper Secondary School</h1>
-			<p>
-				Graduated from upper Secondary school (Lukio) with grades that weren't bad, but also not
-				great enough to flaunt here separately
-			</p>
-		</div>
-
-		<div class="bg-amber-400 p-10 text-container z-[{zArray[3]}]" style="transform: translate(0,{31}em)">
+		{:else if keycount === 4}
+		<div class=" test-{checkCount(4,keycount)} bg-amber-400 p-10 text-container">
+			<h2>4</h2>
 			<h1>2007: Army</h1>
 			<p>
 				Spending 6 months in (and mostly around) forest areas and learning the concept "Hurry to
 				wait" thoroughly.
 			</p>
 		</div>
-
-		<div class="bg-green-400 p-10 text-container z-[{zArray[4]}]" style="transform: translate(0,{30.5}em)">
+		{:else if keycount === 5}
+		<div class=" test-{checkCount(5,keycount)} bg-green-400 p-10 text-container">
+			<h2>5</h2>
 			<h1>2008 - 2011: Travelling</h1>
 			<p>
 				Spent nearly four years travelling Oceania and South-east Asia. I started off with a working
@@ -131,8 +135,9 @@
 				work in Vietnam. Before coming back home I went to check out my roots in Israel
 			</p>
 		</div>
-
-		<div class="bg-blue-400 text-container p-10 z-[{zArray[5]}]" style="transform: translate(0,{30}em)">
+		{:else if keycount === 6}
+		<div class=" test-{checkCount(6,keycount)} bg-blue-400 text-container  p-10 ">
+			<h2>6</h2>
 			<h1>2012 - 2014: Haaga-Helia</h1>
 			<p>
 				Comeleted my studies in Business Information Tech, a degree program intended to teach both
@@ -144,8 +149,9 @@
 				lot, but I am somewhat relieved no one will ever get their hands on the source code
 			</p>
 		</div>
-
-		<div class="bg-cyan-400 text-container p-10 z-[{zArray[6]}]" style="transform: translate(0,{29.5}em)">
+		{:else if keycount === 7}
+		<div class="test-{checkCount(7,keycount)} bg-cyan-400 text-container  p-10 ]">
+			<h2>7</h2>
 			<h1>2015 - 2017: Ajou Univeristy South Korea</h1>
 			<p>CALC`</p>
 			<p>
@@ -159,8 +165,9 @@
 				sands of time
 			</p>
 		</div>
-
-		<div class="bg-pink-400 text-container z-[{zArray[7]}] p-10" style="transform: translate(0,{29}em)">
+		{:else if keycount === 8}
+		<div class="test-{checkCount(8,keycount)} bg-pink-400 text-container p-10 ">
+			<h2>8</h2>
 			<h1>2017 - 2022: VUB Belgium</h1>
 			<p>
 				After my Msc, I was not ready to start real work and instead had yet another very lucky
@@ -179,7 +186,8 @@
 				complimenting the project
 			</p>
 		</div>
-	</div>
+
+	{/if}
 </div>
 
 <style>
@@ -191,45 +199,88 @@
 	.textBox {
 		padding: 1em;
 	}
-
+	
 	.text-container {
-		width: 100%;
+		margin: 5%;
+		width: 80%;
 		position: absolute;
-		margin-top: 2em;
 	}
 
-	.test-1{
-
+	.parent :global(.test-1){
+		animation-name: example;
+		animation-duration: 1s;
+		animation-iteration-count:initial;
+		margin-top: 10;
+	}
+	.test-2{
+		animation-name: example;
+		animation-duration: 1s;
+		animation-iteration-count:initial;
+	}
+	.test-3{
+		animation-name: example;
+		animation-duration:4s;
+		animation-iteration-count:initial;
+	}
+	.test-4{
+		animation-name: example;
+		animation-duration: 4s;
+		animation-iteration-count:initial;
+		}
+	.test-5{
+		animation-name: example;
+		animation-duration: 4s;
+		animation-iteration-count:initial;
+	}
+	.test-6{
+		animation-name: example;
+		animation-duration: 4s;
+		animation-iteration-count:initial;
+	}
+	.test-7{
 		animation-name: example;
 		animation-duration: 4s;
 		animation-iteration-count:initial;
 	}
 
+	.test-8{
+		animation-name: example;
+		animation-duration: 4s;
+		animation-iteration-count:initial;
+	}
+
+
 	@keyframes example {
 		0% {
 			background-color: red;
 			left: 0px;
-			top: 0px;
+			top: 10em;
+			z-index: 2;
 		}
 		25% {
 			background-color: yellow;
-			left: 200px;
-			top: 0px;
+			left: 0px;
+			top: 20em;
+			z-index: 100;
 		}
 		50% {
 			background-color: blue;
-			left: 200px;
-			top: 200px;
+			left: 0px;
+			top: 20em;
+			z-index: 10;
 		}
 		75% {
 			background-color: green;
 			left: 0px;
-			top: 200px;
+			top: 20em;
+			z-index: 10;
 		}
 		100% {
 			background-color: red;
 			left: 0px;
-			top: 0px;
+			top: 10em;
+			z-index: 0;
 		}
 	}
+	
 </style>
