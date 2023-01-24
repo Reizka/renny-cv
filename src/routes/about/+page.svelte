@@ -2,6 +2,11 @@
 	import About from './About.svelte';
 	import PartOne from './myLife/partOne.svelte';
 	import PartTwo from "./myLife/partTwo.svelte";
+	import PartThree from './myLife/partThree.svelte';
+	import PartFour from './myLife/partFour.svelte';
+	import PartFive from './myLife/partFive.svelte';
+	import PartSix from './myLife/partSix.svelte';
+	import PartSeven from './myLife/partSeven.svelte';
 
 
 	const css = 'p-2 shadow-2xl border-solid w-1/2 h-50 mt-12 border-2 border-black rounded-md';
@@ -13,6 +18,19 @@
 	let zArray = [10,9,8,7,6,5,4,3]
 	let zBool =[false,false,false,false,false,false,false,false]
 
+	const comps =[
+		PartOne,PartTwo,PartThree,PartFour,PartFive,PartSix,
+	]
+	
+	function getComponents(keycount){
+		let comp = comps.map((elemet,index)=>{
+			if(keycount>=i ){
+				return elemet;
+			}
+		})
+		return comp;
+	}
+
 	function handleKeydown(event) {
 		let key = event.key;
 		let code = event.code;
@@ -21,7 +39,17 @@
 			if(keycount === 10){
 				keycount =0;
 			}
-			for (let i = 0; i < zArray.length; i++) {
+			
+			console.log(zArray);
+			console.log(zBool);
+		}else if(code ==="ArrowUp"){
+			keycount--
+			if(keycount < 0){
+				keycount =10;
+			}
+		}
+
+		for (let i = 0; i < zArray.length; i++) {
 				if(zArray[i]===10){
 					zBool[i]=true;
 					zArray[i]=0;
@@ -34,9 +62,6 @@
 				
 		
 			}
-			console.log(zArray);
-			console.log(zBool);
-		}
 	}
 
 	function checkCount(expected, given){
@@ -117,76 +142,48 @@
 			<PartTwo style={"bg-red-400 pt-2 pb-8"}/>
 		</div>
 		{:else if keycount === 4}
-		<div class=" test-{checkCount(4,keycount)} bg-amber-400 p-10 text-container">
-			<h2>4</h2>
-			<h1>2007: Army</h1>
-			<p>
-				Spending 6 months in (and mostly around) forest areas and learning the concept "Hurry to
-				wait" thoroughly.
-			</p>
+		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+
+		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+		<div class=" test-{checkCount(4,keycount)}  text-container">
+			<PartThree style={"bg-amber-400 p-10"}/>
 		</div>
 		{:else if keycount === 5}
-		<div class=" test-{checkCount(5,keycount)} bg-green-400 p-10 text-container">
-			<h2>5</h2>
-			<h1>2008 - 2011: Travelling</h1>
-			<p>
-				Spent nearly four years travelling Oceania and South-east Asia. I started off with a working
-				holiday in Australia, before picking up a scuba certificate in Thailand and later finding
-				work in Vietnam. Before coming back home I went to check out my roots in Israel
-			</p>
+		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+		<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
+		<div class=" test-{checkCount(5,keycount)} text-container">
+			<PartFour style={"bg-green-400 p-10 "} />
 		</div>
 		{:else if keycount === 6}
-		<div class=" test-{checkCount(6,keycount)} bg-blue-400 text-container  p-10 ">
-			<h2>6</h2>
-			<h1>2012 - 2014: Haaga-Helia</h1>
-			<p>
-				Comeleted my studies in Business Information Tech, a degree program intended to teach both
-				business and programming with the idea of:"Jack of all trades, master of none"
-			</p>
-			<p>
-				While at Haaga-Helia, I also took on the head tutor activities. My Thesis focused on
-				creating an Eductional AR game for the Android device. The project was fun and I learned a
-				lot, but I am somewhat relieved no one will ever get their hands on the source code
-			</p>
+		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+		<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
+		<PartFour style={"bg-green-400 pb-8 mb-2 "} />
+		<div class=" test-{checkCount(6,keycount)}  text-container  p-10 ">
+			<PartFive style={"bg-blue-400"}/>
 		</div>
 		{:else if keycount === 7}
-		<div class="test-{checkCount(7,keycount)} bg-cyan-400 text-container  p-10 ]">
-			<h2>7</h2>
-			<h1>2015 - 2017: Ajou Univeristy South Korea</h1>
-			<p>CALC`</p>
-			<p>
-				After finishing my studies I wanted to continue further with my studies and looking into
-				educational games. I was very lucky to get a position at Ajou university
-			</p>
-			<p>
-				I finished my Msc studies in time this time creating an adaptive educational game that
-				adapted slightly depending on the users' learning and play style. Again a very fun project
-				created using Unity3D and Springboot (backend) but equally happy the source code is lost to
-				sands of time
-			</p>
+	
+			<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+			<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+			<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
+			<PartFour style={"bg-green-400 pb-8 mb-2 "} />
+			<PartFive style={"bg-blue-400 pb-8 mb-2 "} />
+		<div class=" test-{checkCount(7,keycount)}  text-container  p-10 ">
+			<PartSix style={"bg-cyan-400 "}/>
 		</div>
+		
 		{:else if keycount === 8}
-		<div class="test-{checkCount(8,keycount)} bg-pink-400 text-container p-10 ">
-			<h2>8</h2>
-			<h1>2017 - 2022: VUB Belgium</h1>
-			<p>
-				After my Msc, I was not ready to start real work and instead had yet another very lucky
-				chance as I was invited to do a PhD at Vrije Universiteit Brussel. I had also been invited
-				for a Phd at a Finnish University but the chance to live overseas was far too oppoturnity to
-				pass
-			</p>
-			<p>
-				This time my project was more convoluted and COVID did not help, but in the end I managed to
-				succesfully defend my thesis in July 2022 focusing on Social Engagement platforms and
-				creating designg recommendations for them with older users specifically in mind
-			</p>
-			<p>
-				The project involved number of smaller portions, such as creating a fully functional web
-				application on React & Firebase, as well as, using Unity3D to create a game that was
-				complimenting the project
-			</p>
+			<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+			<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+			<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
+			<PartFour style={"bg-green-400 pb-8 mb-2 "} />
+			<PartFive style={"bg-blue-400 pb-8 mb-2 "} />
+			<PartSix style={"bg-cyan-400 pb-8 mb-2 "} />
+		<div class=" test-{checkCount(8,keycount)}  text-container  p-10">
+			<PartSeven style={"bg-gray-200"}/>
 		</div>
-
 	{/if}
 </div>
 
