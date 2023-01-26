@@ -36,7 +36,7 @@
 		let code = event.code;
 		if(code==="ArrowDown"){
 			keycount++
-			if(keycount === 10){
+			if(keycount === 8){
 				keycount =0;
 			}
 			
@@ -45,7 +45,7 @@
 		}else if(code ==="ArrowUp"){
 			keycount--
 			if(keycount < 0){
-				keycount =10;
+				keycount =7;
 			}
 		}
 
@@ -130,61 +130,64 @@
 	</div>
 	{/if}
 	<h2 class="text-6xl relative postion-left-0 pb-10 underline ">My Life</h2>
-		{#if keycount ===2 }
+	<div class="">
+		{#if keycount ===1 }
 			
-		<div class=" test-{checkCount(2,keycount)} text-container">
-				<PartOne style={"bg-blue-400 pt-2 pb-8"}/>
+		<div class=" test-{checkCount(1,keycount)} text-container">
+				<PartOne style={"bg-blue-400"}/>
 			</div>
 			
-		{:else if keycount === 3}
+		{:else if keycount === 2}
 		<PartOne style={"bg-blue-400 pt-2 pb-8"}/>
-		<div class=" test-{checkCount(3,keycount)} text-container">
+		<div class=" test-{checkCount(2,keycount)} text-container">
 			<PartTwo style={"bg-red-400 pt-2 pb-8"}/>
 		</div>
-		{:else if keycount === 4}
+		{:else if keycount === 3}
 		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
 
 		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
-		<div class=" test-{checkCount(4,keycount)}  text-container">
+		<div class=" test-{checkCount(3,keycount)}  text-container">
 			<PartThree style={"bg-amber-400 p-10"}/>
+		</div>
+		{:else if keycount === 4}
+		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
+		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
+		<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
+		<div class=" test-{checkCount(4,keycount)} text-container">
+			<PartFour style={"bg-green-400 p-10 "} />
 		</div>
 		{:else if keycount === 5}
 		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
 		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
 		<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
-		<div class=" test-{checkCount(5,keycount)} text-container">
-			<PartFour style={"bg-green-400 p-10 "} />
-		</div>
-		{:else if keycount === 6}
-		<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
-		<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
-		<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
 		<PartFour style={"bg-green-400 pb-8 mb-2 "} />
-		<div class=" test-{checkCount(6,keycount)}  text-container  p-10 ">
+		<div class=" test-{checkCount(5,keycount)}  text-container">
 			<PartFive style={"bg-blue-400"}/>
 		</div>
-		{:else if keycount === 7}
+		{:else if keycount === 6}
 	
 			<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
 			<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
 			<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
 			<PartFour style={"bg-green-400 pb-8 mb-2 "} />
 			<PartFive style={"bg-blue-400 pb-8 mb-2 "} />
-		<div class=" test-{checkCount(7,keycount)}  text-container  p-10 ">
+		<div class=" test-{checkCount(6,keycount)}  text-container">
 			<PartSix style={"bg-cyan-400 "}/>
 		</div>
 		
-		{:else if keycount === 8}
+		{:else if keycount === 7}
 			<PartOne style={"bg-blue-400 pt-2 pb-8 mb-2"}/>
 			<PartTwo style={"bg-red-400 pt-2 pb-8 mb-2"}/>
 			<PartThree style={"bg-amber-400 pb-8 mb-2"}/>
 			<PartFour style={"bg-green-400 pb-8 mb-2 "} />
 			<PartFive style={"bg-blue-400 pb-8 mb-2 "} />
 			<PartSix style={"bg-cyan-400 pb-8 mb-2 "} />
-		<div class=" test-{checkCount(8,keycount)}  text-container  p-10">
+		<div class=" test-{checkCount(7,keycount)} text-container">
 			<PartSeven style={"bg-gray-200"}/>
 		</div>
+	
 	{/if}
+</div>
 </div>
 
 <style>
@@ -193,21 +196,18 @@
 		line-height: 1.1;
 	}
 
-	.textBox {
-		padding: 1em;
-	}
+
 	
 	.text-container {
-		margin: 5%;
-		width: 80%;
 		position: absolute;
+		width: 50%;
+		margin-left: 25%;
 	}
 
-	.parent :global(.test-1){
-		animation-name: example;
+	.test-1{
+		animation-name: example ;
 		animation-duration: 1s;
 		animation-iteration-count:initial;
-		margin-top: 10;
 	}
 	.test-2{
 		animation-name: example;
@@ -216,67 +216,44 @@
 	}
 	.test-3{
 		animation-name: example;
-		animation-duration:4s;
+		animation-duration:1s;
 		animation-iteration-count:initial;
 	}
 	.test-4{
 		animation-name: example;
-		animation-duration: 4s;
+		animation-duration: 1s;
 		animation-iteration-count:initial;
 		}
 	.test-5{
 		animation-name: example;
-		animation-duration: 4s;
+		animation-duration: 1s;
 		animation-iteration-count:initial;
 	}
 	.test-6{
 		animation-name: example;
-		animation-duration: 4s;
+		animation-duration: 1s;
 		animation-iteration-count:initial;
 	}
 	.test-7{
 		animation-name: example;
-		animation-duration: 4s;
-		animation-iteration-count:initial;
-	}
-
-	.test-8{
-		animation-name: example;
-		animation-duration: 4s;
+		animation-duration: 1s;
 		animation-iteration-count:initial;
 	}
 
 
-	@keyframes example {
+
+	@keyframes example{
 		0% {
 			background-color: red;
-			left: 0px;
-			top: 10em;
-			z-index: 2;
+			right: 100%;
 		}
-		25% {
+		70% {
 			background-color: yellow;
-			left: 0px;
-			top: 20em;
-			z-index: 100;
-		}
-		50% {
-			background-color: blue;
-			left: 0px;
-			top: 20em;
-			z-index: 10;
-		}
-		75% {
-			background-color: green;
-			left: 0px;
-			top: 20em;
-			z-index: 10;
+			right: 20%;
 		}
 		100% {
 			background-color: red;
-			left: 0px;
-			top: 10em;
-			z-index: 0;
+			right: 25%;
 		}
 	}
 	
