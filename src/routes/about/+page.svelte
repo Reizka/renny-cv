@@ -1,5 +1,4 @@
 <script>
-	import About from './About.svelte';
 	import PartOne from './myLife/partOne.svelte';
 	import PartTwo from "./myLife/partTwo.svelte";
 	import PartThree from './myLife/partThree.svelte';
@@ -85,44 +84,45 @@
 <div id="wrapper" class="max-w-[100%]">
 	{#if keycount === 0}
 	<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me </h2>
-	<div class=" bg-yellow-400 ">
+	<div class="flex">
 		<img
-			class="shadow-xl max-w-[20em] max-h-[20em] flex"
+			class="ml-6 bg-yellow-300 p-6 shadow-xl max-w-[20em] max-h-[20em] flex mt-2"
 			src="/main-portrait-cropped.jpg"
 			alt="main portrait"
 		/>
 
-		<div class="flex p-6 m-2 border-solid ">
-			<div class="font-sans bg-white">
-				<h2>1</h2>
-				<p>
-					Hello and welcome to my homepage! This site is mainly intended to work as an online CV
-					and show off some of my old projects and know how.
+		<div class="flex  m-2 border-solid max-w-[70%]">
+			<div class="font-sans bg-white pl-4 pr-4">
+				<h1>
+					welcome! 
+				</h1>
+				<p class="mt-4">
+					This site is mainly intended to work as an online CV
+					and show off some of my old projects and general know-how.
+				</p>
+				<br/>
+				<p class="mt-4">
+					It is not easy to nail down my exact area of focus in terms of employment as I mainly
+					hail from academia. My main passion though revoles mostly around games and game
+					desing & development.
 				</p>
 
-				<p>
-					It is not easy to nail down my exact are of focus in terms of employment as I mainly
-					hail from academia. My main passion though mostly revoles around games and game
-					development. But I have picked up some android and web development skills on the way as
-					well
-				</p>
-
-				<p>
+				<p class="mt-4">
 					Before starting my studies I spent four years travelling around Ocenia, South-east Asia
 					and Israel. I worked in various different jobs during this time and during the second
 					half of my trip acquired my scuba-diving instructor license.
 				</p>
 
-				<p>
+				<p class="mt-4">
 					After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia, where I
 					completed the Business Information Technology (BITe) in 2½ years (it is normally a 3½
 					year program)
 				</p>
-				<p>
+				<p class="mt-4">
 					I continued directly to Msc studies after completing my Bachelor studies and moved to
 					South Korea for 2 years where I studied at Ajou University
 				</p>
-				<p>
+				<p class="mt-4 pb-10">
 					Lastly, I moved to Belgium to start my PhD, which I succesfully defended in July 2022.
 				</p>
 			</div>
