@@ -11,18 +11,19 @@
 		<slot />
 	</main>
 
-	<footer>
+	<footer class="w-[100%] bg-gray-400 absolute bottom-0">
 		<p>footer</p>
 	</footer>
 </div>
 
 <style>
+		/*
 	.app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
 	}
-	/*
+
 	main {
 		flex: 1;
 		display: flex;
@@ -31,7 +32,7 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
-*/
+
 	footer {
 		display: flex;
 		flex-direction: column;
@@ -48,5 +49,5 @@
 		footer {
 			padding: 12px 0;
 		}
-	}
+	}*/
 </style>
