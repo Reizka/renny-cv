@@ -11,7 +11,7 @@
 		<slot />
 	</main>
 
-	<footer class="w-[100%] bg-gray-400 absolute bottom-0">
+	<footer class="w-full bg-gray-400 ">
 		<p>footer</p>
 	</footer>
 </div>

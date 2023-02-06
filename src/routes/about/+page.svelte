@@ -7,6 +7,8 @@
 	import PartSix from './myLife/partSix.svelte';
 	import PartSeven from './myLife/partSeven.svelte';
 
+	import FaAngleDown from 'svelte-icons/fa/FaAngleDown.svelte';
+
 	const css = 'p-2 shadow-2xl border-solid w-1/2 h-50 mt-12 border-2 border-black rounded-md';
 	let y = 0;
 	console.log(y);
@@ -68,64 +70,88 @@
 	//https://www.w3schools.com/Css/css3_2dtransforms.asp
 	//https://svelte.dev/tutorial/svelte-window-bindings
 </script>
-
+<!--
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-
+-->
 <svelte:window bind:scrollY={y} class="absolute" on:keydown={handleKeydown} />
-<div id="" class="flex flex-col">
+
+<div class="flex flex-col">
 	{#if keycount === 0}
 		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me</h2>
-		<div class="flex flex-col lg:flex-row m-2">
+		<div class="flex flex-col lg:flex-row m-2  bg-white ">
 			<img
-				class="bg-yellow-200 p-6 shadow-xl max-w-[20em] max-h-[20em]"
+				class="max-w-[12em] max-h-[12em] m-2 shadow-lg shadow-gray-400 rounded-full"
 				src="/main-portrait-cropped.jpg"
 				alt="main portrait"
 			/>
 
-			<div
-				class="border-solid font-sans bg-white pl-4 pr-4"
-			>
-				<h1>welcome!</h1>
-				<p class="mt-4">
-					This site is mainly intended to work as an online CV and show off some of my old projects
-					and general know-how.
-				</p>
-				<br />
-				<p class="mt-4">
+			<h1 class="font-serif">Welcome!</h1>
+
+			<div class="border-solid font-sans pl-4 pr-4 font-sans">
+				<div class="flex flex-row">
+					<p class="mt-4">
+						This site is mainly intended to work as an online CV and present some of my old projects
+						and indicate some general areas of expertise. I might also add a blog(ish) area where I
+						update my more resent work, but we'll see.
+					</p>
+					<aside class="border-2 sm:min-w-[14em] p-2">
+						<h2 class="font-bold underline justify-center">Me in short</h2>
+						<ul class="ml-3 list-disc">
+							<li>Ph.D. in Computer Science</li>
+							<li>Over 7 years of programming</li>
+							<li>Lived in 4 continents</li>
+							<li>Fluent in Finnish & English</li>
+							<li>A2 level in French & Dutch</li>
+							<li>I like games (Not mental)</li>
+						</ul>
+					</aside>
+				</div>
+
+				<p class="mt-2">
 					It is not easy to nail down my exact area of focus in terms of employment as I mainly hail
-					from academia. My main passion though revoles mostly around games and game desing &
-					development.
+					from academia. In terms of more specific areas of interest. I love game development, not
+					only for the sake of games, but also due to more unique challenges this field provides.
+					Unique game features often require more novel approaches in programming terms. I equally
+					love learning about the "behind the scenes" development tales of how some amazing game
+					effects can often come down to very elabore smoke and mirrors and other times seemingly
+					simple mechanics can have surprsingly complex coding tales behind them.
+				</p>
+				<p class="mt-4">
+					Before starting my studies I spent nearly four years travelling around Ocenia, South-east
+					Asia and Israel. I worked in various different jobs during this time and during the second
+					half of my trip even acquired a scuba-diving instructor license. I'm a fully licensed PADI
+					Master Scuba Diving Trainer <a
+						class="underline"
+						href="https://apps.padi.com/scuba-diving/pro-chek/">(259093)</a
+					>.
 				</p>
 
 				<p class="mt-4">
-					Before starting my studies I spent four years travelling around Ocenia, South-east Asia
-					and Israel. I worked in various different jobs during this time and during the second half
-					of my trip acquired my scuba-diving instructor license.
-				</p>
-
-				<p class="mt-4">
-					After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia, where I
-					completed the Business Information Technology (BITe) in 2½ years (it is normally a 3½ year
-					program)
+					After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia University
+					of Applied Sciences, where I completed the Business Information Technology (BITe) on year
+					ahead of the normal curriculum schedule. I received full marks for my Bacherlor thesis
+					that I wrote while studying as an exchange student in South-Korea.
 				</p>
 				<p class="mt-4">
 					I continued directly to Msc studies after completing my Bachelor studies and moved to
-					South Korea for 2 years where I studied at Ajou University
+					South Korea for 2 years where I studied at Ajou University. My focus was again on
+					education games. You can read more about Minerva on the Portfolio section.
 				</p>
 				<p class="mt-4 pb-10">
-					Lastly, I moved to Belgium to start my PhD, which I succesfully defended in July 2022.
+					The most recent chapter in my life was moving to Brussels Belgium, in 2017 to start my
+					PhD. I succesfully defended my dissertation focusing on Social Engagement Platforms and
+					Elderly Users, in July 2022.
 				</p>
 			</div>
 		</div>
 	{/if}
 	{#if keycount > 0}
-	<h2 class="text-6xl relative postion-left-0 pb-10 underline ">My Life</h2>
+		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">My Life</h2>
 	{/if}
 	<div class="">
-	
 		{#if keycount === 1}
 			<div class=" test-{checkCount(1, keycount)} text-container">
 				<PartOne style={'bg-blue-400'} />
@@ -178,9 +204,11 @@
 			</div>
 		{/if}
 	</div>
-	<div class="w-[10em] bg-blue-400 border-solid rounded-xl h-[5em] m-auto mt-10">
-		Marjo life events
+	<!--
+	<div class="w-[10em] bg-blue-400 border-solid rounded-xl h-[5em] m-auto mt-4">
+		<FaAngleDown/>
 	</div>
+	-->
 </div>
 
 <style>
