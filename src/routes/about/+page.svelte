@@ -87,15 +87,13 @@
 				src="/main-portrait-cropped.jpg"
 				alt="main portrait"
 			/>
-
-			<h1 class="font-serif">Welcome!</h1>
-
 			<div class="border-solid font-sans pl-4 pr-4 font-sans">
+				<h1 class="font-serif">Welcome!</h1>
 				<div class="flex flex-row">
 					<p class="mt-4">
-						This site is mainly intended to work as an online CV and present some of my old projects
-						and indicate some general areas of expertise. I might also add a blog(ish) area where I
-						update my more resent work, but we'll see.
+						This site is mainly intended to work as an online CV and present some of my old projects, 
+						as well as indicate some general areas of expertise. 
+						I might also add a blog-ish area where I can update my more recent work, but we'll see.
 					</p>
 					<aside class="border-2 sm:min-w-[14em] p-2">
 						<h2 class="font-bold underline justify-center">Me in short</h2>
@@ -111,39 +109,38 @@
 				</div>
 
 				<p class="mt-2">
-					It is not easy to nail down my exact area of focus in terms of employment as I mainly hail
-					from academia. In terms of more specific areas of interest. I love game development, not
-					only for the sake of games, but also due to more unique challenges this field provides.
-					Unique game features often require more novel approaches in programming terms. I equally
-					love learning about the "behind the scenes" development tales of how some amazing game
-					effects can often come down to very elabore smoke and mirrors and other times seemingly
-					simple mechanics can have surprsingly complex coding tales behind them.
+					It is not easy to nail down my exact area of focus in terms of employment as I mainly come from academia. 
+					In terms of more specific areas of interest, I love game development. Not only for the sake of games, 
+					but also due to the unique challenges this field provides. In programming terms, unique game features often require novel approaches. 
+					I equally love learning about the "behind the scenes" development tales of how some amazing game effects can often come down to very elaborate smoke and mirrors, 
+					and other times seemingly simple mechanics can have surprisingly complex coding processes behind them.
 				</p>
 				<p class="mt-4">
-					Before starting my studies I spent nearly four years travelling around Ocenia, South-east
-					Asia and Israel. I worked in various different jobs during this time and during the second
-					half of my trip even acquired a scuba-diving instructor license. I'm a fully licensed PADI
-					Master Scuba Diving Trainer <a
+					Before starting my studies, 
+					I spent nearly four years travelling around Oceania, 
+					Southeast Asia, and Israel. 
+					I worked in various different jobs during this time and, 
+					during the second half of my trip, even acquired a scuba-diving instructor license. 
+					I'm now a fully licensed PADI Master Scuba Diving Trainer <a
 						class="underline"
 						href="https://apps.padi.com/scuba-diving/pro-chek/">(259093)</a
 					>.
 				</p>
 
 				<p class="mt-4">
-					After returning to Finland in 2012 I stared my Bacherlor studies at Haaga-Helia University
-					of Applied Sciences, where I completed the Business Information Technology (BITe) on year
-					ahead of the normal curriculum schedule. I received full marks for my Bacherlor thesis
-					that I wrote while studying as an exchange student in South-Korea.
+					After returning to Finland in 2012, I started my Bachelor's studies at Haaga-Helia University of Applied Sciences, 
+					where I completed the Business Information Technology (BITe) program one year ahead of the normal curriculum schedule. 
+					I received full marks for my Bachelor's thesis, which I wrote while studying as an exchange student in South Korea
 				</p>
 				<p class="mt-4">
-					I continued directly to Msc studies after completing my Bachelor studies and moved to
-					South Korea for 2 years where I studied at Ajou University. My focus was again on
-					education games. You can read more about Minerva on the Portfolio section.
+					After completing my Bachelor's studies, I continued directly to my Master's studies and moved to South Korea for two years to study at Ajou University. 
+					My focus was once again on educational games. You can read more about Minerva in the Portfolio section.
 				</p>
 				<p class="mt-4 pb-10">
-					The most recent chapter in my life was moving to Brussels Belgium, in 2017 to start my
-					PhD. I succesfully defended my dissertation focusing on Social Engagement Platforms and
-					Elderly Users, in July 2022.
+					And then, in a moment of madness, 
+					I decided to move to Brussels, Belgium in 2017 to start my PhD. 
+					It took me five long years, countless all-nighters, and more coffee than any human should consume, but I somehow managed to defend my dissertation focusing on 
+					Social Engagement Platforms and Elderly Users in July 2022
 				</p>
 			</div>
 		</div>
