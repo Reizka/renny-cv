@@ -5,6 +5,9 @@ const config = {
 	kit: {
 		adapter: adapter()
 	},
+	"package": {
+		"files": "docs"
+	  },
 	preprocess: [
 		preprocess({
 		  postcss: true,
