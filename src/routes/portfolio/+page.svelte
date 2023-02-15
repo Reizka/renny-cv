@@ -17,10 +17,13 @@
 	});
 </script>
 
-<h2 class="text-6xl relative postion-left-0 pb-10 underline">Technical portfolio</h2>
+<div class="flex flex-col justify-center items-center">
 
-<div class="grid grid-cols-2 gap-8">
+<h2 class="text-6xl underline mt-4">Technical portfolio</h2>
+
+<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-16 m-auto p-6">
 	{#each mapped as item, i}
 		<svelte:component this={item.component} props={item} />
 	{/each}
+</div>
 </div>

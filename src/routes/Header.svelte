@@ -7,8 +7,8 @@
 <header >
 	<nav class="flex flex-row bg-white justify-center w-[100%]">
 		<ul class="flex postion-relative">
-			<li class:active={$page.url.pathname === '/about'}>
-				<a href="/about">About</a>
+			<li class:active={$page.url.pathname === '/'}>
+				<a href="/">About</a>
 			</li>
 			<li class:active={$page.url.pathname === '/portfolio'}>
 				<a href="/portfolio">Portfolio</a>

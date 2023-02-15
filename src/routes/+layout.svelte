@@ -1,19 +1,20 @@
 <script>
 	import Header from './Header.svelte';
-	import './styles.css';
 	import './app.css';
 </script>
 
-<div class="app">
+<div class="app ">
 	<Header />
 
 	<main>
-		<slot />
+			<slot />
 	</main>
 
+<!--
 	<footer class="w-full bg-gray-400 ">
 		<p>footer</p>
 	</footer>
+-->
 </div>
 
 <style>

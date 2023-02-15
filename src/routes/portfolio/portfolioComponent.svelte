@@ -31,7 +31,7 @@
 	<div class="relative flex bg-gray-200 justify-center">
 		{#if imageName === ''}
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src={placeholder} alt="image placeholder" class=" scale-50 h-60 w-1/2" />
+			<img src={placeholder} alt="image placeholder" class=" scale-50 h-60 w-60" />
 		{:else}
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img class="scale-55 h-60" src={'/images/' + imageName + '.png'} alt="image of portfolio" />
