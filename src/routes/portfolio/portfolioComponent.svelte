@@ -27,7 +27,7 @@
 	import DiCss3 from 'svelte-icons/di/DiCss3.svelte';
 </script>
 
-<div class="flex-col h-1/2 rounded-xl">
+<div class="flex-col h-2/3 rounded-xl">
 	<div class="relative flex bg-gray-200 justify-center">
 		{#if imageName === ''}
 			<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -42,8 +42,8 @@
 			<h1 class="text-xl font-bold text-black opacity-100">{title}</h1>
 		</div>
 	</div>
-	<div class="flex-grow border-2 h-[200px] border-black bg-white rounded-b-2xl shadow-2xl">
-		<h2>{type}</h2>
+	<div class="flex-shrink border-2 h-auto  bg-white rounded-b-2xl shadow-2xl">
+		<h2 class="bg-violet-400 m-auto">{type}</h2>
 		<p>{short_description}</p>
 		<div class="flex flex-row">
 			<GetLogo {keywords} />

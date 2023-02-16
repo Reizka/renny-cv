@@ -70,6 +70,7 @@
 	//https://www.w3schools.com/Css/css3_2dtransforms.asp
 	//https://svelte.dev/tutorial/svelte-window-bindings
 </script>
+
 <!--
 <svelte:head>
 	<title>About</title>
@@ -78,70 +79,66 @@
 -->
 <svelte:window bind:scrollY={y} class="absolute" on:keydown={handleKeydown} />
 
-<div class="flex flex-col">
+<div class="flex flex-col justify-center items-center">
 	{#if keycount === 0}
 		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me</h2>
-		<div class="flex flex-col lg:flex-row m-2  bg-white ">
+		<div class="flex flex-col lg:flex-row bg-white border-2 m-auto w-1/2 shadow-2xl">
+			<div class="flex flex-col">
 			<img
-				class="max-w-[12em] max-h-[12em] m-2 shadow-lg shadow-gray-400 rounded-full"
+				class="max-w-[12em] max-h-[12em] m-2 border-2 shadow-gray-400 rounded-full"
 				src="/main-portrait-cropped.jpg"
 				alt="main portrait"
 			/>
-			<div class="border-solid font-sans pl-4 pr-4 font-sans">
-				<h1 class="font-serif">Welcome!</h1>
-				<div class="flex flex-row">
-					<p class="mt-4">
-						This site is mainly intended to work as an online CV and present some of my old projects, 
-						as well as indicate some general areas of expertise. 
-						I might also add a blog-ish area where I can update my more recent work, but we'll see.
-					</p>
-					<aside class="border-2 sm:min-w-[14em] p-2">
-						<h2 class="font-bold underline justify-center">Me in short</h2>
-						<ul class="ml-3 list-disc">
-							<li>Ph.D. in Computer Science</li>
-							<li>Over 7 years of programming</li>
-							<li>Lived in 4 continents</li>
-							<li>Fluent in Finnish & English</li>
-							<li>A2 level in French & Dutch</li>
-							<li>I like games (Not mental)</li>
-						</ul>
-					</aside>
-				</div>
+			<aside class="border-2 sm:min-w-[14em] pl-4 pr-2 m-auto ml-2">
+				<h2 class="font-bold underline justify-center">Me in short</h2>
+				<ul class="ml-3 list-disc">
+					<li>Ph.D. in Computer Science</li>
+					<li>Over 7 years of programming</li>
+					<li>Lived in 4 continents</li>
+					<li>Fluent in Finnish & English</li>
+					<li>A2 level in French & Dutch</li>
+					<li>I like games</li>
+				</ul>
+			</aside>
+			</div>
+			<div class="border-solid font-sans pl-4 pr-4 font-sans mt-4">
+				<h2 class="font-serif text-4xl">Welcome!</h2>
 
-				<p class="mt-2">
-					It is not easy to nail down my exact area of focus in terms of employment as I mainly come from academia. 
-					In terms of more specific areas of interest, I love game development. Not only for the sake of games, 
-					but also due to the unique challenges this field provides. In programming terms, unique game features often require novel approaches. 
-					I equally love learning about the "behind the scenes" development tales of how some amazing game effects can often come down to very elaborate smoke and mirrors, 
-					and other times seemingly simple mechanics can have surprisingly complex coding processes behind them.
-				</p>
 				<p class="mt-4">
-					Before starting my studies, 
-					I spent nearly four years travelling around Oceania, 
-					Southeast Asia, and Israel. 
-					I worked in various different jobs during this time and, 
-					during the second half of my trip, even acquired a scuba-diving instructor license. 
-					I'm now a fully licensed PADI Master Scuba Diving Trainer <a
+					This site is mainly intended to work as an online CV and present some of my old projects,
+					as well as indicate some general areas of expertise. I might also add a blog-ish area
+					where I can update my more recent work, but we'll see.
+				</p>
+
+				<p class="mt-4">
+					Before starting my studies, I spent nearly four years travelling around Oceania, Southeast
+					Asia, and Israel. I worked in various different jobs during this time and, during the
+					second half of my trip, even acquired a scuba-diving instructor license. I'm now a fully
+					licensed PADI Master Scuba Diving Trainer <a
 						class="underline"
 						href="https://apps.padi.com/scuba-diving/pro-chek/">(259093)</a
 					>.
 				</p>
 
 				<p class="mt-4">
-					After returning to Finland in 2012, I started my Bachelor's studies at Haaga-Helia University of Applied Sciences, 
-					where I completed the Business Information Technology (BITe) program one year ahead of the normal curriculum schedule. 
-					I received full marks for my Bachelor's thesis, which I wrote while studying as an exchange student in South Korea
+					After returning to Finland in 2012, I started my Bachelor's studies at Haaga-Helia
+					University of Applied Sciences, where I completed the Business Information Technology
+					(BITe) program one year ahead of the normal curriculum schedule. I received full marks for
+					my Bachelor's thesis, which I wrote while studying as an exchange student in South Korea
 				</p>
 				<p class="mt-4">
-					After completing my Bachelor's studies, I continued directly to my Master's studies and moved to South Korea for two years to study at Ajou University. 
-					My focus was once again on educational games. You can read more about Minerva in the Portfolio section.
+					After completing my Bachelor's studies, I continued directly to my Master's studies and
+					moved to South Korea for two years to study at Ajou University. My focus was once again on
+					educational games. You can read more about Minerva in the Portfolio section.
 				</p>
 				<p class="mt-4 pb-10">
-					And then, in a moment of madness, 
-					I decided to move to Brussels, Belgium in 2017 to start my PhD. 
-					It took me five long years, countless all-nighters, and more coffee than any human should consume, but I somehow managed to defend my dissertation focusing on 
-					Social Engagement Platforms and Elderly Users in July 2022
+					And then, in a moment of madness, I decided to move to Brussels, Belgium in 2017 to start
+					my PhD. It took me five long years, countless all-nighters, and more coffee than any human
+					should consume, but I somehow managed to defend my dissertation focusing on Social
+					Engagement Platforms and Elderly Users in July 2022
 				</p>
+
+				
 			</div>
 		</div>
 	{/if}

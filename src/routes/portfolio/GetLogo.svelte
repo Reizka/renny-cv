@@ -51,7 +51,7 @@
 			<img src={'/images/multiplayer.png'} alt="multiplayer icon from Freepik" />
 		{/if}
 		<div class="text-center text-xs relative items-center">
-			{kw}
+			<!--{kw}-->
 		</div>
 	</div>
 {/each}
