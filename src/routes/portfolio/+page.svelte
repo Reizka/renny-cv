@@ -17,9 +17,8 @@
 	});
 </script>
 
-<div class="flex flex-col justify-center items-center">
-
-<h2 class="text-6xl underline mt-4">Technical portfolio</h2>
+<div class="flex flex-col justify-center -center">
+	<h2 class="text-6xl underline mt-4 m-auto min-[400px]:text-2xl">Technical portfolio</h2>
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-16 m-auto p-6">
 	{#each mapped as item, i}

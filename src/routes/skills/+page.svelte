@@ -3,7 +3,7 @@
 
 <main>
 	<div class="flex flex-col justify-center -center">
-		<h2 class="text-6xl underline mt-4 m-auto">Technical Skills</h2>
+		<h2 class="sm:text-6xl underline mt-4 m-auto min-[400px]:text-2xl">Technical Skills</h2>
 
 		<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 m-auto p-6">
 

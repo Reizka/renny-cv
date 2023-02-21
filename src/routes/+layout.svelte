@@ -18,13 +18,11 @@
 </div>
 
 <style>
-		/*
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+	
+	/*.app {
+		min-width: 400px;
 	}
-
+	
 	main {
 		flex: 1;
 		display: flex;

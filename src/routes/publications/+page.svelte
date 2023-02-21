@@ -11,7 +11,7 @@
 
 	<div class="flex flex-col justify-center items-center">
   
-	<h2 class="text-6xl underline mt-4">Publications</h2>
+	<h2 class="text-6xl underline mt-4 min-[400px]:text-2xl">Publications</h2>
 
 	<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 m-6 m-auto p-6">
 		{#each pf as p, i}

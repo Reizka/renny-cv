@@ -1,47 +1,52 @@
 <script>
 	import { page } from '$app/stores';
+	import MobileNav from './MobileNav.svelte';
+
 	//import logo from '$lib/images/svelte-logo.svg';
 	//import github from '$lib/images/github.svg';
+	$: innerWidth = 0;
+
+	let links = [
+		{ href: '/', text: 'About' },
+		{ href: '/portfolio', text: 'Portfolio' },
+		{ href: '/publications', text: 'Publications' },
+		{ href: '/skills', text: 'Technical Skills' },
+		{ href: '/contact', text: 'Contact' }
+	];
 </script>
 
-<header >
-	<nav class="flex flex-row bg-white justify-center w-[100%]">
-		<ul class="flex postion-relative">
-			<li class:active={$page.url.pathname === '/'}>
-				<a href="/">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/portfolio'}>
-				<a href="/portfolio">Portfolio</a>
-			</li>
-			<li class:active={$page.url.pathname === '/publications'}>
-				<a href="/publications">Publications</a>
-			</li>
-			<li class:active={$page.url.pathname === '/skills'}>
-				<a href="/skills">Technical Skills</a>
-			</li>
-			<li class:active={$page.url.pathname === '/contact'}>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
+<svelte:window bind:innerWidth />
+
+<header>
+	<nav class="flex bg-white w-[100%]">
+		{#if innerWidth < 500}
+			<MobileNav {links} />
+		{:else}
+			<div class="flex flex-row m-auto bg-gray-400 rounded-b-md text-2xl p-4">
+				<ul class="flex position-relative">
+					{#each links as { href, text }}
+						<!-- svelte-ignore missing-declaration -->
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<li class:classActive={$page.url.pathname === href}>
+							<a class="hover:text-red-400 {[ $page.url.pathname === href ? 'text-red-500' : '' ]}" {href}>{text}</a>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		{/if}
 	</nav>
 </header>
 
 <style>
-
 	nav a {
 		display: flex;
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
-		color:black;
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
 	}
 </style>

@@ -81,8 +81,8 @@
 
 <div class="flex flex-col justify-center items-center">
 	{#if keycount === 0}
-		<h2 class="text-6xl relative postion-left-0 pb-10 underline ">About me</h2>
-		<div class="flex flex-col lg:flex-row bg-white border-2 m-auto w-1/2 shadow-2xl">
+		<h2 class="text-6xl relative postion-left-0 pb-10 underline min-[400px]:text-2xl">About me</h2>
+		<div class="flex flex-col lg:flex-row bg-white border-2 m-auto md:w-1/2 sm:w-[80%] shadow-2xl">
 			<div class="flex flex-col">
 			<img
 				class="max-w-[12em] max-h-[12em] m-2 border-2 shadow-gray-400 rounded-full"
