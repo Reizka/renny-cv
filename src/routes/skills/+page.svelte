@@ -1,6 +1,7 @@
 <script>
 	import skills from '$lib/data/skills.json';
-
+	import TiChevronRightOutline from 'svelte-icons/ti/TiChevronRightOutline.svelte'
+	import TiChevronLeftOutline from 'svelte-icons/ti/TiChevronLeftOutline.svelte'
 
 	let currentIndex = 0; 
 
@@ -22,19 +23,19 @@
 
 
 <main>
-	<button class="absolute mt-15 h-full w-20 outline left-0 rounded-r-2xl bg-white/30 backdrop-blur hover:w-40" on:click={goPrevious}>{prevBtnText}</button>
-	<button class="absolute mt-15 h-full w-20 right-0 rounded-l-2xl backdrop-blur-sm hover:w-40" on:click={goNext}>{nextBtnText}</button>
+	<button class="absolute mt-15 mb-20 h-full w-20 left-0 text-sm hover:w-40 hover:text-xl" on:click={goPrevious}>{prevBtnText} <TiChevronLeftOutline/> </button>
+	<button class="absolute mt-15 mb-20 h-full w-20 right-0 text-sm hover:w-40 hover:text-xl" on:click={goNext}>{nextBtnText} <TiChevronRightOutline/></button>
 	<div class="flex flex-col justify-center -center">
 		<div class="slide flex flex-col justify-center items-center">
 			<h2 class="sm:text-6xl underline mt-4 m-auto min-[400px]:text-2xl">
 				{skills[currentIndex].title}
 			</h2>
 	
-			<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 m-auto p-6">
+			<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 m-auto p-12">
 				{#each skills[currentIndex].categories as category}
 					<div class="skill-container flex flex-col">
 						<h3 class="bg-teal-300 text-xl text-center font-bold">{category.name}</h3>
-						<ul class="list-disc m-auto">
+						<ul class="list-disc m-auto p-10">
 							{#each category.items as item}
 								<li>{item}</li>
 							{/each}
