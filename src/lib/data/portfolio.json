@@ -1,5 +1,40 @@
 [
+  {
+    "title": "Web Scraper",
+    "keywords": [
+      "springboot"
+    ],
+    "short_description": "A simple web scraper to scrape the Pint of Science Speaker DB for more easy handling of the data",
+    "long_description": "Pint of Science is a multinational event with a variety of speakers who present their research to the public. The event is held in various locations and the speakers are different each year. The goal of this project was to create a web scraper that would collect the data from the Pint of Science website and store it in a database. The data would then be used to create a mobile application that would allow users to view the speakers and their research. The speakers are registered in a internal db that offers very limited filtering capabilities",
+    "imageName": "",
+    "url": "",
+    "type": "Hobby"
+  },
+  {
+    "title": "Testing Platform for IAM Services",
+    "keywords": [
+      "Keycloak",
+      "Ruby on Rails"
+    ],
+    "short_description": "A simple content management web application that supports secure login and password management, intended for training usage of IAM tools, such as Keycloak",
+    "long_description": "Learning the IAM tools authentication flow can be challenging for new employees, especially when the use case is not explicitly clear. This application is intended to be used as an explicit use case where OAUTH2 authentication flow is required and also support for different roles is required.",
+    "imageName": "",
+    "url": "",
+    "type": "Work"
+  },
+  {
+    "title": "Website",
+    "keywords": [
+      "React"
+    ],
+    "short_description": "A simple website I am in the process of creating  to a customer on my own time",
+    "long_description": "A simple website meant to refresh my ReactJS skills and fullfill needs requested from the site. ",
+    "imageName": "",
+    "url": "",
+    "type": "Freelance"
+  },
     {
+
       "title": "Pangoling Game engine",
       "keywords": [
         "C++"

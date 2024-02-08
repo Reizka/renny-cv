@@ -11,7 +11,6 @@
 		{ href: '/portfolio', text: 'Portfolio' },
 		{ href: '/publications', text: 'Publications' },
 		{ href: '/skills', text: 'Technical Skills' },
-		{ href: '/contact', text: 'Contact' }
 	];
 </script>
 
