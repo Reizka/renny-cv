@@ -1,5 +1,16 @@
 [
   {
+    "title": "Digital Hadrian's Wall",
+    "keywords": [
+      "Unity3D"
+    ],
+    "short_description": "Converting the Hadrian's Wall boardgame into a digital game.",
+    "long_description": "Hadrian's wall is a complex resource management boardgame where player has to maximize their resource usage during their turn and are given various paths towards this goal. The game contains several intricaticies that make it a fascinating hobby project",
+    "imageName": "",
+    "url": "",
+    "type": "Hobby"
+  },
+  {
     "title": "Web Scraper",
     "keywords": [
       "springboot"
@@ -23,7 +34,7 @@
     "type": "Work"
   },
   {
-    "title": "Website",
+    "title": "Home page for a rental house",
     "keywords": [
       "React"
     ],
