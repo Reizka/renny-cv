@@ -25,10 +25,6 @@ export let links = undefined;
 	  <li class:classActive={$page.url.pathname === href} on:click={() => toggle()}>
 		<a class="opacity-100 {[ $page.url.pathname === href ? 'text-red-500' : '' ]}" href={href}>{text}</a>
 	  </li>
-	  
-	  
-	  
-		
 	  {/each}
 	</ul>
   </div>

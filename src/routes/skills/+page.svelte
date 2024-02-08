@@ -26,14 +26,7 @@
 					<li>R</li>
 				</ul>
 			</div>
-			<div class="skill-container flex flex-col">
-				<h3 class="bg-indigo-400 text-xl text-center font-bold">Mobile</h3>
-				<ul class="list-disc m-auto">
-					<li>Java</li>
-					<li>Gradle</li>
-					<li>SQLite</li>
-				</ul>
-			</div>
+	
 			<div class="skill-container flex flex-col">
 				<h3 class="bg-amber-500 text-xl text-center font-bold">Game Engines</h3>
 				<ul class="list-disc m-auto">
@@ -58,7 +51,27 @@
 				</ul>
 			</div>
 			<div class="skill-container flex flex-col">
-				<h3 class="bg-slate-400 text-xl">Miscalleneous</h3>
+				<h3 class="bg-black text-teal-300 text-xl text-center font-bold">IAM tools</h3>
+				<ul class="list-disc m-auto">
+					<li>Forgerock IAM stack </li>
+					<li>Keycloak</li>
+					<li>PING IAM</li>
+				</ul>
+			</div>
+			<div class="skill-container flex flex-col">
+				<h3 class="bg-slate-400 text-xl text-center font-bold">Security</h3>
+				<ul class="list-disc m-auto">
+					<li>Security+ Certified</li>
+					<li>OAuth2</li>
+					<li>OpenID</li>
+					<li>Authorization</li>
+					<li>Authentication</li>
+					<li>Encryption</li>
+					<li>SAML2</li>
+				</ul>
+			</div>
+			<div class="skill-container flex flex-col">
+				<h3 class="bg-green-400 text-xl text-center font-bold">Miscalleneous</h3>
 				<ul class="list-disc m-auto">
 					<li>LaTeX</li>
 					<li>JSON</li>
@@ -68,6 +81,19 @@
 					<li>SVN</li>
 					<li>Maven</li>
 					<li>Docker</li>
+				</ul>
+			</div>
+			<div class="skill-container flex flex-col">
+				<h3 class="bg-yellow-400 text-xl text-center font-bold">Concepts</h3>
+				<ul class="list-disc m-auto">
+					<li>AGILE</li>
+					<li>SCRUM</li>
+					<li>Waterfall</li>
+					<li>DevOps</li>
+					<li>GiT</li>
+					<li>Usability</li>
+					<li>User experience</li>
+					<li>Accessibility</li>
 				</ul>
 			</div>
 		</div>
