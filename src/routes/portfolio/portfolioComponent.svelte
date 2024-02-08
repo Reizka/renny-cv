@@ -6,7 +6,7 @@
 
 	const title = props.title;
 	const short_description = props.short_description;
-	const type = props.type;
+	let type = props.type;
 	const keywords = props.keywords;
 	const long_description = props.long_description;
 	const imageName = props.imageName;
@@ -25,6 +25,18 @@
 	import DiMysql from 'svelte-icons/di/DiMysql.svelte';
 	import DiSqllite from 'svelte-icons/di/DiSqllite.svelte';
 	import DiCss3 from 'svelte-icons/di/DiCss3.svelte';
+
+
+	  // Mapping of type values to corresponding background classes
+	  const typeToClassMap = {
+        'Work': 'bg-violet-400',
+        'Hobby': 'bg-green-400',
+        'Research': 'bg-orange-400',
+    };
+
+    // Default class if type doesn't match any key in the map
+    const defaultClass = 'bg-blue-400';
+
 </script>
 
 <div class="flex-col h-2/3 rounded-xl">
@@ -43,7 +55,7 @@
 		</div>
 	</div>
 	<div class="flex-shrink border-2 h-auto  bg-white rounded-b-2xl shadow-2xl">
-		<h2 class="bg-violet-400 m-auto">{type}</h2>
+		<h2 class="{typeToClassMap[type] || defaultClass} m-auto">{type}</h2>
 		<p>{short_description}</p>
 		<div class="flex flex-row">
 			<GetLogo {keywords} />

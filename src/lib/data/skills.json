@@ -1,0 +1,136 @@
+[
+    {
+        "title": "Technical",
+        "categories": [
+            {
+                "name": "Operating Systems",
+                "items": ["Windows", "macOS", "Ubuntu", "Mint"]
+            },
+            {
+                "name": "Programming Languages",
+                "items": ["Python", "JavaScript", "C#", "Java","R", "C++"]
+            },
+            {
+                "name": "Development Tools",
+                "items": ["Visual Studio Code","Rider","Unity3D", "libGDX"]
+            },
+            {
+                "name": "Web Development",
+                "items": ["HTML", "CSS", "React", "Node.js", "Express","Svelte","TailwindCSS","Bootstrap"]
+            },
+            {
+                "name": "Databases",
+                "items": ["MongoDB", "MySQL", "PostgreSQL", "SQLite","Firebase","Directory Services","LDAP"]
+            },
+            {
+                "name": "IAM tools",
+                "items": ["Forgerock", "Keycloak", "Ping"]
+            },
+            {
+                "name": "Miscalleneous",
+                "items": ["LaTex","JSON","XML","UML","GiT","SVN","Maven","Gradle","Docker"]
+            },
+        
+            {
+                "name": "Security",
+                "items": ["OWASP Top 10", "COMPTia Security+ Certified","Encryption"]
+            },
+            {
+                "name": "Concepts",
+                "items": ["Agile", "Scrum", "Kanban", "DevOps","Waterfall","UX","Accesibility"] 
+            }
+        ]
+    },
+    {
+        "title": "Research",
+        "categories": [
+            {
+                "name": "Data Analysis",
+                "items": ["Statistical Analysis", "Data Visualization"]
+            },
+            {
+                "name": "Qualitative Research",
+                "items": ["Interviews", "Focus Groups"]
+            },
+            {
+                "name": "Quantitative Research",
+                "items": ["Surveys", "Experiments", "Longitudinal Studies"]
+            }
+        ]
+    },
+    {
+        "title": "Business",
+        "categories": [
+            {
+                "name": "Management",
+                "items": ["Project Management", "Team Leadership"]
+            },
+            {
+                "name": "Business Process",
+                "items": ["Process mapping", "Process Improvement"]
+            }
+        ]
+    },
+    {
+        "title": "Soft Skills",
+        "categories": [
+            {
+                "name": "Communication",
+                "items": ["Public Speaking", "Technical Writing"]
+            },
+            {
+                "name": "Problem Solving",
+                "items": ["Critical Thinking", "Decision Making"]
+            },
+            {
+                "name": "Teamwork",
+                "items": ["Collaboration", "Conflict Resolution"]
+            }
+        ]
+    },
+    {
+        "title": "Languages",
+        "categories": [
+            {
+                "name": "English",
+                "items": ["Fluent"]
+            },
+            {
+                "name": "Finnish",
+                "items": ["Native"]
+            },
+            {
+                "name": "French",
+                "items": ["B1"]
+            },
+            {
+                "name": "Dutch",
+                "items": ["A2"]
+            }
+        ]
+    },
+    {
+        "title": "Certifications & Badges",
+        "categories": [
+            {
+                "name": "COMPTia Security+",
+                "items": ["2021"]
+            },
+            {
+                "name": "Forgerock Badges",
+                "items": [
+                    "Access Management Product Knowledge",
+                "Access Management Core Skills",
+                "Identity Management Product Knowledge",
+                "Directory Services Core Skillst",
+                "Directory Services Product Knowledge",
+            "Identity Gateway Product Knowledge",
+            "Identity Management Micro Core Skills - Modeling Objects & Identities",
+            "Identity Management Micro Core Skills - Managing Connectors",
+            "Directory Services Micro Core Skills - Accessing Directory Services",
+            "Directory Services Micro Core Skills - Maintaining Directory Servers",
+            "Directory Services Micro Core Skills - Deploying Directory Services"]
+            }
+        ]
+    }
+]

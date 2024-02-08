@@ -10,7 +10,7 @@
 		{ href: '/', text: 'About' },
 		{ href: '/portfolio', text: 'Portfolio' },
 		{ href: '/publications', text: 'Publications' },
-		{ href: '/skills', text: 'Technical Skills' },
+		{ href: '/skills', text: 'Skills' },
 	];
 </script>
 
