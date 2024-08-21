@@ -1,16 +1,13 @@
 <script>
 	import { page } from '$app/stores';
 	import MobileNav from './MobileNav.svelte';
-
-	//import logo from '$lib/images/svelte-logo.svg';
-	//import github from '$lib/images/github.svg';
 	$: innerWidth = 0;
 
 	let links = [
 		{ href: '/', text: 'About' },
 		{ href: '/portfolio', text: 'Portfolio' },
 		{ href: '/publications', text: 'Publications' },
-		{ href: '/skills', text: 'Skills' },
+		{ href: '/skills', text: 'Skills' }
 	];
 </script>
 
@@ -27,7 +24,10 @@
 						<!-- svelte-ignore missing-declaration -->
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li class:classActive={$page.url.pathname === href}>
-							<a class="hover:text-red-400 {[ $page.url.pathname === href ? 'text-red-500' : '' ]}" {href}>{text}</a>
+							<a
+								class="hover:text-red-400 {[$page.url.pathname === href ? 'text-red-500' : '']}"
+								{href}>{text}</a
+							>
 						</li>
 					{/each}
 				</ul>
