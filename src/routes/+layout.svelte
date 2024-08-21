@@ -1,15 +1,15 @@
 <script>
-	import Header from './Header.svelte';
-	import './app.css';
-	import PageTrans from '../lib/utility/PageTrans.svelte';
-	import { page } from '$app/stores';
+	import Header from "./Header.svelte";
+	import "./app.css";
+	import PageTrans from "../lib/utility/PageTrans.svelte";
+	import { page } from "$app/stores";
 </script>
 
-<div class="app ">
+<div class="app">
 	<Header />
 
 	<main>
-		<PageTrans refresh={$page.route.id}>
+		<PageTrans refresh={$page.route.id} cls={"m-4"}>
 			<slot />
 		</PageTrans>
 	</main>
