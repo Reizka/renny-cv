@@ -16,6 +16,16 @@
 				: skillCategories.map(() => false),
 		);
 	}
+
+	// Scroll to the specific skill container when a link button is clicked
+	function scrollToSkill(index) {
+		const container = document.querySelector(`.skill-container-${index}`);
+		container.scrollIntoView({
+			behavior: "smooth",
+			block: "center",
+			inline: "center",
+		});
+	}
 </script>
 
 <main>
@@ -31,10 +41,12 @@
 				{#each skills as skill, index}
 					<button
 						class="px-2 py-2 sm:px-4 sm:py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 focus:outline-none text-sm sm:text-base"
-						on:click={() =>
-							(openCategories = openCategories.map(() =>
+						on:click={() => {
+							scrollToSkill(index);
+							openCategories = openCategories.map(() =>
 								skill.categories.map(() => false),
-							))}
+							);
+						}}
 					>
 						{skill.title}
 					</button>
@@ -49,7 +61,7 @@
 		>
 			{#each skills as skill, skillIndex}
 				<div
-					class="skill-container snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
+					class="skill-container skill-container-{skillIndex} snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
 				>
 					<h2
 						class="text-xl sm:text-3xl underline mt-4 m-auto text-center"

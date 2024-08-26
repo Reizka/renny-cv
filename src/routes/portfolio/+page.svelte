@@ -11,6 +11,7 @@
 			imageName: x.imageName,
 			url: x.url,
 			type: x.type,
+			github: x.github,
 			component: ItemTypeOne,
 		};
 		return p;

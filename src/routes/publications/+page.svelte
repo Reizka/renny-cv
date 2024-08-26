@@ -11,9 +11,7 @@
 			Publications
 		</h2>
 
-		<div
-			class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 m-6 m-auto p-6"
-		>
+		<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-1">
 			{#each pf as p, i}
 				<div class="border-2 mt-2 border-black bg-white shadow-xl">
 					<div class="">

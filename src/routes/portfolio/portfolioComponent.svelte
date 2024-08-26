@@ -69,13 +69,16 @@
 		<div class="flex flex-row">
 			<GetLogo {keywords} />
 		</div>
-		<a href={github} target="_blank">
-			<img
-				class="p-2 m-auto w-10 h-10"
-				src={"/images/github-mark.png"}
-				alt="GitHub Repository Thumbnail"
-			/>
-		</a>
+		{#if github !== ""}
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<a href={github} target="_blank" rel="noopener noreferrer">
+				<img
+					class="p-2 m-auto w-10 h-10"
+					src="/images/github-mark.png"
+					alt="GitHub Repository Thumbnail"
+				/>
+			</a>
+		{/if}
 
 		<!--
 
