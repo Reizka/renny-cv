@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-center items-center">
-	<h2 class="text-6xl relative pb-10 underline min-[400px]:text-2xl">
+	<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
 		About me
 	</h2>
 	<div

@@ -1,5 +1,18 @@
 [
   {
+    "title": "the Cretan Agency - website",
+    "keywords": [
+      "React",
+      "Firebase"
+    ],
+    "short_description": "A webite for a rental home in crete.",
+    "long_description": "A website that also has a simple admin page that allows changing the text & images on the website. Support for three languages was also inbuilt. In the end the customer didn't need the website. ",
+    "imageName": "cretan",
+    "url": "https://cretan.netlify.app/",
+    "type": "Freelance",
+    "github": ""
+  },
+  {
     "title": "Digital Hadrian's Wall",
     "keywords": [
       "Unity3D"
@@ -8,7 +21,8 @@
     "long_description": "Hadrian's wall is a complex resource management boardgame where player has to maximize their resource usage during their turn and are given various paths towards this goal. The game contains several intricaticies that make it a fascinating hobby project",
     "imageName": "",
     "url": "",
-    "type": "Hobby"
+    "type": "Hobby",
+    "github": ""
   },
   {
     "title": "Web Scraper",
@@ -19,7 +33,8 @@
     "long_description": "Pint of Science is a multinational event with a variety of speakers who present their research to the public. The event is held in various locations and the speakers are different each year. The goal of this project was to create a web scraper that would collect the data from the Pint of Science website and store it in a database. The data would then be used to create a mobile application that would allow users to view the speakers and their research. The speakers are registered in a internal db that offers very limited filtering capabilities",
     "imageName": "",
     "url": "",
-    "type": "Hobby"
+    "type": "Hobby",
+    "github": ""
   },
   {
     "title": "Testing Platform for IAM Services",
@@ -31,152 +46,152 @@
     "long_description": "Learning the IAM tools authentication flow can be challenging for new employees, especially when the use case is not explicitly clear. This application is intended to be used as an explicit use case where OAUTH2 authentication flow is required and also support for different roles is required.",
     "imageName": "",
     "url": "",
-    "type": "Work"
+    "type": "Work",
+    "github": ""
   },
   {
-    "title": "Home page for a rental house",
+    "title": "Pangoling Game engine",
     "keywords": [
-      "React"
+      "C++"
     ],
-    "short_description": "A simple website I am in the process of creating  to a customer on my own time",
-    "long_description": "A simple website meant to refresh my ReactJS skills and fullfill needs requested from the site. ",
+    "short_description": "current project to create a simple 3D game engine. Project is still very much work in progress and due to its nature this is unlikely to change anytime soon",
+    "long_description": "",
     "imageName": "",
     "url": "",
-    "type": "Freelance"
+    "type": "Hobby",
+    "github": ""
   },
-    {
-
-      "title": "Pangoling Game engine",
-      "keywords": [
-        "C++"
-      ],
-      "short_description": "current project to create a simple 3D game engine. Project is still very much work in progress and due to its nature this is unlikely to change anytime soon",
-      "long_description": "",
-      "imageName": "",
-      "url": "",
-      "type": "Hobby"
-    },
-    {
-      "title": "Nosville",
-      "keywords": [
-        "HTML",
-        "JavaScript",
-        "React",
-        "Tailwind",
-        "Firebase",
-        "NodeJS",
-        "Multilanguage"
-      ],
-      "short_description": "A fully functional help request tool where users could ask and receive help to their requests",
-      "long_description": "",
-      "imageName": "nosville",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "CityWe",
-      "keywords": [
-        "Unity3D",
-        "C#",
-        "Firebase",
-        "Json",
-        "multiplayer"
-      ],
-      "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
-      "long_description": "",
-      "imageName": "citywe",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "AR Math education",
-      "keywords": [
-        "Unity3D",
-        "C#"
-      ],
-      "short_description": "Worked together in a cooperation between VUB and Lulea University developing a story focused educational game that also utilzed AR techniques to teach some basic math topics to elementary students",
-      "long_description": "",
-      "imageName": "AR-math",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Truebiters",
-      "keywords": [
-        "Unity3D",
-        "C#",
-        "multiplayer",
-        "Multilanguage"
-      ],
-      "short_description": "A digital educational game intended for teaching basics of learning about booleans. The game also had a multiplayer game over bluetooth. The game was functional and made available on Android and IOS stores",
-      "long_description": "",
-      "imageName": "truebiters",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Minerva",
-      "keywords": [
-        "Unity3D",
-        "C#",
-        "Java",
-        "springboot",
-        "MySQL",
-        "Json",
-        "Multilanguage"
-      ],
-      "short_description": "An adaptive educational game that changed depending on players learning and play styles",
-      "long_description": "",
-      "imageName": "minerva",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Running Othello 2",
-      "keywords": [
-        "Android",
-        "Java",
-        "multiplayer",
-        "NFC"
-      ],
-      "short_description": "An educational take on Running Othello game where players make their moves on NFC tags placed on the ground. The player would need to solve an educational task before they could take another move. The game supports 2 player game over two separate gameboards",
-      "long_description": "",
-      "imageName": "",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Zombie Slayer",
-      "keywords": [
-        "Unity3D",
-        "C#"
-      ],
-      "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself",
-      "long_description": "",
-      "imageName": "",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Leometry AR",
-      "keywords": [
-        "Java"
-      ],
-      "short_description": "A simple educational game built for Android platform that also utilized AR for launching certain ingame events",
-      "long_description": "",
-      "imageName": "leometry",
-      "url": "",
-      "type": "Research"
-    },
-    {
-      "title": "Website",
-      "keywords": [
-        "HTML","JavaScript"
-      ],
-      "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
-      "long_description": "",
-      "imageName": "",
-      "url": "",
-      "type": "Freelance"
-    }
-  ]
+  {
+    "title": "Nosville",
+    "keywords": [
+      "HTML",
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "Firebase",
+      "NodeJS",
+      "Multilanguage"
+    ],
+    "short_description": "A fully functional help request tool where users could ask and receive help to their requests",
+    "long_description": "",
+    "imageName": "nosville",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "CityWe",
+    "keywords": [
+      "Unity3D",
+      "C#",
+      "Firebase",
+      "Json",
+      "multiplayer"
+    ],
+    "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
+    "long_description": "",
+    "imageName": "citywe",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "AR Math education",
+    "keywords": [
+      "Unity3D",
+      "C#"
+    ],
+    "short_description": "Worked together in a cooperation between VUB and Lulea University developing a story focused educational game that also utilzed AR techniques to teach some basic math topics to elementary students",
+    "long_description": "",
+    "imageName": "AR-math",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Truebiters",
+    "keywords": [
+      "Unity3D",
+      "C#",
+      "multiplayer",
+      "Multilanguage"
+    ],
+    "short_description": "A digital educational game intended for teaching basics of learning about booleans. The game also had a multiplayer game over bluetooth. The game was functional and made available on Android and IOS stores",
+    "long_description": "",
+    "imageName": "truebiters",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Minerva",
+    "keywords": [
+      "Unity3D",
+      "C#",
+      "Java",
+      "springboot",
+      "MySQL",
+      "Json",
+      "Multilanguage"
+    ],
+    "short_description": "An adaptive educational game that changed depending on players learning and play styles",
+    "long_description": "",
+    "imageName": "minerva",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Running Othello 2",
+    "keywords": [
+      "Android",
+      "Java",
+      "multiplayer",
+      "NFC"
+    ],
+    "short_description": "An educational take on Running Othello game where players make their moves on NFC tags placed on the ground. The player would need to solve an educational task before they could take another move. The game supports 2 player game over two separate gameboards",
+    "long_description": "",
+    "imageName": "",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Zombie Slayer",
+    "keywords": [
+      "Unity3D",
+      "C#"
+    ],
+    "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself",
+    "long_description": "",
+    "imageName": "",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Leometry AR",
+    "keywords": [
+      "Java"
+    ],
+    "short_description": "A simple educational game built for Android platform that also utilized AR for launching certain ingame events",
+    "long_description": "",
+    "imageName": "leometry",
+    "url": "",
+    "type": "Research",
+    "github": ""
+  },
+  {
+    "title": "Website",
+    "keywords": [
+      "HTML",
+      "JavaScript"
+    ],
+    "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
+    "long_description": "",
+    "imageName": "",
+    "url": "",
+    "type": "Freelance",
+    "github": ""
+  }
+]

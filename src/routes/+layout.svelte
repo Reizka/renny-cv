@@ -9,7 +9,7 @@
 	<Header />
 
 	<main>
-		<PageTrans refresh={$page.route.id} cls={"m-4"}>
+		<PageTrans refresh={$page.route.id} cls={"m-6"}>
 			<slot />
 		</PageTrans>
 	</main>

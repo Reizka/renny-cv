@@ -21,7 +21,7 @@
 <main>
 	<div class="flex flex-col justify-center items-center relative w-full">
 		<!-- Title -->
-		<h2 class="text-4xl sm:text-6xl underline mt-4 min-[400px]:text-2xl">
+		<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
 			Skills
 		</h2>
 
@@ -81,7 +81,7 @@
 									</div>
 								{:else}
 									<div
-										class="p-4 bg-gray-100 border border-gray-300 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-[-10px] opacity-0 h-0 overflow-hidden"
+										class="bg-gray-100 border border-gray-300 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-[-10px] opacity-0 h-0 overflow-hidden"
 									></div>
 								{/if}
 							</div>

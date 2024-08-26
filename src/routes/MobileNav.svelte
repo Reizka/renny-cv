@@ -11,7 +11,7 @@
 
 {#if showNav == false}
 	<button
-		class="absolute right-0 top-0 h-12 w-12 m-2"
+		class="absolute right-0 top-0 h-12 w-12 m-2 z-10"
 		on:click={() => toggle()}
 	>
 		<FaBars />
@@ -19,7 +19,7 @@
 {:else}
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div
-		class="flex bg-black w-42 absolute right-2 top-2 z-10 p-4 rounded-md opacity-85"
+		class="flex bg-black w-42 absolute right-2 top-2 z-20 p-4 m-6 rounded-md opacity-85"
 	>
 		<ul class="flex flex-col text-white justify-center text-xl">
 			{#each links as { href, text }}

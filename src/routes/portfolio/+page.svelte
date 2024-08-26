@@ -18,18 +18,13 @@
 </script>
 
 <div class="flex flex-col justify-center items-center">
-	<h2
-		class="text-6xl relative postion-left-0 pb-10 underline min-[400px]:text-2xl"
-	>
+	<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
 		Technical portfolio
 	</h2>
-	<div class="flex flex-col lg:flex-row m-auto md:w-1/2 sm:w-[80%]">
-		<div
-			class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-16 m-auto p-6"
-		>
-			{#each mapped as item, i}
-				<svelte:component this={item.component} props={item} />
-			{/each}
-		</div>
+
+	<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-1">
+		{#each mapped as item, i}
+			<svelte:component this={item.component} props={item} />
+		{/each}
 	</div>
 </div>
