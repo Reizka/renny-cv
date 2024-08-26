@@ -1,16 +1,20 @@
 <script>
-	import Header from './Header.svelte';
-	import './app.css';
+	import Header from "./Header.svelte";
+	import "./app.css";
+	import PageTrans from "../lib/utility/PageTrans.svelte";
+	import { page } from "$app/stores";
 </script>
 
-<div class="app ">
+<div class="app">
 	<Header />
 
 	<main>
+		<PageTrans refresh={$page.route.id} cls={"m-6"}>
 			<slot />
+		</PageTrans>
 	</main>
 
-<!--
+	<!--
 	<footer class="w-full bg-gray-400 ">
 		<p>footer</p>
 	</footer>
@@ -18,35 +22,4 @@
 </div>
 
 <style>
-	
-	/*.app {
-		min-width: 400px;
-	}
-	
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}*/
 </style>
