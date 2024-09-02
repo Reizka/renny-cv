@@ -5,8 +5,8 @@
       "React",
       "Firebase"
     ],
-    "short_description": "A webite for a rental home in crete.",
-    "long_description": "A website that also has a simple admin page that allows changing the text & images on the website. Support for three languages was also inbuilt. In the end the customer didn't need the website. ",
+    "short_description": "A website for a rental home in Crete.",
+    "long_description": "A website for a rental home in Crete, featuring a simple admin page that allows easy updates to text and images. The website supports three languages, providing accessibility for diverse visitors. Despite the complete development, the client eventually decided not to deploy the website.",
     "imageName": "cretan",
     "url": "https://cretan.netlify.app/",
     "type": "Freelance",
@@ -17,9 +17,9 @@
     "keywords": [
       "Unity3D"
     ],
-    "short_description": "Converting the Hadrian's Wall boardgame into a digital game.",
-    "long_description": "Hadrian's wall is a complex resource management boardgame where player has to maximize their resource usage during their turn and are given various paths towards this goal. The game contains several intricaticies that make it a fascinating hobby project",
-    "imageName": "",
+    "short_description": "Converting the Hadrian's Wall board game into a digital game.",
+    "long_description": "A digital adaptation of Hadrian's Wall, a complex resource management board game. Players must strategically maximize their resources each turn with multiple pathways to success. The project involves intricate game mechanics, making it a fascinating hobby project for deep exploration of Unity3D and game design.",
+    "imageName": "hadrian",
     "url": "",
     "type": "Hobby",
     "github": ""
@@ -27,10 +27,11 @@
   {
     "title": "Web Scraper",
     "keywords": [
-      "springboot"
+      "NodeJS",
+      "Puppeteer"
     ],
-    "short_description": "A simple web scraper to scrape the Pint of Science Speaker DB for more easy handling of the data",
-    "long_description": "Pint of Science is a multinational event with a variety of speakers who present their research to the public. The event is held in various locations and the speakers are different each year. The goal of this project was to create a web scraper that would collect the data from the Pint of Science website and store it in a database. The data would then be used to create a mobile application that would allow users to view the speakers and their research. The speakers are registered in a internal db that offers very limited filtering capabilities",
+    "short_description": "A simple web scraper to scrape the Pint of Science Speaker DB for more easy handling of the data.",
+    "long_description": "This project involved creating a web scraper to collect and manage data from the Pint of Science Speaker Database. Pint of Science is a global event where researchers present their work to the public. The scraper collects speaker data, which is stored in a database for easy filtering and usage. The data was intended for a mobile application to help users view and engage with speaker information more efficiently, overcoming the limitations of the internal database.",
     "imageName": "",
     "url": "",
     "type": "Hobby",
@@ -42,8 +43,8 @@
       "Keycloak",
       "Ruby on Rails"
     ],
-    "short_description": "A simple content management web application that supports secure login and password management, intended for training usage of IAM tools, such as Keycloak",
-    "long_description": "Learning the IAM tools authentication flow can be challenging for new employees, especially when the use case is not explicitly clear. This application is intended to be used as an explicit use case where OAUTH2 authentication flow is required and also support for different roles is required.",
+    "short_description": "A simple content management web application that supports secure login and password management for testing IAM tools.",
+    "long_description": "This project is a content management web application designed to help new employees learn the IAM tools authentication flow, specifically using Keycloak. The platform provides an explicit use case where OAUTH2 authentication and role-based access control are required, offering a hands-on training environment for secure login and password management.",
     "imageName": "",
     "url": "",
     "type": "Work",
@@ -54,8 +55,8 @@
     "keywords": [
       "C++"
     ],
-    "short_description": "current project to create a simple 3D game engine. Project is still very much work in progress and due to its nature this is unlikely to change anytime soon",
-    "long_description": "",
+    "short_description": "Current project to create a simple 3D game engine. Project is still very much work in progress and due to its nature this is unlikely to change anytime soon.",
+    "long_description": "An ongoing project aimed at developing a basic 3D game engine using C++. The project is in the early stages and is focused on creating a foundational engine for 3D games. Due to the complexity and scope, it remains a long-term work in progress, providing a deep dive into game engine architecture and C++ programming.",
     "imageName": "",
     "url": "",
     "type": "Hobby",
@@ -72,15 +73,15 @@
       "NodeJS",
       "Multilanguage"
     ],
-    "short_description": "A fully functional help request tool where users could ask and receive help to their requests",
-    "long_description": "",
+    "short_description": "A fully functional help request tool where users could ask and receive help to their requests.",
+    "long_description": "Nosville is a help request platform where users can post and respond to various requests for assistance. The tool was built using React for the front end, NodeJS for the backend, and Firebase for real-time data management. The platform is multilingual and designed to facilitate easy communication and support among users. Tailwind CSS was used for the styling, ensuring a clean and responsive user interface.",
     "imageName": "nosville",
     "url": "",
     "type": "Research",
     "github": ""
   },
   {
-    "title": "CityWe",
+    "title": "Nosville-game",
     "keywords": [
       "Unity3D",
       "C#",
@@ -88,21 +89,21 @@
       "Json",
       "multiplayer"
     ],
-    "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards",
-    "long_description": "",
+    "short_description": "A digital multiplayer card game where players create their own city district by means of playing cards.",
+    "long_description": "Nosville-game is a multiplayer card game built in Unity3D where players create and manage their own city districts by strategically playing cards. The game features real-time multiplayer capabilities using Firebase for backend services. JSON is used for data management, and the game supports various multiplayer interactions. The project is an exploration of game design, multiplayer systems, and urban simulation.",
     "imageName": "citywe",
-    "url": "",
+    "url": "https://reizka.itch.io/nosville",
     "type": "Research",
     "github": ""
   },
   {
-    "title": "AR Math education",
+    "title": "AR Math Education",
     "keywords": [
       "Unity3D",
       "C#"
     ],
-    "short_description": "Worked together in a cooperation between VUB and Lulea University developing a story focused educational game that also utilzed AR techniques to teach some basic math topics to elementary students",
-    "long_description": "",
+    "short_description": "I helped with the development of a story-focused educational AR game",
+    "long_description": "A collaborative project between VUB and Lulea University, this educational game was developed to teach elementary students basic math concepts through an engaging story-driven experience. The game incorporated Augmented Reality (AR) to enhance interactivity and learning, allowing students to visualize and interact with math problems in a more immersive way.",
     "imageName": "AR-math",
     "url": "",
     "type": "Research",
@@ -116,8 +117,8 @@
       "multiplayer",
       "Multilanguage"
     ],
-    "short_description": "A digital educational game intended for teaching basics of learning about booleans. The game also had a multiplayer game over bluetooth. The game was functional and made available on Android and IOS stores",
-    "long_description": "",
+    "short_description": "An one to two plyer educational game intended for teaching basics of learning about booleans.",
+    "long_description": "Truebiters is an educational game developed to teach the basics of Boolean logic. Built using Unity3D, the game features a multiplayer mode that operates over Bluetooth, allowing players to compete or collaborate in learning exercises. The game supports multiple languages and was made available on both Android and iOS platforms, making it accessible to a wide audience.",
     "imageName": "truebiters",
     "url": "",
     "type": "Research",
@@ -134,8 +135,8 @@
       "Json",
       "Multilanguage"
     ],
-    "short_description": "An adaptive educational game that changed depending on players learning and play styles",
-    "long_description": "",
+    "short_description": "An adaptive educational game that changed depending on players' learning and play styles.",
+    "long_description": "Minerva is an adaptive educational game designed to tailor its content and challenges based on the player's learning style and in-game decisions. Developed using Unity3D and backed by a Java and Spring Boot-based backend, the game dynamically adjusts to provide a personalized learning experience. MySQL and JSON were used for data management, and the game supports multiple languages to reach a broader audience.",
     "imageName": "minerva",
     "url": "",
     "type": "Research",
@@ -149,9 +150,9 @@
       "multiplayer",
       "NFC"
     ],
-    "short_description": "An educational take on Running Othello game where players make their moves on NFC tags placed on the ground. The player would need to solve an educational task before they could take another move. The game supports 2 player game over two separate gameboards",
-    "long_description": "",
-    "imageName": "",
+    "short_description": "An educational take on Running Othello game where players make their moves on NFC tags.",
+    "long_description": "Running Othello 2 is an innovative educational game that combines physical activity with learning. Players use NFC tags placed on the ground to make their moves in the game, but must first solve an educational challenge before proceeding. The game supports two-player gameplay across separate game boards, encouraging both physical and mental engagement.",
+    "imageName": "Running-Othello-2",
     "url": "",
     "type": "Research",
     "github": ""
@@ -162,8 +163,8 @@
       "Unity3D",
       "C#"
     ],
-    "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself",
-    "long_description": "",
+    "short_description": "A simple enemy wave game where player must survive as long as possible. The pixel art was created by myself.",
+    "long_description": "Zombie Slayer is a survival game where players face endless waves of enemies and must survive for as long as possible. The game was developed using Unity3D and C#, and features original pixel art created by the developer. The focus was on creating a fun, fast-paced gameplay experience with an emphasis on visual style and mechanics.",
     "imageName": "",
     "url": "",
     "type": "Research",
@@ -174,8 +175,8 @@
     "keywords": [
       "Java"
     ],
-    "short_description": "A simple educational game built for Android platform that also utilized AR for launching certain ingame events",
-    "long_description": "",
+    "short_description": "A simple educational game built for Android platform that also utilized AR for launching certain in-game events.",
+    "long_description": "Leometry AR is an educational game developed for the Android platform that uses Augmented Reality (AR) to trigger in-game events. The game focuses on teaching geometry concepts in a fun and interactive way, blending digital and real-world experiences. Developed in Java, the game provides a unique learning environment that encourages exploration and engagement.",
     "imageName": "leometry",
     "url": "",
     "type": "Research",
@@ -187,8 +188,8 @@
       "HTML",
       "JavaScript"
     ],
-    "short_description": "I created a simple homepage for the golden divers dive shop in Thailand",
-    "long_description": "",
+    "short_description": "I created a simple homepage for the Golden Divers dive shop in Thailand.",
+    "long_description": "This project involved creating a simple yet functional homepage for the Golden Divers dive shop in Thailand. The website was designed to showcase the shop's services, diving packages, and contact information. The site was built using HTML and JavaScript, focusing on providing a clean and user-friendly experience for potential customers.",
     "imageName": "",
     "url": "",
     "type": "Freelance",

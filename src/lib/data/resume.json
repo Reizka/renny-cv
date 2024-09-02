@@ -1,0 +1,112 @@
+{
+    "work": [
+        {
+            "name": "IdentIT",
+            "position": "CIAM expert",
+            "startDate": "2023-07-31",
+            "endDate": "2024-06-30",
+            "highlights": [],
+            "url": "https://www.linkedin.com/company/identit-eu/",
+            "location": "Kontich, Flemish Region, Belgium"
+        },
+        {
+            "name": "Vrije Universiteit Brussel",
+            "position": "Doctoral Student",
+            "startDate": "2017-09-30",
+            "endDate": "2022-08-31",
+            "highlights": [],
+            "url": "https://www.linkedin.com/school/vrije-universiteit-brussel/",
+            "location": "Brussels Area, Belgium"
+        },
+        {
+            "name": "Ubilife",
+            "position": "Researcher",
+            "startDate": "2015-03-31",
+            "endDate": "2017-02-28",
+            "highlights": [],
+            "summary": "worked on two development projects during my time at Ubilife. \n\nRunning Othello2: Two player android game that used NFC tags to simulate Othello board. Game also had additional sensor based physical tasks and educational material related to physical education\n\nMinerva: A programming education game that also adapts to the play and Learning style of the player. Client-side developed on Unity3D and back-end using Spring boot & MySQL",
+            "url": "",
+            "location": "Suwon, Gyeonggi-do, Korea"
+        },
+        {
+            "name": "Raya Divers Ltd",
+            "position": "PADI Diving instructor",
+            "startDate": "2014-12-31",
+            "endDate": "2015-02-28",
+            "highlights": [],
+            "summary": "Instructor duties up to MSDT level. Responsibilities also included sales and occasional tour guiding on Raya's other activities",
+            "url": "https://www.linkedin.com/company/raya-divers-ltd/",
+            "location": "Khao Lak, Thailand"
+        },
+        {
+            "name": "Ubilife",
+            "position": "Android programmer",
+            "startDate": "2014-02-28",
+            "endDate": "2014-06-30",
+            "highlights": [],
+            "summary": "I was handling the client side development and design of a educational game made for elementary school students. \n\nThe project was part of a collaboration between Ajou university in South Korea, University of Eastern Finland and Haaga-Helia University of Applied Sciences in Finland",
+            "url": "",
+            "location": "Ajou University, South-Korea"
+        },
+        {
+            "name": "Academic Work",
+            "position": "Nordea: Software Tester",
+            "startDate": "2014-02-28",
+            "endDate": "2014-02-28",
+            "highlights": [],
+            "summary": "Verkkopankin käyttötestaamista mobiilisovelluksilla\n\nTesting a banking applicatios with various mobile devices.",
+            "url": "https://www.linkedin.com/company/academic-work/",
+            "location": "Helsinki, Finland"
+        },
+        {
+            "name": "HAAGA-HELIA University of Applied Sciences",
+            "position": "Head Tutor of Business Information Technology Degree Programme",
+            "startDate": "2013-04-30",
+            "endDate": "2014-02-28",
+            "highlights": [],
+            "summary": "I was responsible for my degree programme's tutoring activities.",
+            "url": "https://www.linkedin.com/school/haaga-helia-university-of-applied-sciences/",
+            "location": "Helsinki, Finland"
+        },
+        {
+            "name": "Seikkailutukku/Adventurestock",
+            "position": "Magento Backend Developer (Internship)",
+            "startDate": "2013-05-31",
+            "endDate": "2013-08-31",
+            "highlights": [],
+            "summary": "Web Server Maintenance\nWeb Development\nE-commerce Management\n\nMagento backend\nHTML, CSS, PHP,Javascript, Photoshop",
+            "url": "",
+            "location": "Espoo"
+        },
+        {
+            "name": "HAAGA-HELIA University of Applied Sciences",
+            "position": "Peer Tutor of Business Information Technology Degree Programme",
+            "startDate": "2012-04-30",
+            "endDate": "2013-01-31",
+            "highlights": [],
+            "summary": "Assisting first year students in both practical matters as well as supporting their general orientation to their new studying environment.",
+            "url": "https://www.linkedin.com/school/haaga-helia-university-of-applied-sciences/",
+            "location": "Helsinki, Finland"
+        },
+        {
+            "name": "Flipper Diving Club",
+            "position": "PADI Diving Instructor (MSDT)",
+            "startDate": "2010-03-31",
+            "endDate": "2011-05-31",
+            "highlights": [],
+            "summary": "Worked as Diving instructor and Divemaster.",
+            "url": "",
+            "location": "Phu Quoc, Vietnam"
+        },
+        {
+            "name": "Teleperformance",
+            "position": "Telemarketing & Customer service",
+            "startDate": "2007-02-28",
+            "endDate": "2008-01-31",
+            "highlights": [],
+            "summary": "A customer service role where I handled everything from invoices to technical problems & sales",
+            "url": "https://www.linkedin.com/company/teleperformance/",
+            "location": "Tampere, Finland"
+        }
+    ]
+}

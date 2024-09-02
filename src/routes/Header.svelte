@@ -8,6 +8,7 @@
 		{ href: "/portfolio", text: "Portfolio" },
 		{ href: "/publications", text: "Publications" },
 		{ href: "/skills", text: "Skills" },
+		{ href: "/work-history", text: "Work-history" },
 	];
 </script>
 

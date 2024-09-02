@@ -23,7 +23,7 @@
 		Technical portfolio
 	</h2>
 
-	<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-1">
+	<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
 		{#each mapped as item, i}
 			<svelte:component this={item.component} props={item} />
 		{/each}
