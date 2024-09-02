@@ -7,11 +7,7 @@
 
 <main>
 	<div class="flex flex-col justify-center items-center">
-		<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
-			Publications
-		</h2>
-
-		<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-1">
+		<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
 			{#each pf as p, i}
 				<div class="border-2 mt-2 border-black bg-white shadow-xl">
 					<div class="">

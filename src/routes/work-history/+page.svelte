@@ -10,11 +10,7 @@
 
 <main>
     <div class="flex flex-col justify-center items-center">
-        <h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
-            Work-history
-        </h2>
-
-        <div class="grid grid-cols-1 gap-1 lg:w-2/3">
+        <div class="grid grid-cols-1 gap-6 lg:w-2/3 w-full">
             {#each resume.work as job}
                 <div class="border p-4 rounded-lg shadow-lg">
                     <div class="flex items-center mb-4">

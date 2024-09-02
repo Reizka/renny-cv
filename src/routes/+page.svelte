@@ -1,7 +1,4 @@
 <div class="flex flex-col justify-center items-center">
-	<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
-		About me
-	</h2>
 	<div
 		class="flex flex-col lg:flex-row bg-white border-2 m-auto mb-4 md:w-1/2 sm:w-[80%] shadow-2xl"
 	>

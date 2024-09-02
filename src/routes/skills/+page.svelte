@@ -30,11 +30,6 @@
 
 <main>
 	<div class="flex flex-col justify-center items-center relative w-full">
-		<!-- Title -->
-		<h2 class="text-xl lg:text-6xl underline mt-4 min-[400px]:text-2xl">
-			Skills
-		</h2>
-
 		<!-- Navigation Links (hidden on small screens) -->
 		<div class="z-10 bg-white shadow-md w-full p-2 sm:p-4 hidden sm:block">
 			<nav class="flex justify-center space-x-4">
@@ -61,7 +56,7 @@
 		>
 			{#each skills as skill, skillIndex}
 				<div
-					class="skill-container skill-container-{skillIndex} snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
+					class="skill-container skill-container-{skillIndex} border shadow-xl snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
 				>
 					<h2
 						class="text-xl sm:text-3xl underline mt-4 m-auto text-center"
@@ -118,9 +113,6 @@
 		background-color: white;
 		margin-bottom: 10px;
 		border-radius: 5px;
-		box-shadow:
-			0 4px 8px 0 rgba(0, 0, 0, 0.2),
-			0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		padding-bottom: 0.5em;
 		max-width: 400px; /* adjust this value as needed for smaller screens */
 		overflow-y: auto;
