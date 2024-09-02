@@ -2,24 +2,28 @@
     "work": [
         {
             "name": "IdentIT",
+            "image": "identit",
             "position": "CIAM expert",
             "startDate": "2023-07-31",
             "endDate": "2024-06-30",
             "highlights": [],
-            "url": "https://www.linkedin.com/company/identit-eu/",
+            "summary": "I was tasked with creating internal education content for interns on how to setup Forgerog CIAM on premises environment as well as doing research & proof of concept studies on new & emerging CIAM services and technologies. ",
             "location": "Kontich, Flemish Region, Belgium"
         },
         {
             "name": "Vrije Universiteit Brussel",
+            "image": "vub",
             "position": "Doctoral Student",
             "startDate": "2017-09-30",
             "endDate": "2022-08-31",
             "highlights": [],
+            "summary": "I worked on numerous research projects throghout my time as a doctoral researcher. My main focus was on the topics of: Usability, User Engagement, Accessibility for Elderly users aas well as educational games. As my main Ph.D project I carried out evaluations of existing research & services as well as carried out interviews and user studies on live platforms around Europe. I also developed both proof of concept web platforms, games and other software solutions",
             "url": "https://www.linkedin.com/school/vrije-universiteit-brussel/",
             "location": "Brussels Area, Belgium"
         },
         {
             "name": "Ubilife",
+            "image": "ubilife",
             "position": "Researcher",
             "startDate": "2015-03-31",
             "endDate": "2017-02-28",
@@ -30,6 +34,7 @@
         },
         {
             "name": "Raya Divers Ltd",
+            "image": "raya",
             "position": "PADI Diving instructor",
             "startDate": "2014-12-31",
             "endDate": "2015-02-28",
@@ -40,6 +45,7 @@
         },
         {
             "name": "Ubilife",
+            "image": "ubilife",
             "position": "Android programmer",
             "startDate": "2014-02-28",
             "endDate": "2014-06-30",
@@ -50,6 +56,7 @@
         },
         {
             "name": "Academic Work",
+            "image": "aw",
             "position": "Nordea: Software Tester",
             "startDate": "2014-02-28",
             "endDate": "2014-02-28",
@@ -60,6 +67,7 @@
         },
         {
             "name": "HAAGA-HELIA University of Applied Sciences",
+            "image": "hh",
             "position": "Head Tutor of Business Information Technology Degree Programme",
             "startDate": "2013-04-30",
             "endDate": "2014-02-28",
@@ -70,6 +78,7 @@
         },
         {
             "name": "Seikkailutukku/Adventurestock",
+            "image": "as",
             "position": "Magento Backend Developer (Internship)",
             "startDate": "2013-05-31",
             "endDate": "2013-08-31",
@@ -80,6 +89,7 @@
         },
         {
             "name": "HAAGA-HELIA University of Applied Sciences",
+            "image": "hh",
             "position": "Peer Tutor of Business Information Technology Degree Programme",
             "startDate": "2012-04-30",
             "endDate": "2013-01-31",
@@ -90,6 +100,7 @@
         },
         {
             "name": "Flipper Diving Club",
+            "image": "flipper",
             "position": "PADI Diving Instructor (MSDT)",
             "startDate": "2010-03-31",
             "endDate": "2011-05-31",
@@ -100,6 +111,7 @@
         },
         {
             "name": "Teleperformance",
+            "image": "tp",
             "position": "Telemarketing & Customer service",
             "startDate": "2007-02-28",
             "endDate": "2008-01-31",
