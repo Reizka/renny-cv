@@ -7,7 +7,10 @@
 	);
 
 	// Toggle the open state of a category and close others
-	function toggleCategory(skillIndex, categoryIndex) {
+	function toggleCategory(
+		/** @type {number} */ skillIndex,
+		/** @type {number} */ categoryIndex,
+	) {
 		openCategories = openCategories.map((skillCategories, i) =>
 			i === skillIndex
 				? skillCategories.map((isOpen, j) =>
@@ -18,8 +21,11 @@
 	}
 
 	// Scroll to the specific skill container when a link button is clicked
-	function scrollToSkill(index) {
-		const container = document.querySelector(`.skill-container-${index}`);
+	function scrollToSkill(/** @type {number} */ index) {
+		const container = /** @type {HTMLElement | null} */ (
+			document.querySelector(`.skill-container-${index}`)
+		);
+		if (!container) return;
 		container.scrollIntoView({
 			behavior: "smooth",
 			block: "center",
@@ -56,7 +62,7 @@
 		>
 			{#each skills as skill, skillIndex}
 				<div
-					class="skill-container skill-container-{skillIndex} border shadow-xl snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
+					class="skill-container skill-container-{skillIndex} shadow-xl snap-center flex-shrink-0 w-4/5 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 -ml-6 sm:ml-0"
 				>
 					<h2
 						class="text-xl sm:text-3xl underline mt-4 m-auto text-center"
@@ -79,17 +85,13 @@
 								</button>
 								<!-- Collapsible Content with Borders and Background -->
 								{#if openCategories[skillIndex][categoryIndex]}
-									<div
-										class="p-4 bg-gray-100 border border-gray-300 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100"
-									>
+									<div class="p-4 bg-gray-100 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
 										{#each category.items as item}
 											<div class="py-1">{item}</div>
 										{/each}
 									</div>
 								{:else}
-									<div
-										class="bg-gray-100 border border-gray-300 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-[-10px] opacity-0 h-0 overflow-hidden"
-									></div>
+									<div class="bg-gray-100 rounded mt-2 transition-all duration-300 ease-in-out transform translate-y-[-10px] opacity-0 h-0 overflow-hidden"></div>
 								{/if}
 							</div>
 						{/each}

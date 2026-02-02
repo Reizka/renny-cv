@@ -2,6 +2,7 @@
 <script>
 	import pf from "$lib/data/2022-pubs.json";
 	//Getting external link icon
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import GoLinkExternal from "svelte-icons/go/GoLinkExternal.svelte";
 </script>
 
@@ -9,7 +10,7 @@
 	<div class="flex flex-col justify-center items-center">
 		<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
 			{#each pf as p, i}
-				<div class="border-2 mt-2 border-black bg-white shadow-xl">
+				<div class="mt-2 bg-white shadow-xl">
 					<div class="">
 						<div class="float-left m-1 lg:text-l m-2">
 							{#if p.info.type === "Journal Articles"}
@@ -44,8 +45,7 @@
 							<a
 								href={p.info.ee}
 								target="_blank"
-								rel="noopener noreferrer"
-								alt="link to publication"><GoLinkExternal /></a
+								rel="noopener noreferrer"><GoLinkExternal /></a
 							>
 						</div>
 					</div>

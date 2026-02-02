@@ -1,12 +1,13 @@
 <script>
 	import { page } from "$app/stores";
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import FaBars from "svelte-icons/fa/FaBars.svelte";
 	let showNav = false;
 	function toggle() {
 		showNav = !showNav;
 	}
 
-	export let links = undefined;
+	export let links = /** @type {{ href: string; text: string }[]} */ ([]);
 </script>
 
 {#if showNav == false}

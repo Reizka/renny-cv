@@ -1,17 +1,50 @@
 <script>
-	export let props = undefined;
+	/**
+	 * @typedef {{
+	 * 	title: string;
+	 * 	short_description: string;
+	 * 	type: string;
+	 * 	keywords: string[];
+	 * 	long_description: string;
+	 * 	imageName: string;
+	 * 	url: string;
+	 * 	github: string;
+	 * }} PortfolioProps
+	 */
+
+	export let props = /** @type {PortfolioProps} */ ({
+		title: "",
+		short_description: "",
+		type: "",
+		keywords: [],
+		long_description: "",
+		imageName: "",
+		url: "",
+		github: "",
+	});
 
 	import placeholder from "$lib/images/no-photos.png";
 	import GetLogo from "./GetLogo.svelte";
 
-	const title = props.title;
-	const short_description = props.short_description;
-	let type = props.type;
-	const keywords = props.keywords;
-	const long_description = props.long_description;
-	const imageName = props.imageName;
-	const url = props.url;
-	const github = props.github;
+	let title = "";
+	let short_description = "";
+	let type = "";
+	let keywords = /** @type {string[]} */ ([]);
+	let long_description = "";
+	let imageName = "";
+	let url = "";
+	let github = "";
+
+	$: ({
+		title,
+		short_description,
+		type,
+		keywords,
+		long_description,
+		imageName,
+		url,
+		github,
+	} = props);
 
 	let showModal = false;
 
@@ -20,11 +53,11 @@
 	}
 
 	// Mapping of type values to corresponding background classes
-	const typeToClassMap = {
+	const typeToClassMap = /** @type {Record<string, string>} */ ({
 		Work: "bg-violet-400",
 		Hobby: "bg-green-400",
 		Research: "bg-orange-400",
-	};
+	});
 
 	// Default class if type doesn't match any key in the map
 	const defaultClass = "bg-blue-400";
@@ -43,6 +76,7 @@
 		>
 			<button
 				class="absolute top-2 right-2 text-gray-500 hover:text-gray-900"
+				aria-label="Close details"
 				on:click={closeModal}
 			>
 				<svg
@@ -69,9 +103,7 @@
 			</h2>
 			<p>{long_description}</p>
 
-			<div
-				class="flex flex-col mt-4 border-t-4 border-b-4 border-gray-500 rounded-lg p-4"
-			>
+			<div class="flex flex-col mt-4 rounded-lg p-4">
 				{#if url !== ""}
 					<div class="flex items-center pb-4">
 						<div class="ml-2">
@@ -89,9 +121,7 @@
 				{/if}
 
 				{#if github !== ""}
-					<div
-						class="flex items-center pb-4 border-b-4 border-gray-500"
-					>
+					<div class="flex items-center pb-4">
 						<img
 							class="w-10 h-10"
 							src="/images/github-mark.png"
@@ -124,7 +154,7 @@
 								<!-- svelte-ignore a11y-label-has-associated-control -->
 								<label>{kw}</label>
 								{#if i < keywords.length - 1}
-									<div class="border-l-2 h-6 mx-2"></div>
+									<div class="h-6 mx-2"></div>
 								{/if}
 							</div>
 						{/each}
@@ -159,12 +189,12 @@
 			/>
 		{/if}
 		<div
-			class="absolute w-full bottom-0 left-1/2 -translate-x-1/2 border-3 bg-teal-400 p-2 pw-5 opacity-80"
+			class="absolute w-full bottom-0 left-1/2 -translate-x-1/2 bg-teal-400 p-2 pw-5 opacity-80"
 		>
 			<h1 class="text-xl font-bold text-black opacity-100">{title}</h1>
 		</div>
 	</div>
-	<div class="flex-shrink border-2 h-auto bg-white rounded-b-2xl shadow-2xl">
+	<div class="flex-shrink h-auto bg-white rounded-b-2xl shadow-2xl">
 		<h2 class="{typeToClassMap[type] || defaultClass} m-auto">{type}</h2>
 		<p>{short_description}</p>
 		<div class="flex flex-row">

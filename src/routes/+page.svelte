@@ -1,14 +1,14 @@
 <div class="flex flex-col justify-center items-center">
 	<div
-		class="flex flex-col lg:flex-row bg-white border-2 m-auto mb-4 md:w-1/2 sm:w-[80%] shadow-2xl"
+		class="flex flex-col lg:flex-row bg-white m-auto mb-4 md:w-1/2 sm:w-[80%] shadow-2xl"
 	>
 		<div class="flex flex-col">
 			<img
-				class="max-w-[12em] max-h-[12em] m-2 border-2 shadow-gray-400 rounded-full"
+				class="max-w-[12em] max-h-[12em] m-2 shadow-gray-400 rounded-full"
 				src="/main-portrait-cropped.jpg"
 				alt="main portrait"
 			/>
-			<aside class="border-2 sm:min-w-[14em] pl-4 pr-2 m-auto ml-2">
+			<aside class="sm:min-w-[14em] pl-4 pr-2 m-auto ml-2">
 				<h2 class="font-bold underline justify-center">Me in short</h2>
 				<ul class="ml-3 list-disc">
 					<li>Ph.D. in Computer Science</li>
@@ -19,7 +19,7 @@
 				</ul>
 			</aside>
 		</div>
-		<div class="border-solid font-sans pl-4 pr-4 mt-4">
+		<div class="font-sans pl-4 pr-4 mt-4">
 			<h2 class="font-serif text-4xl">Welcome!</h2>
 
 			<p class="mt-4">

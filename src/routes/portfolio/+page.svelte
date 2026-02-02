@@ -10,7 +10,6 @@
 			long_description: x.long_description,
 			imageName: x.imageName,
 			url: x.url,
-			type: x.type,
 			github: x.github,
 			component: ItemTypeOne,
 		};

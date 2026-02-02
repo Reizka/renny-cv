@@ -1,18 +1,29 @@
 <script>
 	//keyword icons
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiAndroid from 'svelte-icons/di/DiAndroid.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiUnitySmall from 'svelte-icons/di/DiUnitySmall.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiHtml5 from 'svelte-icons/di/DiHtml5.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiJsBadge from 'svelte-icons/di/DiJsBadge.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiNodejsSmall from 'svelte-icons/di/DiNodejsSmall.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiFirebase from 'svelte-icons/di/DiFirebase.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiReact from 'svelte-icons/di/DiReact.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiJava from 'svelte-icons/di/DiJava.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiMysql from 'svelte-icons/di/DiMysql.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiSqllite from 'svelte-icons/di/DiSqllite.svelte';
+	// @ts-ignore - svelte-icons lacks published type declarations
 	import DiCss3 from 'svelte-icons/di/DiCss3.svelte';
 
-	export let keywords = [];
+	export let keywords = /** @type {string[]} */ ([]);
 </script>
 
 {#each keywords as kw}
