@@ -1,7 +1,8 @@
 <script>
     import resume from "$lib/data/resume.json";
     // Helper function to extract and format the date to Year and Month
-    function formatDate(/** @type {string} */ dateString) {
+    function formatDate(/** @type {string | null} */ dateString) {
+        if (!dateString) return "Present";
         const date = new Date(dateString);
         const options = /** @type {Intl.DateTimeFormatOptions} */ ({
             year: "numeric",

@@ -1,6 +1,46 @@
 {
     "work": [
         {
+            "name": "Digital Product Development (Independent / Collaborative Projects)",
+            "image": "",
+            "position": "Developer, Designer & Product Contributor",
+            "startDate": "2025-10-01",
+            "endDate": null,
+            "highlights": [],
+            "summary": "Contributing to two active digital projects (Primal Punk and Nosville) in small, cross-functional teams. Translating high-level design ideas into concrete tasks, milestones, and implementable requirements. Supporting feature scoping, dependency awareness, and internal documentation to keep development focused and aligned. Coordinating closely with developers and content contributors to maintain shared understanding of goals, constraints, and progress. Balancing technical feasibility with usability and delivery realities in an iterative development environment.",
+            "location": "Remote, Belgium"
+        },
+        {
+            "name": "Pint of Science - Brussels",
+            "image": "",
+            "position": "Brussels Event Coordinator",
+            "startDate": "2025-11-01",
+            "endDate": null,
+            "highlights": [],
+            "summary": "Coordinating delivery of a multi-site public event involving volunteers, venues, and external stakeholders. Structuring tasks, timelines, and responsibilities across distributed teams to ensure consistent execution. Managing communication flows between volunteers, partners, and venues to reduce friction and last-minute issues.",
+            "location": "Brussels, Belgium"
+        },
+        {
+            "name": "British School of Brussels",
+            "image": "",
+            "position": "Software Technician",
+            "startDate": "2024-12-01",
+            "endDate": "2025-12-31",
+            "highlights": [],
+            "summary": "Maintained and updated onboarding materials, documentation, and knowledge bases to ensure continuity and consistent ways of working. Produced dashboards and status views to support leadership oversight, prioritisation, and decision-making.",
+            "location": "Tervuren, Belgium"
+        },
+        {
+            "name": "Game: ALT-Project (Community Project)",
+            "image": "",
+            "position": "Developer (Unity3D)",
+            "startDate": "2024-09-01",
+            "endDate": "2025-01-31",
+            "highlights": [],
+            "summary": "Collaborated in a cross-functional team to scope, prioritise, and deliver features for a multiplayer digital product. Balanced technical constraints, delivery timelines, and user experience considerations. Contributed to backlog structuring, feature breakdown, and dependency awareness.",
+            "location": "Remote, Finland"
+        },
+        {
             "name": "IdentIT",
             "image": "identit",
             "position": "CIAM expert",
