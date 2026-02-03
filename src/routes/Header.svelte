@@ -153,19 +153,34 @@
 				</div>
 				<div class={`portfolio-accordion ${showPortfolioMenu ? "open" : ""}`}>
 					<div class="portfolio-panel">
-						<a class="thumb-card" href="/portfolio/development">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/development"}
+							style={`--thumb-image: url(${devPreview})`}
+							href="/portfolio/development"
+						>
 							<span class="thumb-title">Development</span>
 							<span class="thumb-caption"
 								>Full‑stack and software builds</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/ux-research">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/ux-research"}
+							style={`--thumb-image: url(${uxPreview})`}
+							href="/portfolio/ux-research"
+						>
 							<span class="thumb-title">UX Research</span>
 							<span class="thumb-caption"
 								>Discovery, insights, validation</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/game-design">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/game-design"}
+							style={`--thumb-image: url(${gamePreview})`}
+							href="/portfolio/game-design"
+						>
 							<span class="thumb-title">Game Design</span>
 							<span class="thumb-caption"
 								>Systems, narrative, mechanics</span
@@ -177,7 +192,12 @@
 								>Rulesets, economy, balance</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/narrative-design">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/narrative-design"}
+							style={`--thumb-image: url(${narrativePreview})`}
+							href="/portfolio/narrative-design"
+						>
 							<span class="thumb-title">Narrative Design</span>
 							<span class="thumb-caption"
 								>Story worlds, quests, dialogue</span
@@ -189,7 +209,12 @@
 								>Rapid builds, experiments</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/product-strategy">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/product-strategy"}
+							style={`--thumb-image: url(${productPreview})`}
+							href="/portfolio/product-strategy"
+						>
 							<span class="thumb-title">Product & Strategy</span>
 							<span class="thumb-caption"
 								>Roadmaps, positioning, scope</span
@@ -397,7 +422,14 @@
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 260ms ease;
-		background: #2a241f;
+		background: linear-gradient(
+			90deg,
+			rgba(18, 16, 22, 0.72) 0%,
+			rgba(18, 16, 22, 0.55) 45%,
+			rgba(18, 16, 22, 0.22) 100%
+		);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 18px 40px rgba(5, 4, 8, 0.3);
 		border-radius: 0 14px 14px 14px;
 		margin-top: 0;
 		position: relative;
@@ -407,17 +439,6 @@
 
 	.portfolio-accordion.open {
 		max-height: 520px;
-	}
-
-	.site-header.portfolio-theme .portfolio-accordion {
-		background: linear-gradient(
-			90deg,
-			rgba(18, 16, 22, 0.72) 0%,
-			rgba(18, 16, 22, 0.55) 45%,
-			rgba(18, 16, 22, 0.22) 100%
-		);
-		backdrop-filter: blur(10px);
-		border-radius: 0 0 20px 20px;
 	}
 
 	.site-header.portfolio-theme .portfolio-accordion {
@@ -487,6 +508,50 @@
 		background: linear-gradient(135deg, #f7f2e8, #e9e2d7);
 		box-shadow: 0 18px 40px rgba(36, 28, 18, 0.12);
 		transition: transform 180ms ease, box-shadow 180ms ease;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.thumb-card.thumb-photo {
+		color: #f5f2ec;
+	}
+
+	.thumb-card.thumb-photo::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: var(--thumb-image);
+		background-size: cover;
+		background-position: center;
+		transform: translateX(0);
+		transition: transform 320ms ease;
+		z-index: 0;
+	}
+
+	.thumb-card.thumb-photo::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			180deg,
+			rgba(12, 10, 14, 0.15) 0%,
+			rgba(12, 10, 14, 0.7) 100%
+		);
+		z-index: 1;
+	}
+
+	.thumb-card.thumb-photo.thumb-active::before {
+		transform: translateX(-110%);
+	}
+
+	.thumb-card.thumb-photo .thumb-title,
+	.thumb-card.thumb-photo .thumb-caption {
+		position: relative;
+		z-index: 2;
+	}
+
+	.thumb-card.thumb-photo .thumb-caption {
+		color: rgba(245, 242, 236, 0.8);
 	}
 
 	.thumb-card:hover {

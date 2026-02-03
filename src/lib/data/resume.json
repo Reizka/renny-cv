@@ -12,7 +12,7 @@
         },
         {
             "name": "Pint of Science - Brussels",
-            "image": "",
+            "image": "pos",
             "position": "Brussels Event Coordinator",
             "startDate": "2025-11-01",
             "endDate": null,
@@ -22,7 +22,7 @@
         },
         {
             "name": "British School of Brussels",
-            "image": "",
+            "image": "bsb",
             "position": "Software Technician",
             "startDate": "2024-12-01",
             "endDate": "2025-12-31",
@@ -32,7 +32,7 @@
         },
         {
             "name": "Game: ALT-Project (Community Project)",
-            "image": "",
+            "image": "alt",
             "position": "Developer (Unity3D)",
             "startDate": "2024-09-01",
             "endDate": "2025-01-31",
