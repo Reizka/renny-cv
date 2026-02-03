@@ -1,8 +1,19 @@
 <script>
 	import { page } from "$app/stores";
 	import MobileNav from "./MobileNav.svelte";
+	import devPreview from "$lib/images/portfolio/development.jpg";
+	import uxPreview from "$lib/images/portfolio/ux-research.jpg";
+	import gamePreview from "$lib/images/portfolio/game-design.jpg";
+	import narrativePreview from "$lib/images/portfolio/narrative-design.jpg";
+	import productPreview from "$lib/images/portfolio/product-strategy.jpg";
 	$: innerWidth = 0;
 	let showPortfolioMenu = false;
+	$: isDevPage = $page.url.pathname === "/portfolio/development";
+	$: isUxPage = $page.url.pathname === "/portfolio/ux-research";
+	$: isGamePage = $page.url.pathname === "/portfolio/game-design";
+	$: isNarrativePage = $page.url.pathname === "/portfolio/narrative-design";
+	$: isProductPage = $page.url.pathname === "/portfolio/product-strategy";
+	$: isPortfolioPage = $page.url.pathname.startsWith("/portfolio");
 
 	let links = [
 		{ href: "/", text: "About" },
@@ -18,48 +29,119 @@
 
 <svelte:window bind:innerWidth />
 
-<header class="site-header">
+<header
+	class={`site-header ${isDevPage ? "dev-theme" : ""} ${isUxPage ? "ux-theme" : ""} ${
+		isPortfolioPage ? "portfolio-theme" : ""
+	}`}
+>
+	<div class={`portfolio-preview ${isDevPage ? "show" : ""}`}>
+		<img
+			src={devPreview}
+			alt="Development portfolio preview"
+			loading="lazy"
+		/>
+		<p class="preview-credit">
+			Photo by
+			<a
+				href="https://unsplash.com/@juanjodev02?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Juanjo Jaramillo</a
+			>
+			on
+			<a
+				href="https://unsplash.com/photos/black-flat-screen-computer-monitor-mZnx9429i94?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Unsplash</a
+			>
+		</p>
+	</div>
+	<div class={`portfolio-preview ${isUxPage ? "show" : ""}`}>
+		<img src={uxPreview} alt="UX research portfolio preview" loading="lazy" />
+		<p class="preview-credit">
+			Photo by
+			<a
+				href="https://unsplash.com/@uxindo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>UX Indonesia</a
+			>
+			on
+			<a
+				href="https://unsplash.com/photos/person-writing-on-white-paper-qC2n6RQU4Vw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Unsplash</a
+			>
+		</p>
+	</div>
+	<div class={`portfolio-preview ${isGamePage ? "show" : ""}`}>
+		<img src={gamePreview} alt="Game design portfolio preview" loading="lazy" />
+		<p class="preview-credit">Photo by Francesco Ungaro</p>
+	</div>
+	<div class={`portfolio-preview ${isNarrativePage ? "show" : ""}`}>
+		<img
+			src={narrativePreview}
+			alt="Narrative design portfolio preview"
+			loading="lazy"
+		/>
+		<p class="preview-credit">
+			Photo by
+			<a href="https://pixabay.com/photos/cellar-vault-tunnel-sheets-basement-258906/"
+				>Pixabay</a
+			>
+		</p>
+	</div>
+	<div class={`portfolio-preview ${isProductPage ? "show" : ""}`}>
+		<img
+			src={productPreview}
+			alt="Product strategy portfolio preview"
+			loading="lazy"
+		/>
+		<p class="preview-credit">
+			Photo by
+			<a href="https://www.pexels.com/photo/paper-on-gray-laptop-669617/"
+				>Lukas Blazek</a
+			>
+			from Pexels
+		</p>
+	</div>
 	<nav class="nav-wrap">
 		{#if innerWidth < 500}
 			<MobileNav {links} />
 		{:else}
 			<div class="masthead">
-				<div class="title-block">
-					<div class="kicker">Curriculum Vitae</div>
-					<h1 class="mast-title">Renny Lindberg</h1>
-					<div class="subline">Research, engineering, and portfolio</div>
+				<div class="glass-strip">
+					<div class="title-block">
+						<div class="kicker">Curriculum Vitae</div>
+						<h1 class="mast-title">Renny Lindberg</h1>
+						<div class="subline">Research, engineering, and portfolio</div>
+					</div>
+					<div class="divider"></div>
+					<ul class="nav-list">
+						{#each links as { href, text }}
+							<!-- svelte-ignore missing-declaration -->
+							<!-- svelte-ignore a11y-click-events-have-key-events -->
+							<li
+								class:classActive={$page.url.pathname === href}
+								class:portfolio-active={
+									href === "/portfolio" && showPortfolioMenu
+								}
+							>
+								{#if href === "/portfolio"}
+									<!-- svelte-ignore a11y-click-events-have-key-events -->
+									<a
+										class:active-link={$page.url.pathname === href}
+										href={href}
+										on:click|preventDefault={() =>
+											(showPortfolioMenu = !showPortfolioMenu)}
+										>{text}</a
+									>
+								{:else}
+									<a
+										class:active-link={$page.url.pathname === href}
+										href={href}
+										on:click={closePortfolioMenu}
+										>{text}</a
+									>
+								{/if}
+							</li>
+						{/each}
+					</ul>
 				</div>
-				<div class="divider"></div>
-				<ul class="nav-list">
-					{#each links as { href, text }}
-						<!-- svelte-ignore missing-declaration -->
-						<!-- svelte-ignore a11y-click-events-have-key-events -->
-						<li
-							class:classActive={$page.url.pathname === href}
-							class:portfolio-active={
-								href === "/portfolio" && showPortfolioMenu
-							}
-						>
-							{#if href === "/portfolio"}
-								<!-- svelte-ignore a11y-click-events-have-key-events -->
-								<a
-									class:active-link={$page.url.pathname === href}
-									href={href}
-									on:click|preventDefault={() =>
-										(showPortfolioMenu = !showPortfolioMenu)}
-									>{text}</a
-								>
-							{:else}
-								<a
-									class:active-link={$page.url.pathname === href}
-									href={href}
-									on:click={closePortfolioMenu}
-									>{text}</a
-								>
-							{/if}
-						</li>
-					{/each}
-				</ul>
 				<div class={`portfolio-accordion ${showPortfolioMenu ? "open" : ""}`}>
 					<div class="portfolio-panel">
 						<a class="thumb-card" href="/portfolio/development">
@@ -80,6 +162,30 @@
 								>Systems, narrative, mechanics</span
 							>
 						</a>
+						<a class="thumb-card" href="/portfolio/systems">
+							<span class="thumb-title">Systems</span>
+							<span class="thumb-caption"
+								>Rulesets, economy, balance</span
+							>
+						</a>
+						<a class="thumb-card" href="/portfolio/narrative-design">
+							<span class="thumb-title">Narrative Design</span>
+							<span class="thumb-caption"
+								>Story worlds, quests, dialogue</span
+							>
+						</a>
+						<a class="thumb-card" href="/portfolio/prototypes">
+							<span class="thumb-title">Prototypes</span>
+							<span class="thumb-caption"
+								>Rapid builds, experiments</span
+							>
+						</a>
+						<a class="thumb-card" href="/portfolio/product-strategy">
+							<span class="thumb-title">Product & Strategy</span>
+							<span class="thumb-caption"
+								>Roadmaps, positioning, scope</span
+							>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -92,6 +198,7 @@
 		background: linear-gradient(180deg, #f9f7f2 0%, #f3f1ec 100%);
 		padding: 2.5rem 1.5rem 1.25rem;
 		position: relative;
+		overflow: hidden;
 		z-index: 10;
 	}
 
@@ -99,10 +206,24 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		position: relative;
+		z-index: 2;
 	}
 
 	.masthead {
 		width: min(1100px, 92vw);
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.site-header.portfolio-theme .masthead {
+		gap: 0;
+	}
+
+	.glass-strip {
 		display: flex;
 		flex-direction: column;
 		gap: 0.85rem;
@@ -170,6 +291,99 @@
 		box-shadow: inset 0 -2px 0 #1f1c16;
 	}
 
+	.site-header.dev-theme .divider {
+		background: linear-gradient(
+			90deg,
+			transparent,
+			rgba(245, 242, 236, 0.55),
+			transparent
+		);
+	}
+
+	.site-header.portfolio-theme .glass-strip {
+		padding: 1rem 1.1rem 0.9rem;
+		border-radius: 20px 20px 0 0;
+		background: linear-gradient(
+			90deg,
+			rgba(18, 16, 22, 0.72) 0%,
+			rgba(18, 16, 22, 0.55) 45%,
+			rgba(18, 16, 22, 0.22) 100%
+		);
+		backdrop-filter: blur(10px);
+	}
+
+	.site-header.dev-theme .kicker,
+	.site-header.dev-theme .subline {
+		color: rgba(245, 242, 236, 0.9);
+	}
+
+	.site-header.dev-theme .mast-title {
+		color: #f5f2ec;
+		text-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+	}
+
+	.site-header.dev-theme .nav-list a {
+		color: rgba(245, 242, 236, 0.85);
+	}
+
+	.site-header.dev-theme .nav-list a:hover {
+		color: #bd93f9;
+	}
+
+	.site-header.dev-theme .nav-list a.active-link {
+		color: #f5f2ec;
+		box-shadow: inset 0 -2px 0 rgba(189, 147, 249, 0.7);
+	}
+
+	.portfolio-preview {
+		opacity: 0;
+		position: absolute;
+		inset: 0;
+		transform: translateX(-100%);
+		transition: transform 520ms ease, opacity 320ms ease;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.portfolio-preview.show {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.portfolio-preview img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		filter: saturate(0.95);
+	}
+
+	.preview-credit {
+		margin: 0;
+		position: absolute;
+		left: 1.2rem;
+		bottom: 0.9rem;
+		padding: 0.55rem 0.85rem;
+		background: rgba(20, 15, 10, 0.7);
+		border-radius: 999px;
+		font-family: "Space Grotesk", "Segoe UI", sans-serif;
+		font-size: 0.7rem;
+		color: #d2c8ba;
+		pointer-events: auto;
+	}
+
+	.preview-credit a {
+		color: #f4e5cf;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(244, 229, 207, 0.4);
+	}
+
+	.preview-credit a:hover {
+		color: #ffffff;
+		border-bottom-color: rgba(255, 255, 255, 0.6);
+	}
+
 	.portfolio-accordion {
 		max-height: 0;
 		overflow: hidden;
@@ -183,15 +397,72 @@
 	}
 
 	.portfolio-accordion.open {
-		max-height: 320px;
+		max-height: 520px;
+	}
+
+	.site-header.portfolio-theme .portfolio-accordion {
+		background: linear-gradient(
+			90deg,
+			rgba(18, 16, 22, 0.72) 0%,
+			rgba(18, 16, 22, 0.55) 45%,
+			rgba(18, 16, 22, 0.22) 100%
+		);
+		backdrop-filter: blur(10px);
+		border-radius: 0 0 20px 20px;
+	}
+
+	.site-header.portfolio-theme .portfolio-accordion {
+		margin-top: 0;
+		top: 0;
+	}
+
+	.site-header.portfolio-theme .glass-strip,
+	.site-header.portfolio-theme .portfolio-accordion {
+		box-shadow: 0 18px 40px rgba(5, 4, 8, 0.3);
+	}
+
+	.site-header.portfolio-theme .portfolio-accordion {
+		margin-top: -2px;
+	}
+
+	.site-header.portfolio-theme .kicker,
+	.site-header.portfolio-theme .subline {
+		color: rgba(245, 242, 236, 0.9);
+	}
+
+	.site-header.portfolio-theme .mast-title {
+		color: #f5f2ec;
+		text-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+	}
+
+	.site-header.portfolio-theme .nav-list a {
+		color: rgba(245, 242, 236, 0.85);
+	}
+
+	.site-header.portfolio-theme .nav-list a:hover {
+		color: #bd93f9;
+	}
+
+	.site-header.portfolio-theme .nav-list a.active-link {
+		color: #f5f2ec;
+		box-shadow: inset 0 -2px 0 rgba(189, 147, 249, 0.7);
+	}
+
+	.site-header.portfolio-theme .divider {
+		background: linear-gradient(
+			90deg,
+			transparent,
+			rgba(245, 242, 236, 0.55),
+			transparent
+		);
 	}
 
 	.portfolio-panel {
 		width: min(960px, 92vw);
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.4rem;
-		padding: 1.4rem 1rem 1.4rem;
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		gap: 1rem;
+		padding: 1.1rem 0.9rem 1.2rem;
 	}
 
 	.thumb-card {
@@ -199,9 +470,9 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		gap: 0.6rem;
-		min-height: 180px;
+		min-height: 150px;
 		border-radius: 18px;
-		padding: 1.4rem;
+		padding: 1.05rem;
 		text-decoration: none;
 		color: #1f1c16;
 		background: linear-gradient(135deg, #f7f2e8, #e9e2d7);
@@ -216,12 +487,12 @@
 
 	.thumb-title {
 		font-family: "Playfair Display", "Times New Roman", serif;
-		font-size: 1.4rem;
+		font-size: 1.15rem;
 	}
 
 	.thumb-caption {
 		font-family: "Space Grotesk", "Segoe UI", sans-serif;
-		font-size: 0.85rem;
+		font-size: 0.78rem;
 		color: #6a6358;
 	}
 
