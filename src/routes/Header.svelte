@@ -6,6 +6,7 @@
 	import gamePreview from "$lib/images/portfolio/game-design.jpg";
 	import narrativePreview from "$lib/images/portfolio/narrative-design.jpg";
 	import productPreview from "$lib/images/portfolio/product-strategy.jpg";
+	import publicationPreview from "$lib/images/portfolio/publication.jpg";
 	$: innerWidth = 0;
 	let showPortfolioMenu = false;
 	let mastheadEl;
@@ -14,12 +15,12 @@
 	$: isGamePage = $page.url.pathname === "/portfolio/game-design";
 	$: isNarrativePage = $page.url.pathname === "/portfolio/narrative-design";
 	$: isProductPage = $page.url.pathname === "/portfolio/product-strategy";
+	$: isPublicationPage = $page.url.pathname === "/portfolio/publications";
 	$: isPortfolioPage = $page.url.pathname.startsWith("/portfolio");
 
 	let links = [
 		{ href: "/", text: "About" },
 		{ href: "/portfolio", text: "Portfolio" },
-		{ href: "/publications", text: "Publications" },
 		{ href: "/work-history", text: "Work-history" },
 	];
 
@@ -108,6 +109,25 @@
 			from Pexels
 		</p>
 	</div>
+	<div class={`portfolio-preview ${isPublicationPage ? "show" : ""}`}>
+		<img
+			src={publicationPreview}
+			alt="Publications portfolio preview"
+			loading="lazy"
+		/>
+		<p class="preview-credit">
+			Photo by
+			<a
+				href="https://unsplash.com/@martinadams?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Martin Adams</a
+			>
+			on
+			<a
+				href="https://unsplash.com/photos/assorted-title-book-lot-on-shelf-_OZCl4XcpRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Unsplash</a
+			>
+		</p>
+	</div>
 	<nav class="nav-wrap">
 		{#if innerWidth < 500}
 			<MobileNav {links} />
@@ -186,11 +206,14 @@
 								>Systems, narrative, mechanics</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/systems">
-							<span class="thumb-title">Systems</span>
-							<span class="thumb-caption"
-								>Rulesets, economy, balance</span
-							>
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/publications"}
+							style={`--thumb-image: url(${publicationPreview})`}
+							href="/portfolio/publications"
+						>
+							<span class="thumb-title">Publications</span>
+							<span class="thumb-caption">Papers, talks, citations</span>
 						</a>
 						<a
 							class="thumb-card thumb-photo"

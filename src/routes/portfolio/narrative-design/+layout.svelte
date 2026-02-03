@@ -203,6 +203,13 @@
 
 		.narrative-nav {
 			position: static;
+			display: none;
+		}
+	}
+
+	@media (min-width: 500px) and (max-width: 900px) {
+		.narrative-nav {
+			display: flex;
 		}
 	}
 </style>
