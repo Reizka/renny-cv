@@ -8,6 +8,7 @@
 	import productPreview from "$lib/images/portfolio/product-strategy.jpg";
 	$: innerWidth = 0;
 	let showPortfolioMenu = false;
+	let mastheadEl;
 	$: isDevPage = $page.url.pathname === "/portfolio/development";
 	$: isUxPage = $page.url.pathname === "/portfolio/ux-research";
 	$: isGamePage = $page.url.pathname === "/portfolio/game-design";
@@ -25,9 +26,17 @@
 	function closePortfolioMenu() {
 		showPortfolioMenu = false;
 	}
+
+	function handleOutsideClick(event) {
+		if (!showPortfolioMenu) return;
+		const path = event.composedPath ? event.composedPath() : [];
+		if (!path.includes(mastheadEl)) {
+			showPortfolioMenu = false;
+		}
+	}
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:innerWidth on:click={handleOutsideClick} />
 
 <header
 	class={`site-header ${isDevPage ? "dev-theme" : ""} ${isUxPage ? "ux-theme" : ""} ${
@@ -103,7 +112,7 @@
 		{#if innerWidth < 500}
 			<MobileNav {links} />
 		{:else}
-			<div class="masthead">
+			<div class="masthead" bind:this={mastheadEl}>
 				<div class="glass-strip">
 					<div class="title-block">
 						<div class="kicker">Curriculum Vitae</div>

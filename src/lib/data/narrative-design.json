@@ -1,0 +1,88 @@
+{
+  "systems": [
+    {
+      "name": "Dungeons & Dragons",
+      "slug": "dungeons-and-dragons",
+      "groups": [
+        {
+          "name": "One Shots",
+          "slug": "one-shots",
+          "items": [
+            {
+              "name": "Big Trouble it Littlefare",
+              "slug": "big-trouble-it-littlefare"
+            },
+            {
+              "name": "Something Waits Below",
+              "slug": "something-waits-below"
+            }
+          ]
+        },
+        {
+          "name": "Campaigns",
+          "slug": "campaigns",
+          "items": [
+            {
+              "name": "Wheel of Fortune - remix",
+              "slug": "wheel-of-fortune-remix"
+            },
+            {
+              "name": "Phandalver and Below the Shattered Obelisk REMIX",
+              "slug": "phandalver-below-the-shattered-obelisk-remix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Call of Cthulhu",
+      "slug": "call-of-cthulhu",
+      "groups": [
+        {
+          "name": "One Shots",
+          "slug": "one-shots",
+          "items": [
+            {
+              "name": "Echoes from Carcosa",
+              "slug": "echoes-from-carcosa"
+            }
+          ]
+        },
+        {
+          "name": "Campaigns",
+          "slug": "campaigns",
+          "items": [
+            {
+              "name": "What Lurks Below?",
+              "slug": "what-lurks-below"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cyberpunk Red",
+      "slug": "cyberpunk-red",
+      "groups": [
+        {
+          "name": "One Shots",
+          "slug": "one-shots",
+          "items": [
+            {
+              "name": "Volatile Cargo",
+              "slug": "volatile-cargo"
+            },
+            {
+              "name": "Intellectual Property",
+              "slug": "intellectual-property"
+            },
+            {
+              "name": "Dead Signal",
+              "slug": "dead-signal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

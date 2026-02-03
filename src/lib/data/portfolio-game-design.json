@@ -1,98 +1,5 @@
 [
   {
-    "title": "the Cretan Agency - website",
-    "keywords": [
-      "React",
-      "Firebase"
-    ],
-    "short_description": "A website for a rental home in Crete.",
-    "long_description": "A website for a rental home in Crete, featuring a simple admin page that allows easy updates to text and images. The website supports three languages, providing accessibility for diverse visitors. Despite the complete development, the client eventually decided not to deploy the website.",
-    "imageName": "cretan",
-    "url": "https://cretan.netlify.app/",
-    "type": "Freelance",
-    "section": "development",
-    "year": 2024,
-    "github": "https://github.com/Reizka/createan_app"
-  },
-  {
-    "title": "Digital Hadrian's Wall",
-    "keywords": [
-      "Unity3D"
-    ],
-    "short_description": "Converting the Hadrian's Wall board game into a digital game.",
-    "long_description": "A digital adaptation of Hadrian's Wall, a complex resource management board game. Players must strategically maximize their resources each turn with multiple pathways to success. The project involves intricate game mechanics, making it a fascinating hobby project for deep exploration of Unity3D and game design.",
-    "imageName": "hadrian",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2024,
-    "github": ""
-  },
-  {
-    "title": "Web Scraper",
-    "keywords": [
-      "NodeJS",
-      "Puppeteer"
-    ],
-    "short_description": "A simple web scraper to scrape the Pint of Science Speaker DB for easier handling of the data.",
-    "long_description": "This project involved creating a web scraper to collect and manage data from the Pint of Science Speaker Database. Pint of Science is a global event where researchers present their work to the public. The scraper collects speaker data, which is stored in a database for easy filtering and usage. The data was intended for a mobile application to help users view and engage with speaker information more efficiently, overcoming the limitations of the internal database.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2024,
-    "github": "https://github.com/Reizka/Puppeteer-WebScraper"
-  },
-  {
-    "title": "Testing Platform for IAM Services",
-    "keywords": [
-      "Keycloak",
-      "Ruby on Rails"
-    ],
-    "short_description": "A simple content management web application that supports secure login and password management for testing IAM tools.",
-    "long_description": "This project is a content management web application designed to help new employees learn the IAM tools authentication flow, specifically using Keycloak. The platform provides an explicit use case where OAuth2 authentication and role-based access control are required, offering a hands-on training environment for secure login and password management.",
-    "imageName": "",
-    "url": "",
-    "type": "Work",
-    "section": "development",
-    "year": 2024,
-    "github": "https://github.com/Reizka/Nyarlathotep"
-  },
-  {
-    "title": "Pangoling Game engine",
-    "keywords": [
-      "C++"
-    ],
-    "short_description": "Current project to create a simple 3D game engine. Project is still very much work in progress, and due to its nature this is unlikely to change anytime soon.",
-    "long_description": "An ongoing project aimed at developing a basic 3D game engine using C++. The project is in the early stages and is focused on creating a foundational engine for 3D games. Due to the complexity and scope, it remains a long-term work in progress, providing a deep dive into game engine architecture and C++ programming.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2022,
-    "github": ""
-  },
-  {
-    "title": "Nosville",
-    "keywords": [
-      "HTML",
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "Firebase",
-      "NodeJS",
-      "Multilingual"
-    ],
-    "short_description": "A fully functional help request tool where users could ask and receive help with their requests.",
-    "long_description": "Nosville is a help request platform where users can post and respond to various requests for assistance. The tool was built using React for the front end, NodeJS for the backend, and Firebase for real-time data management. The platform is multilingual and designed to facilitate easy communication and support among users. Tailwind CSS was used for the styling, ensuring a clean and responsive user interface.",
-    "imageName": "nosville",
-    "url": "",
-    "type": "Research",
-    "section": "development",
-    "year": 2022,
-    "github": ""
-  },
-  {
     "title": "Nosville-game",
     "keywords": [
       "Unity3D",
@@ -257,21 +164,6 @@
     "type": "Research",
     "section": "game-design",
     "year": 2016,
-    "github": ""
-  },
-  {
-    "title": "Golden Divers homepage",
-    "keywords": [
-      "HTML",
-      "JavaScript"
-    ],
-    "short_description": "I created a simple homepage for the Golden Divers dive shop in Thailand.",
-    "long_description": "This project involved creating a simple yet functional homepage for the Golden Divers dive shop in Thailand. The website was designed to showcase the shop's services, diving packages, and contact information. The site was built using HTML and JavaScript, focusing on providing a clean and user-friendly experience for potential customers.",
-    "imageName": "",
-    "url": "",
-    "type": "Freelance",
-    "section": "development",
-    "year": 2012,
     "github": ""
   }
 ]

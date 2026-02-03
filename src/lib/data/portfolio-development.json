@@ -15,35 +15,6 @@
     "github": "https://github.com/Reizka/createan_app"
   },
   {
-    "title": "Digital Hadrian's Wall",
-    "keywords": [
-      "Unity3D"
-    ],
-    "short_description": "Converting the Hadrian's Wall board game into a digital game.",
-    "long_description": "A digital adaptation of Hadrian's Wall, a complex resource management board game. Players must strategically maximize their resources each turn with multiple pathways to success. The project involves intricate game mechanics, making it a fascinating hobby project for deep exploration of Unity3D and game design.",
-    "imageName": "hadrian",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2024,
-    "github": ""
-  },
-  {
-    "title": "Web Scraper",
-    "keywords": [
-      "NodeJS",
-      "Puppeteer"
-    ],
-    "short_description": "A simple web scraper to scrape the Pint of Science Speaker DB for easier handling of the data.",
-    "long_description": "This project involved creating a web scraper to collect and manage data from the Pint of Science Speaker Database. Pint of Science is a global event where researchers present their work to the public. The scraper collects speaker data, which is stored in a database for easy filtering and usage. The data was intended for a mobile application to help users view and engage with speaker information more efficiently, overcoming the limitations of the internal database.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2024,
-    "github": "https://github.com/Reizka/Puppeteer-WebScraper"
-  },
-  {
     "title": "Testing Platform for IAM Services",
     "keywords": [
       "Keycloak",
@@ -57,20 +28,6 @@
     "section": "development",
     "year": 2024,
     "github": "https://github.com/Reizka/Nyarlathotep"
-  },
-  {
-    "title": "Pangoling Game engine",
-    "keywords": [
-      "C++"
-    ],
-    "short_description": "Current project to create a simple 3D game engine. Project is still very much work in progress, and due to its nature this is unlikely to change anytime soon.",
-    "long_description": "An ongoing project aimed at developing a basic 3D game engine using C++. The project is in the early stages and is focused on creating a foundational engine for 3D games. Due to the complexity and scope, it remains a long-term work in progress, providing a deep dive into game engine architecture and C++ programming.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "prototypes",
-    "year": 2022,
-    "github": ""
   },
   {
     "title": "Nosville",
@@ -108,57 +65,6 @@
     "type": "Research",
     "section": "game-design",
     "year": 2022,
-    "github": ""
-  },
-  {
-    "title": "Primal Punk: Moloch",
-    "keywords": [
-      "RPG",
-      "Narrative",
-      "Systems"
-    ],
-    "short_description": "A lite-RPG set in a dystopian future.",
-    "long_description": "Primal Punk: Moloch is a lite-RPG set in a dystopian future. The project focuses on atmosphere, progression, and building a distinctive world tone through systems and narrative framing.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "game-design",
-    "includeInDevelopment": false,
-    "year": 2025,
-    "github": ""
-  },
-  {
-    "title": "Nosville 2026",
-    "keywords": [
-      "Mobile",
-      "Unity3D",
-      "RPG"
-    ],
-    "short_description": "Reboot of the old research project, now aimed at creating a proper mobile game.",
-    "long_description": "Nosville 2026 is a reboot of the original research project with a new goal: creating a proper mobile game. The work focuses on translating the earlier concepts into a production-ready gameplay loop for mobile.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "game-design",
-    "includeInDevelopment": false,
-    "year": 2026,
-    "github": ""
-  },
-  {
-    "title": "Project Umbrella",
-    "keywords": [
-      "Simulation",
-      "Management",
-      "Systems"
-    ],
-    "short_description": "A simulation about creating and running your own laboratory.",
-    "long_description": "Project Umbrella is a simulation focused on creating and running your own laboratory. The project explores resource loops, staffing, and research progression as core mechanics.",
-    "imageName": "",
-    "url": "",
-    "type": "Hobby",
-    "section": "game-design",
-    "includeInDevelopment": false,
-    "year": 2025,
     "github": ""
   },
   {

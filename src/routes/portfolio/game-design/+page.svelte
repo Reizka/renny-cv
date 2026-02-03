@@ -1,8 +1,31 @@
+<script>
+	import pf from "$lib/data/portfolio-game-design.json";
+	import ItemTypeOne from "../portfolioComponent.svelte";
+
+	const mapped = pf
+		.sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
+		.map((x) => ({
+			title: x.title,
+			short_description: x.short_description,
+			type: x.type,
+			keywords: x.keywords,
+			long_description: x.long_description,
+			imageName: x.imageName,
+			url: x.url,
+			github: x.github,
+			component: ItemTypeOne,
+		}));
+</script>
+
 <section class="section">
 	<div class="section-inner">
 		<p class="eyebrow">Portfolio</p>
 		<h1>Game Design</h1>
-		<p>Content coming soon.</p>
+		<div class="grid">
+			{#each mapped as item, i}
+				<svelte:component this={item.component} props={item} />
+			{/each}
+		</div>
 	</div>
 </section>
 
@@ -19,6 +42,13 @@
 		background: rgba(255, 255, 255, 0.45);
 		backdrop-filter: blur(6px);
 		box-shadow: 0 16px 30px rgba(31, 28, 22, 0.08);
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
 	}
 
 	.eyebrow {
