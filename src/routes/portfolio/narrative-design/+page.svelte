@@ -14,17 +14,6 @@
 		Select a system and scenario to explore the Story landing page and its
 		supporting materials.
 	</p>
-
-	<div class="overview-grid">
-		{#each data.systems as system}
-			<div class="overview-card">
-				<h2>{system.name}</h2>
-				<p>
-					{system.groups.map((group) => group.name).join(" · ")}
-				</p>
-			</div>
-		{/each}
-	</div>
 </section>
 
 <style>
@@ -54,28 +43,4 @@
 		line-height: 1.6;
 	}
 
-	.overview-grid {
-		margin-top: 1.6rem;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.1rem;
-	}
-
-	.overview-card {
-		background: rgba(255, 255, 255, 0.45);
-		border-radius: 18px;
-		padding: 1.1rem 1.2rem;
-		box-shadow: 0 12px 24px rgba(31, 28, 22, 0.08);
-	}
-
-	.overview-card h2 {
-		margin: 0 0 0.4rem;
-		font-size: 1.1rem;
-	}
-
-	.overview-card p {
-		margin: 0;
-		color: #5b5852;
-		font-size: 0.9rem;
-	}
 </style>

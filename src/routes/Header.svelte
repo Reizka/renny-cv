@@ -244,6 +244,51 @@
 		z-index: 2;
 	}
 
+	@media (max-width: 500px) {
+		.site-header {
+			padding: 1.5rem 1.1rem 1rem;
+		}
+
+		.nav-wrap {
+			justify-content: flex-end;
+		}
+
+		.portfolio-accordion {
+			position: static;
+			top: 0;
+			border-radius: 14px;
+			margin-top: 0.6rem;
+		}
+
+		.portfolio-panel {
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+			padding: 0.6rem 0.6rem 0.7rem;
+		}
+
+		.thumb-card {
+			min-height: auto;
+			padding: 0.5rem 0.6rem;
+			border-radius: 10px;
+			background: transparent;
+			box-shadow: none;
+		}
+
+		.thumb-card.thumb-photo::before,
+		.thumb-card.thumb-photo::after {
+			display: none;
+		}
+
+		.thumb-title {
+			font-size: 0.9rem;
+		}
+
+		.thumb-caption {
+			font-size: 0.75rem;
+		}
+	}
+
 	.masthead {
 		width: min(1100px, 92vw);
 		display: flex;

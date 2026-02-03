@@ -3,7 +3,7 @@
 </script>
 
 <div class="narrative-layout">
-	<aside class="narrative-nav">
+	<aside class="narrative-nav" id="nav">
 		<a class="nav-about nav-tab" href="/portfolio/narrative-design">About</a>
 		{#each data.systems as system}
 			<div class={`nav-section nav-tab ${system.slug}`}>
@@ -196,13 +196,28 @@
 		border-left-color: rgba(255, 255, 255, 0.6);
 	}
 
-	@media (max-width: 900px) {
-		.narrative-layout {
-			grid-template-columns: 1fr;
-		}
-
-		.narrative-nav {
-			position: static;
-		}
+@media (max-width: 900px) {
+	.narrative-layout {
+		grid-template-columns: 1fr;
 	}
+
+	.narrative-nav {
+		position: static;
+		display: none;
+	}
+
+	.nav-section {
+		transform: translateX(0);
+	}
+
+	.nav-tab {
+		transform: translateX(0);
+	}
+
+	.nav-body {
+		max-height: none;
+		opacity: 1;
+		transform: none;
+	}
+}
 </style>
