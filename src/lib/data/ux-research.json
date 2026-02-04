@@ -7,27 +7,37 @@
     {
       "title": "Understanding Help-Seeking in Social Engagement Platforms",
       "slug": "online-user-studies-on-online-platforms",
-      "publicationKey": "dissertation/vub/Lindberg22"
+      "publicationKey": "dissertation/vub/Lindberg22",
+      "tags": ["User Research", "Trust & Safety", "Mixed Methods"]
     },
     {
       "title": "Expert Evaluation of a Design Guidelines",
       "slug": "expert-evaluation-of-a-design-guidelines",
-      "publicationKey": "conf/chigreece/LindbergT21"
+      "publicationKey": "conf/chigreece/LindbergT21",
+      "tags": ["UX Evaluation", "Accessibility", "Elderly Users", "Expert Review"]
     },
     {
-      "title": "Heurestical Evaluation of Online Platforms",
+      "title": "Design Patterns That Shape Trust in Local Platforms",
       "slug": "heurestical-evaluation-of-online-platforms",
-      "publicationKey": "conf/goodtechs/LindbergT20"
+      "publicationKey": "dissertation/vub/Lindberg22",
+      "tags": ["UX Evaluation", "Trust & Safety", "Usability"]
     },
     {
-      "title": "Expert Evaluation of a Simple Game",
+      "title": "Stakeholder Perspectives on Safety & Engagement",
+      "slug": "stakeholder-perspectives-on-safety-engagement",
+      "publicationKey": "dissertation/vub/Lindberg22"
+    },
+    {
+      "title": "Testing Gamification in Local Help Platforms",
       "slug": "expert-evaluation-of-a-simple-game",
-      "publicationKey": "conf/csedu/LindbergHL17"
+      "publicationKey": "conf/csedu/LindbergHL17",
+      "tags": ["User Research", "Engagement", "Behavior & Motivation"]
     },
     {
       "title": "Evaluation of TrueBiters Game about logic gates",
       "slug": "evaluation-of-truebiters-game-about-logic-gates",
-      "publicationKey": "journals/sle/TroyerLS19"
+      "publicationKey": "journals/sle/TroyerLS19",
+      "tags": ["Experimental Research", "Learning UX", "Engagement"]
     },
     {
       "title": "Evaluation of Minerva an Adaptive Game about proramming concepts",
