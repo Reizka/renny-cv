@@ -10,9 +10,8 @@
 
 <section class="detail-section">
 	<p class="eyebrow">Narrative Design</p>
-	<h1>{item?.name || "Locations"}</h1>
-	<p class="meta">{system?.name} · {group?.name}</p>
-	<p class="body">Locations content coming soon.</p>
+	<h1>{item?.name || "Research Output"}</h1>
+	<p class="body">Research output coming soon.</p>
 </section>
 
 <style>
@@ -34,11 +33,6 @@
 
 	h1 {
 		font-size: clamp(1.8rem, 3vw, 2.6rem);
-		margin: 0;
-	}
-
-	.meta {
-		color: #6b655b;
 		margin: 0;
 	}
 

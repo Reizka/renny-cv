@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let activeTopic = "welcome";
 	let isFlipping = false;
 
@@ -46,7 +46,7 @@
 		{ name: "Dutch", level: "A1", flag: "🇳🇱" },
 	];
 
-	function selectTopic(key) {
+	function selectTopic(key: string) {
 		if (activeTopic === key || isFlipping) return;
 		isFlipping = true;
 		setTimeout(() => {
@@ -58,10 +58,7 @@
 	}
 </script>
 
-<div
-	class="flex flex-col justify-center items-center"
-	on:click={() => selectTopic("welcome")}
->
+<div class="flex flex-col justify-center items-center">
 	<div class={`welcome-shell ${activeTopic !== "welcome" ? "topic-mode" : ""}`}>
 		<div class="portrait-wrap">
 			<img

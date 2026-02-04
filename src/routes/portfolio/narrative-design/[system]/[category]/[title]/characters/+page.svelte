@@ -10,9 +10,9 @@
 
 <section class="detail-section">
 	<p class="eyebrow">Narrative Design</p>
-	<h1>{item?.name || "Locations"}</h1>
+	<h1>{item?.name || "Characters"}</h1>
 	<p class="meta">{system?.name} · {group?.name}</p>
-	<p class="body">Locations content coming soon.</p>
+	<p class="body">Characters content coming soon.</p>
 </section>
 
 <style>

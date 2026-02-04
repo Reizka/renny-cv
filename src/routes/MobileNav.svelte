@@ -84,9 +84,9 @@
 									<div class="submenu-group">
 										<span>Dungeons &amp; Dragons</span>
 										<a
-											href="/portfolio/narrative-design/dungeons-and-dragons/one-shots/big-trouble-it-littlefare"
+											href="/portfolio/narrative-design/dungeons-and-dragons/one-shots/big-trouble-in-littlefare"
 											on:click={() => toggle()}
-											>Big Trouble it Littlefare</a
+											>Big Trouble in Littlefare</a
 										>
 										<a
 											href="/portfolio/narrative-design/dungeons-and-dragons/one-shots/something-waits-below"

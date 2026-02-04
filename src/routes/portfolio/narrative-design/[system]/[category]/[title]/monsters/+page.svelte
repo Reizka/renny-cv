@@ -10,9 +10,9 @@
 
 <section class="detail-section">
 	<p class="eyebrow">Narrative Design</p>
-	<h1>{item?.name || "NPCs"}</h1>
+	<h1>{item?.name || "Monsters"}</h1>
 	<p class="meta">{system?.name} · {group?.name}</p>
-	<p class="body">NPCs content coming soon.</p>
+	<p class="body">Monsters content coming soon.</p>
 </section>
 
 <style>
@@ -20,6 +20,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.6rem;
+		max-width: 720px;
+		margin: 0 auto;
 	}
 
 	.eyebrow {

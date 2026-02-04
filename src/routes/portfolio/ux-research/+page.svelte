@@ -1,24 +1,20 @@
-<section class="section">
-	<div class="section-inner">
-		<p class="eyebrow">Portfolio</p>
-		<h1>UX Research</h1>
-		<p>Content coming soon.</p>
-	</div>
+<script>
+	import data from "$lib/data/ux-research.json";
+</script>
+
+<section class="ux-section">
+	<p class="eyebrow">UX Research</p>
+	<h1>{data.about.title}</h1>
+	<p class="intro">{data.about.intro}</p>
 </section>
 
 <style>
-	.section {
-		padding: 3rem 0;
-	}
-
-	.section-inner {
-		width: min(1100px, 92vw);
+	.ux-section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.7rem;
+		max-width: 720px;
 		margin: 0 auto;
-		padding: 2rem clamp(1.2rem, 3vw, 2.6rem);
-		border-radius: 22px;
-		background: rgba(255, 255, 255, 0.45);
-		backdrop-filter: blur(6px);
-		box-shadow: 0 16px 30px rgba(31, 28, 22, 0.08);
 	}
 
 	.eyebrow {
@@ -26,11 +22,18 @@
 		letter-spacing: 0.24em;
 		font-size: 0.65rem;
 		color: #7b756c;
-		margin-bottom: 0.8rem;
+		margin: 0;
 	}
 
 	h1 {
 		font-size: clamp(2rem, 4vw, 3rem);
-		margin: 0 0 0.8rem;
+		margin: 0;
+	}
+
+	.intro {
+		margin: 0;
+		max-width: 60ch;
+		color: #4c4740;
+		line-height: 1.6;
 	}
 </style>

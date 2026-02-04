@@ -1,0 +1,52 @@
+{
+  "about": {
+    "title": "UX Research",
+    "intro": "Content coming soon."
+  },
+  "caseStudies": [
+    {
+      "title": "Online User Studies On Online Platforms",
+      "slug": "online-user-studies-on-online-platforms",
+      "publicationKey": "conf/ice-itmc/LaatoLLBBKTL20"
+    },
+    {
+      "title": "Expert Evaluation of a Design Guidelines",
+      "slug": "expert-evaluation-of-a-design-guidelines",
+      "publicationKey": "conf/chigreece/LindbergT21"
+    },
+    {
+      "title": "Heurestical Evaluation of Online Platforms",
+      "slug": "heurestical-evaluation-of-online-platforms",
+      "publicationKey": "conf/goodtechs/LindbergT20"
+    },
+    {
+      "title": "Expert Evaluation of a Simple Game",
+      "slug": "expert-evaluation-of-a-simple-game",
+      "publicationKey": "conf/csedu/LindbergHL17"
+    },
+    {
+      "title": "Evaluation of TrueBiters Game about logic gates",
+      "slug": "evaluation-of-truebiters-game-about-logic-gates",
+      "publicationKey": "journals/sle/TroyerLS19"
+    },
+    {
+      "title": "Evaluation of Minerva an Adaptive Game about proramming concepts",
+      "slug": "evaluation-of-minerva-an-adaptive-game-about-proramming-concepts",
+      "publicationKey": "journals/ijsg/LindbergL18"
+    },
+    {
+      "title": "Evaluation of Running Othello2 an Physical Educationt Game",
+      "slug": "evaluation-of-running-othello2-an-physical-educationt-game",
+      "publicationKey": "journals/tlt/LindbergSL16"
+    },
+    {
+      "title": "Evaluation of Leometry AR",
+      "slug": "evaluation-of-leometry-ar",
+      "publicationKey": "journals/information/TroyerMLB20"
+    }
+  ],
+  "sections": [
+    { "title": "Research Themes", "slug": "research-themes" },
+    { "title": "How I work", "slug": "how-i-work" }
+  ]
+}

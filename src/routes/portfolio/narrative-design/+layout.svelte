@@ -64,7 +64,7 @@
 		padding: 0.75rem 1.2rem;
 		border-radius: 0 18px 18px 0;
 		box-shadow: 0 10px 22px rgba(31, 28, 22, 0.12);
-		transform: translateX(calc(-100% + 40px));
+		transform: translateX(0);
 		transition: transform 200ms ease, box-shadow 200ms ease,
 			border-radius 200ms ease;
 	}
@@ -93,7 +93,7 @@
 	}
 
 	.nav-section {
-		transform: translateX(calc(-100% + 40px));
+		transform: translateX(0);
 	}
 
 	.nav-about {

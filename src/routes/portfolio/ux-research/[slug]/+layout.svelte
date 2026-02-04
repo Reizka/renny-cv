@@ -1,31 +1,25 @@
 <script>
 	import { page } from "$app/stores";
+	import data from "$lib/data/ux-research.json";
 
-	$: basePath = `/portfolio/narrative-design/${$page.params.system}/${$page.params.category}/${$page.params.title}`;
+	$: basePath = `/portfolio/ux-research/${$page.params.slug}`;
 	$: currentPath = $page.url.pathname;
-	const tabs = [
-		{ label: "Work", path: "" },
-		{ label: "Research Output", path: "/research-output" },
-	];
-
-	$: activeIndex = tabs.findIndex(
-		(tab) => currentPath === `${basePath}${tab.path}`
-	);
-	if (activeIndex < 0) activeIndex = 0;
+	$: isCaseStudy = data.caseStudies.some((cs) => cs.slug === $page.params.slug);
 </script>
 
-<div class="detail-tabs-wrap">
-	<div class="detail-tabs" style={`--active-index: ${activeIndex}`}>
-		<span class="tab-indicator"></span>
-		{#each tabs as tab}
+{#if isCaseStudy}
+	<div class="detail-tabs-wrap">
+		<div class="detail-tabs" style={`--active-index: ${currentPath === basePath ? 0 : 1}`}>
+			<span class="tab-indicator"></span>
+			<a class:active={currentPath === basePath} href={basePath}>Work</a>
 			<a
-				class:active={currentPath === `${basePath}${tab.path}`}
-				href={`${basePath}${tab.path}`}
-				>{tab.label}</a
+				class:active={currentPath === `${basePath}/research-output`}
+				href={`${basePath}/research-output`}
+				>Research Output</a
 			>
-		{/each}
+		</div>
 	</div>
-</div>
+{/if}
 <slot />
 
 <style>
