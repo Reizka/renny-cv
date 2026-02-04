@@ -18,6 +18,8 @@
 								<div class="bg-violet-200">Journal Paper</div>
 							{:else if p.info.type === "Conference and Workshop Papers"}
 								<div class="bg-cyan-300">Conference Paper</div>
+							{:else if p.info.type === "Dissertation"}
+								<div class="bg-amber-200">Dissertation</div>
 							{:else}
 								<div class="bg-amber-200">Publication</div>
 							{/if}

@@ -7,6 +7,7 @@
 	import narrativePreview from "$lib/images/portfolio/narrative-design.jpg";
 	import productPreview from "$lib/images/portfolio/product-strategy.jpg";
 	import publicationPreview from "$lib/images/portfolio/publication.jpg";
+	import prototypePreview from "$lib/images/portfolio/prototype.jpg";
 	$: innerWidth = 0;
 	let showPortfolioMenu = false;
 	let mastheadEl;
@@ -14,6 +15,7 @@
 	$: isUxPage = $page.url.pathname === "/portfolio/ux-research";
 	$: isGamePage = $page.url.pathname === "/portfolio/game-design";
 	$: isNarrativePage = $page.url.pathname === "/portfolio/narrative-design";
+	$: isPrototypePage = $page.url.pathname === "/portfolio/prototypes";
 	$: isProductPage = $page.url.pathname === "/portfolio/product-strategy";
 	$: isPublicationPage = $page.url.pathname === "/portfolio/publications";
 	$: isPortfolioPage = $page.url.pathname.startsWith("/portfolio");
@@ -107,6 +109,25 @@
 				>Lukas Blazek</a
 			>
 			from Pexels
+		</p>
+	</div>
+	<div class={`portfolio-preview ${isPrototypePage ? "show" : ""}`}>
+		<img
+			src={prototypePreview}
+			alt="Prototypes portfolio preview"
+			loading="lazy"
+		/>
+		<p class="preview-credit">
+			Photo by
+			<a
+				href="https://unsplash.com/@maximalfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Maximalfocus</a
+			>
+			on
+			<a
+				href="https://unsplash.com/photos/black-and-red-light-illustration-HakTxidk36I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Unsplash</a
+			>
 		</p>
 	</div>
 	<div class={`portfolio-preview ${isPublicationPage ? "show" : ""}`}>
@@ -226,7 +247,12 @@
 								>Story worlds, quests, dialogue</span
 							>
 						</a>
-						<a class="thumb-card" href="/portfolio/prototypes">
+						<a
+							class="thumb-card thumb-photo"
+							class:thumb-active={$page.url.pathname === "/portfolio/prototypes"}
+							style={`--thumb-image: url(${prototypePreview})`}
+							href="/portfolio/prototypes"
+						>
 							<span class="thumb-title">Prototypes</span>
 							<span class="thumb-caption"
 								>Rapid builds, experiments</span

@@ -8,9 +8,9 @@
 		<div class="ux-group">
 			<p class="ux-group-title">Case Studies</p>
 			<ul>
-				{#each data.caseStudies as cs}
+				{#each data.caseStudies as cs, i}
 					<li>
-						<a href={`/portfolio/ux-research/${cs.slug}`}>{cs.title}</a>
+						<a href={`/portfolio/ux-research/${cs.slug}`}>{i + 1}. {cs.title}</a>
 					</li>
 				{/each}
 			</ul>

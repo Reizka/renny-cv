@@ -521,5 +521,28 @@
       "url": "https://dblp.org/rec/conf/csedu/LindbergL16a"
     },
     "url": "URL#2468452"
+  },
+  {
+    "@score": "1",
+    "@id": "phd-lindberg-vub",
+    "info": {
+      "authors": {
+        "author": [
+          {
+            "@pid": "184/1676",
+            "text": "R. Lindberg"
+          }
+        ]
+      },
+      "title": "Design recommendations for social engagement platforms: Towards enhanced technology adoption by people and long-term engagement.",
+      "venue": "Vrije Universiteit Brussel",
+      "year": "2022",
+      "type": "Dissertation",
+      "access": "open",
+      "key": "dissertation/vub/Lindberg22",
+      "ee": "https://cris.vub.be/ws/portalfiles/portal/88311339/Renny_Lindberg_PhD_thesis.pdf",
+      "url": "https://cris.vub.be/ws/portalfiles/portal/88311339/Renny_Lindberg_PhD_thesis.pdf"
+    },
+    "url": "URL#phd-lindberg-vub"
   }
 ]
