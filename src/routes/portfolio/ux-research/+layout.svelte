@@ -1,14 +1,14 @@
-<script>
+<script lang="ts">
 	import data from "$lib/data/ux-research.json";
 
-	let activeTags = [];
+	let activeTags: string[] = [];
 
 	const allTags = Array.from(
 		new Set(data.caseStudies.flatMap((cs) => cs.tags || []))
 	).sort();
 
 	let tagOpen = false;
-	let filterEl;
+	let filterEl: HTMLDivElement | undefined;
 
 	$: filteredCaseStudies =
 		activeTags.length === 0
@@ -18,7 +18,7 @@
 						cs.tags && activeTags.every((tag) => cs.tags.includes(tag))
 				);
 
-	function toggleTag(tag) {
+	function toggleTag(tag: string) {
 		activeTags = activeTags.includes(tag)
 			? activeTags.filter((t) => t !== tag)
 			: [...activeTags, tag];
@@ -32,10 +32,10 @@
 		tagOpen = !tagOpen;
 	}
 
-	function handleOutsideClick(event) {
+	function handleOutsideClick(event: MouseEvent) {
 		if (!tagOpen) return;
 		const path = event.composedPath ? event.composedPath() : [];
-		if (!path.includes(filterEl)) {
+		if (filterEl && !path.includes(filterEl)) {
 			tagOpen = false;
 		}
 	}
@@ -61,12 +61,12 @@
 						Filter tags
 					</button>
 					{#if tagOpen}
-						<div class="ux-filter-menu" on:click|stopPropagation>
+						<div class="ux-filter-menu">
 							{#each allTags as tag}
 								<button
 									type="button"
 									class:tag-active={activeTags.includes(tag)}
-									on:click={() => toggleTag(tag)}
+									on:click|stopPropagation={() => toggleTag(tag)}
 								>
 									{tag}
 								</button>

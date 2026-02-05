@@ -1207,6 +1207,327 @@
 				requires equal attention to behavioral triggers, not just content delivery.
 			</p>
 			<div class="section-line"></div>
+		{:else if slug === "evaluation-of-minerva-an-adaptive-game-about-proramming-concepts"}
+			<h1 id="summary">Summary</h1>
+			<p class="body">
+				Minerva is an adaptive, multi-genre educational game designed to support
+				elementary school students in learning core programming concepts, such as
+				commands, repetition, decisions, and basic logic. Unlike many programming
+				games that rely on a single genre or fixed experience, Minerva combines
+				adventure, action, and puzzle mechanics and adapts both gameplay and learning
+				content to players’ styles.
+			</p>
+			<p class="body">
+				The study focused on whether this adaptive, game-based approach could:
+			</p>
+			<ul class="body-list">
+				<li>Support learning as effectively as traditional materials</li>
+				<li>Increase engagement among heterogeneous learners</li>
+				<li>Reveal usability and instructional challenges early in development</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="constraints">Constraints</h1>
+			<ul class="body-list">
+				<li>Single-session evaluation limited insight into long-term learning effects</li>
+				<li>
+					Cultural specificity: all participants were Korean 6th-grade students,
+					limiting generalizability
+				</li>
+				<li>Time limitations restricted depth of tutorial use and exploration</li>
+				<li>
+					Adaptive features were not fully evaluated due to sample size and study scope
+				</li>
+				<li>
+					Heterogeneous play and learning styles made per-style analysis statistically
+					infeasible
+				</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="research-goals">Research Goals</h1>
+			<p class="body">The study aimed to investigate:</p>
+			<ul class="body-list">
+				<li>
+					Whether a multi-genre, adaptive game can engage children with diverse learning
+					preferences
+				</li>
+				<li>
+					Whether learning outcomes (retention) are comparable to traditional
+					handout-based instruction
+				</li>
+				<li>How students perceive the game as a learning tool</li>
+				<li>What usability and instructional issues emerge in real classroom use</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="approach">Approach &amp; Methods</h1>
+			<h2>Study Design</h2>
+			<p class="body">A formative mixed-method evaluation was conducted with two groups:</p>
+			<ul class="body-list">
+				<li>Game group: 32 sixth-grade students who played Minerva</li>
+				<li>
+					Control group: 32 sixth-grade students who learned the same concepts using
+					handouts
+				</li>
+			</ul>
+			<p class="body">
+				Both groups studied identical programming concepts. Learning outcomes were
+				measured using a retention test, while engagement and experience were captured
+				through questionnaires, observations, and interviews.
+			</p>
+
+			<h2>Data Collected</h2>
+			<ul class="body-list">
+				<li>Quantitative retention tests (commands, repetition, decisions, basic concepts)</li>
+				<li>Self-reported learning experience and engagement</li>
+				<li>Observations during gameplay</li>
+				<li>Teacher and student qualitative feedback</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="data">Data &amp; Findings</h1>
+			<h2>Learning Outcomes</h2>
+			<ul class="body-list">
+				<li>Overall, learning retention was comparable between the game group and the control group</li>
+				<li>For some topics (e.g. repetition), the game group performed better</li>
+				<li>For others (e.g. basic concepts), the control group slightly outperformed the game group</li>
+				<li>
+					The results suggest the game is at least as effective as traditional methods,
+					while being more engaging
+				</li>
+			</ul>
+
+			<h2>Engagement and Experience</h2>
+			<ul class="body-list">
+				<li>Students reported largely positive learning experiences</li>
+				<li>
+					Teachers observed increased engagement, including among students with
+					typically low motivation
+				</li>
+				<li>Behavioral, emotional, and cognitive engagement were clearly present</li>
+				<li>No cases of complete disengagement were observed</li>
+			</ul>
+			<p class="body">However, engagement quality varied:</p>
+			<ul class="body-list">
+				<li>Some students experienced frustration due to unclear instructions or controls</li>
+				<li>Others showed self-regulated interest, replaying the game or helping peers</li>
+			</ul>
+
+			<h2>Usability Issues Identified</h2>
+			<p class="body">Key issues surfaced during the evaluation:</p>
+			<ul class="body-list">
+				<li>Unclear instructions and tutorials</li>
+				<li>Difficulty understanding what to do next</li>
+				<li>Confusion between movement controls and programming commands</li>
+				<li>High cognitive load in repetition and decision puzzles</li>
+				<li>Tutorials perceived as boring or easy to skip</li>
+			</ul>
+			<p class="body">
+				These issues directly informed design recommendations for improving onboarding,
+				tutorials, and pacing.
+			</p>
+			<div class="section-line"></div>
+
+			<h1 id="conclusions">Conclusions</h1>
+			<p class="body">
+				The evaluation showed that Minerva successfully engages elementary school
+				students and supports learning outcomes comparable to traditional instruction,
+				while offering a more motivating experience.
+			</p>
+			<p class="body">
+				However, the study also highlighted a critical UX insight: engagement alone
+				does not guarantee learning. Clear guidance, well-designed tutorials, and
+				appropriate scaffolding are essential—especially for younger users encountering
+				abstract concepts like programming logic.
+			</p>
+			<p class="body">
+				The findings reinforced the value of adaptive, multi-genre educational games,
+				while underlining the importance of early formative evaluation to surface
+				usability and instructional barriers. Minerva served not as a finished solution,
+				but as a research-driven prototype guiding future design and development.
+			</p>
+			<div class="section-line"></div>
+		{:else if slug === "evaluation-of-running-othello2-an-physical-educationt-game"}
+			<h1 id="summary">Summary</h1>
+			<p class="body">
+				Running Othello 2 (RO2) is a mobile exergame designed for primary school
+				Physical Education (PE). It turns Othello into a physically active,
+				curriculum-linked game by combining NFC-tag movement, wearable sensing (heart
+				rate), and short health-education micro-lessons (e.g., hygiene, first aid,
+				safety). The goal was to see whether this kind of “move + learn” experience
+				can improve learning, exercise, and motivation compared to standard PE
+				learning materials.
+			</p>
+			<div class="section-line"></div>
+
+			<h1 id="constraints">Constraints</h1>
+			<ul class="body-list">
+				<li>
+					Hardware + setup dependency: required a physical board (64 NFC tags),
+					smartphones, and wearables; setup time, storage, maintenance, and breakage
+					risk were real constraints in a school context.
+				</li>
+				<li>
+					Classroom realism: PE time is limited and logistically messy; the game had
+					to fit into recess/short sessions and still deliver learning content.
+				</li>
+				<li>
+					Sensor reliability: activity recognition thresholds and NFC reads caused
+					occasional errors; children also performed movements “wrong” while still
+					passing missions.
+				</li>
+				<li>
+					Novelty effect risk: engagement may be inflated because the tech is new; the
+					teacher explicitly worried interest would drop if repeated without variation.
+				</li>
+				<li>
+					Translation + cultural context: instruments were translated to Korean and
+					later back to English, creating unavoidable risk of nuance loss.
+				</li>
+				<li>
+					Short-term evaluation: one-week window + a delayed post-quiz gives only
+					limited insight into long-term outcomes.
+				</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="research-goals">Research Goals</h1>
+			<ul class="body-list">
+				<li>
+					Learning: Does RO2 improve retention of PE/health-education content compared
+					to handouts?
+				</li>
+				<li>
+					Exercise: Does gameplay generate meaningful physical activity (using heart
+					rate as a proxy)?
+				</li>
+				<li>
+					Motivation &amp; engagement: Does it increase willingness to move—especially
+					among typically inactive or overweight students?
+				</li>
+				<li>
+					Feasibility: What issues (usability, technical, operational) might block real
+					PE adoption?
+				</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="approach">Approach &amp; Methods</h1>
+			<p class="body">
+				Participants: 61 South Korean third-grade students (~10 years old).
+			</p>
+			<ul class="body-list">
+				<li>Game group: 32 students played RO2</li>
+				<li>Control group: 29 students studied the same content via handouts</li>
+			</ul>
+			<p class="body">One PE teacher interviewed</p>
+			<p class="body">Study format: mixed-method, school-based, run over ~1 week.</p>
+			<p class="body">
+				RO2 sessions: ~15 minutes per player, 4 players at a time (two matches).
+			</p>
+			<p class="body">
+				Post-quiz administered one week later to both groups.
+			</p>
+			<p class="body">Data sources:</p>
+			<ul class="body-list">
+				<li>Post-quiz (ordering + multiple-choice questions)</li>
+				<li>Game-group questionnaire (4-point Likert + open questions)</li>
+				<li>Student interviews (8 volunteers)</li>
+				<li>Teacher interview</li>
+				<li>Observations by researchers + teacher</li>
+				<li>Heart rate data (Microsoft Band; 21 successful samples)</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="data">Data &amp; Findings</h1>
+			<h2>Learning outcomes (post-quiz)</h2>
+			<p class="body">
+				Game group averaged 77% correct vs 65% for the control group.
+			</p>
+			<p class="body">
+				The game group outperformed the control group on most questions;
+				multiple-choice results showed significant differences in several items.
+			</p>
+			<p class="body">
+				Ordering questions were hard for both groups; one ordering item (handwashing
+				sequence) had no fully correct answers, partly due to overly similar images.
+			</p>
+			<p class="body">
+				Interpretation: the game supported short-term learning/retention, but some
+				question formats and assets undermined measurement quality.
+			</p>
+
+			<h2>Exercise efficiency</h2>
+			<p class="body">
+				Heart rate data showed peaks above 100 bpm in many sessions (overall average
+				~84 bpm).
+			</p>
+			<p class="body">
+				Exertion level depended heavily on physical layout (distance between tags)
+				and mission thresholds.
+			</p>
+			<p class="body">
+				Observations noted kids getting out of breath during spinning/jumping and not
+				always noticing they were exercising.
+			</p>
+			<p class="body">
+				Interpretation: RO2 produced at least mild-to-moderate physical exertion, with
+				clear room for personalization (difficulty scaling, mission tuning).
+			</p>
+
+			<h2>Motivation &amp; engagement</h2>
+			<p class="body">
+				High engagement across the board, including students usually inactive in PE;
+				the teacher specifically pointed out overweight children being unusually
+				active and happy.
+			</p>
+			<p class="body">
+				Kids consistently preferred this style of PE learning over textbook theory
+				lessons.
+			</p>
+			<p class="body">
+				Technology itself (NFC recognition, wearables) was a major motivator, but the
+				teacher warned this may fade without varied modes/content.
+			</p>
+			<p class="body">
+				Not all students enjoyed competition; at least one preferred helping rather
+				than beating a friend—hinting at the need for cooperative modes.
+			</p>
+
+			<h2>Issues surfaced</h2>
+			<ul class="body-list">
+				<li>Technical restarts were needed sometimes.</li>
+				<li>Activity recognition wasn’t always accurate (threshold tuning).</li>
+				<li>Some children “gamed” physical missions without following instructions precisely.</li>
+				<li>Certain pedagogical puzzles were perceived as difficult or boring by some players.</li>
+				<li>
+					Teacher raised practical barriers: cost, maintenance, storage, training time,
+					space, and lack of onsite technical support.
+				</li>
+			</ul>
+			<div class="section-line"></div>
+
+			<h1 id="conclusions">Conclusions</h1>
+			<p class="body">
+				RO2 demonstrated that a wearable-enabled exergame can blend movement with
+				curriculum learning in a way that students and teachers find compelling.
+				Compared to handouts, it produced stronger short-term retention on several
+				learning items, and it clearly increased motivation to move, especially for
+				students who are typically less active in PE.
+			</p>
+			<p class="body">
+				The big blockers weren’t the idea—they were execution realities: reliability
+				of sensing + NFC interactions, clarity of instructions and content pacing, and
+				the operational burden of hardware in schools.
+			</p>
+			<p class="body">
+				For real adoption, the design needs: better onboarding and clearer
+				instructions (ideally video), more robust activity detection, adaptive
+				difficulty and cooperative play modes, and a deployment model that schools
+				can actually maintain.
+			</p>
+			<div class="section-line"></div>
 		{:else}
 			{#each sectionHeaders as heading}
 				<h1 id={heading.toLowerCase().replace(/[^a-z]+/g, "-")}>

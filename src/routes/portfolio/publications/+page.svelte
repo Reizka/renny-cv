@@ -9,6 +9,43 @@
 	<div class="section-inner">
 		<p class="eyebrow">Portfolio</p>
 		<h1>Publications</h1>
+		<div class="pub-intro">
+			<div class="pub-about">
+				<h2 class="about-title">About</h2>
+				<p>
+					This page collects my published research, consisting of work that has
+					undergone independent expert review and has been published in recognized
+					academic journals.
+				</p>
+			</div>
+			<div class="pub-divider"></div>
+			<div class="pub-stats">
+				<h2>Scholar Stats</h2>
+				<div class="stat-grid">
+					<div class="stat-card">
+						<span class="stat-label">Citations</span>
+						<span class="stat-value">1033</span>
+						<span class="stat-sub">Total</span>
+					</div>
+					<div class="stat-card">
+						<span class="stat-label">Publications</span>
+						<span class="stat-value">{pf.length}</span>
+						<span class="stat-sub">Listed</span>
+					</div>
+					<div class="stat-card">
+						<span class="stat-label">h-index</span>
+						<span class="stat-value">12</span>
+						<span class="stat-sub">Total</span>
+					</div>
+					<div class="stat-card">
+						<span class="stat-label">i10-index</span>
+						<span class="stat-value">14</span>
+						<span class="stat-sub">Total</span>
+					</div>
+				</div>
+				<p class="stat-note">Source: Google Scholar</p>
+			</div>
+		</div>
 		<div class="grid">
 			{#each pf as p, i}
 				<div class="pub-card">
@@ -78,6 +115,79 @@
 	h1 {
 		font-size: clamp(2rem, 4vw, 3rem);
 		margin: 0 0 1.4rem;
+	}
+
+	.pub-intro {
+		display: grid;
+		grid-template-columns: minmax(0, 1.15fr) auto minmax(0, 0.85fr);
+		gap: 1.4rem;
+		margin: 0 0 2rem;
+		background: rgba(255, 255, 255, 0.6);
+		border-radius: 20px;
+		padding: 1.4rem 1.6rem;
+		box-shadow: 0 14px 28px rgba(31, 28, 22, 0.08);
+	}
+
+	.pub-about h2,
+	.pub-stats h2 {
+		margin: 0 0 0.6rem;
+		font-size: 1.05rem;
+	}
+
+	.pub-about p {
+		margin: 0;
+		color: #4c4740;
+		line-height: 1.6;
+	}
+
+	.about-title {
+		font-weight: 700;
+	}
+
+	.pub-divider {
+		width: 1px;
+		background: rgba(47, 42, 34, 0.15);
+		border-radius: 999px;
+	}
+
+	.stat-grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.55rem;
+	}
+
+	.stat-card {
+		background: rgba(255, 255, 255, 0.85);
+		border-radius: 14px;
+		padding: 0.6rem 0.65rem;
+		box-shadow: inset 0 0 0 1px rgba(31, 28, 22, 0.08);
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+
+	.stat-label {
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		font-size: 0.55rem;
+		color: #6b655b;
+	}
+
+	.stat-value {
+		font-size: 1.15rem;
+		font-weight: 600;
+		color: #1f1c16;
+	}
+
+	.stat-sub {
+		font-size: 0.65rem;
+		color: #6b655b;
+	}
+
+	.stat-note {
+		margin: 0.6rem 0 0;
+		font-size: 0.7rem;
+		color: #6b655b;
 	}
 
 	.grid {
@@ -163,5 +273,15 @@
 	.author-weak {
 		font-weight: 300;
 		font-size: 0.75rem;
+	}
+
+	@media (max-width: 900px) {
+		.pub-intro {
+			grid-template-columns: 1fr;
+		}
+
+		.pub-divider {
+			display: none;
+		}
 	}
 </style>

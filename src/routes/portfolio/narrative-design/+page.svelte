@@ -25,6 +25,7 @@
 		used other forums for brainstorming; where relevant, I try to provide
 		links to those sources.
 	</p>
+	<a class="cta" href="/portfolio/narrative-design/scenarios">Browse RPG scenarios</a>
 </section>
 
 <style>
@@ -54,6 +55,23 @@
 		max-width: 60ch;
 		color: #4c4740;
 		line-height: 1.6;
+	}
+
+	.cta {
+		align-self: flex-start;
+		text-decoration: none;
+		background: rgba(20, 18, 22, 0.9);
+		color: #f5f2ec;
+		padding: 0.65rem 1.1rem;
+		border-radius: 999px;
+		font-size: 0.85rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		box-shadow: 0 12px 26px rgba(31, 28, 22, 0.18);
+	}
+
+	.cta:hover {
+		background: rgba(20, 18, 22, 1);
 	}
 
 </style>

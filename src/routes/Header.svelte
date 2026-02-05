@@ -26,6 +26,8 @@
 		{ href: "/work-history", text: "Work-history" },
 	];
 
+	$: isPortfolioMenuOpen = showPortfolioMenu;
+
 	function closePortfolioMenu() {
 		showPortfolioMenu = false;
 	}
@@ -162,7 +164,7 @@
 					</div>
 					<div class="divider"></div>
 					<ul class="nav-list">
-						{#each links as { href, text }}
+						{#each links as { href, text }, index}
 							<!-- svelte-ignore missing-declaration -->
 							<!-- svelte-ignore a11y-click-events-have-key-events -->
 							<li
@@ -172,17 +174,19 @@
 								}
 							>
 								{#if href === "/portfolio"}
-									<!-- svelte-ignore a11y-click-events-have-key-events -->
-									<a
-										class:active-link={$page.url.pathname === href}
-										href={href}
-										on:click|preventDefault={() =>
-											(showPortfolioMenu = !showPortfolioMenu)}
-										>{text}</a
+									<button
+										type="button"
+										class:active-link={isPortfolioMenuOpen || isPortfolioPage}
+										aria-expanded={showPortfolioMenu}
+										on:click={() => (showPortfolioMenu = !showPortfolioMenu)}
 									>
+										{text}
+									</button>
 								{:else}
 									<a
-										class:active-link={$page.url.pathname === href}
+										class:active-link={
+											$page.url.pathname === href && !isPortfolioMenuOpen
+										}
 										href={href}
 										on:click={closePortfolioMenu}
 										>{text}</a
@@ -356,6 +360,8 @@
 		text-transform: uppercase;
 		letter-spacing: 0.14em;
 		font-size: 0.7rem;
+		position: relative;
+		color: #1f1c16;
 	}
 
 	.nav-list a {
@@ -365,13 +371,31 @@
 		transition: color 160ms ease;
 	}
 
-	.nav-list a:hover {
+	.nav-list button {
+		background: none;
+		border: none;
+		padding: 0 0 0.2rem;
+		color: #3f3a33;
+		font: inherit;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		cursor: pointer;
+		transition: color 160ms ease;
+	}
+
+	.nav-list a:hover,
+	.nav-list button:hover {
 		color: #7a2f1f;
 	}
 
-	.nav-list a.active-link {
+	.nav-list a.active-link,
+	.nav-list button.active-link {
 		color: #1f1c16;
-		box-shadow: inset 0 -2px 0 #1f1c16;
+	}
+
+	.nav-list a.active-link,
+	.nav-list button.active-link {
+		box-shadow: inset 0 -2px 0 currentColor;
 	}
 
 	.site-header.dev-theme .divider {
@@ -409,13 +433,18 @@
 		color: rgba(245, 242, 236, 0.85);
 	}
 
-	.site-header.dev-theme .nav-list a:hover {
+	.site-header.dev-theme .nav-list button {
+		color: rgba(245, 242, 236, 0.85);
+	}
+
+	.site-header.dev-theme .nav-list a:hover,
+	.site-header.dev-theme .nav-list button:hover {
 		color: #bd93f9;
 	}
 
-	.site-header.dev-theme .nav-list a.active-link {
+	.site-header.dev-theme .nav-list a.active-link,
+	.site-header.dev-theme .nav-list button.active-link {
 		color: #f5f2ec;
-		box-shadow: inset 0 -2px 0 rgba(189, 147, 249, 0.7);
 	}
 
 	.portfolio-preview {
@@ -518,13 +547,22 @@
 		color: rgba(245, 242, 236, 0.85);
 	}
 
-	.site-header.portfolio-theme .nav-list a:hover {
+	.site-header.portfolio-theme .nav-list button {
+		color: rgba(245, 242, 236, 0.85);
+	}
+
+	.site-header.portfolio-theme .nav-list {
+		color: #f5f2ec;
+	}
+
+	.site-header.portfolio-theme .nav-list a:hover,
+	.site-header.portfolio-theme .nav-list button:hover {
 		color: #bd93f9;
 	}
 
-	.site-header.portfolio-theme .nav-list a.active-link {
+	.site-header.portfolio-theme .nav-list a.active-link,
+	.site-header.portfolio-theme .nav-list button.active-link {
 		color: #f5f2ec;
-		box-shadow: inset 0 -2px 0 rgba(189, 147, 249, 0.7);
 	}
 
 	.site-header.portfolio-theme .divider {
@@ -630,4 +668,5 @@
 	.portfolio-active > a.active-link {
 		box-shadow: none;
 	}
+
 </style>

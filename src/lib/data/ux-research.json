@@ -42,17 +42,21 @@
     {
       "title": "Evaluation of Minerva an Adaptive Game about proramming concepts",
       "slug": "evaluation-of-minerva-an-adaptive-game-about-proramming-concepts",
-      "publicationKey": "journals/ijsg/LindbergL18"
+      "publicationKey": "journals/ijsg/LindbergL18",
+      "tags": ["UX Evaluation", "User Research", "Engagement", "Children"]
     },
     {
       "title": "Evaluation of Running Othello2 an Physical Educationt Game",
       "slug": "evaluation-of-running-othello2-an-physical-educationt-game",
-      "publicationKey": "journals/tlt/LindbergSL16"
-    },
-    {
-      "title": "Evaluation of Leometry AR",
-      "slug": "evaluation-of-leometry-ar",
-      "publicationKey": "journals/information/TroyerMLB20"
+      "publicationKey": "journals/tlt/LindbergSL16",
+      "tags": [
+        "UX Evaluation",
+        "Mixed Methods",
+        "Children",
+        "Behavior & Motivation",
+        "Wearables & Sensors",
+        "Field Study"
+      ]
     }
   ],
   "sections": [

@@ -8,6 +8,10 @@
 		{ key: "travels", label: "Countries I've lived in" },
 		{ key: "skills", label: "My Skills" },
 	];
+	const topicsByKey = Object.fromEntries(
+		topics.map((topic) => [topic.key, topic.label])
+	);
+	$: activeTopicLabel = topicsByKey[activeTopic] || "Welcome";
 
 	const education = [
 		{
@@ -46,6 +50,30 @@
 		{ name: "Dutch", level: "A1", flag: "🇳🇱" },
 	];
 
+	const skills = [
+		{
+			group: "Product & Strategy",
+			items: "Feature scoping, roadmap support, requirements, documentation",
+		},
+		{
+			group: "Web & App Development",
+			items: "React, NodeJS, Firebase, Tailwind, Rails",
+		},
+		{
+			group: "Identity & Security",
+			items: "CIAM, OAuth2 flows, access control training",
+		},
+		{
+			group: "Game Development",
+			items: "Unity3D (C#), multiplayer concepts, rapid prototyping",
+		},
+		{
+			group: "Research & UX",
+			items: "User interviews, usability evaluation, accessibility, engagement",
+		},
+	];
+
+	// Keeps the flip animation stable by updating state mid-transition.
 	function selectTopic(key: string) {
 		if (activeTopic === key || isFlipping) return;
 		isFlipping = true;
@@ -86,7 +114,7 @@
 				{#key activeTopic}
 					<div class="type-box">
 						<h2 class="font-serif text-3xl">
-							{topics.find((t) => t.key === activeTopic)?.label}
+							{activeTopicLabel}
 						</h2>
 						<div class="type-content">
 							{#if activeTopic === "education"}
@@ -121,42 +149,16 @@
 								</ul>
 							{:else if activeTopic === "skills"}
 								<ul class="skills-list">
-									<li class="type-line">
-										<span class="skill-group">Product &amp; Strategy</span>
-										<span class="skill-items"
-											>Feature scoping, roadmap support, requirements,
-											documentation</span
-										>
-									</li>
-									<li class="type-line">
-										<span class="skill-group">Web &amp; App Development</span>
-										<span class="skill-items"
-											>React, NodeJS, Firebase, Tailwind, Rails</span
-										>
-									</li>
-									<li class="type-line">
-										<span class="skill-group">Identity &amp; Security</span>
-										<span class="skill-items"
-											>CIAM, OAuth2 flows, access control training</span
-										>
-									</li>
-									<li class="type-line">
-										<span class="skill-group">Game Development</span>
-										<span class="skill-items"
-											>Unity3D (C#), multiplayer concepts, rapid prototyping</span
-										>
-									</li>
-									<li class="type-line">
-										<span class="skill-group">Research &amp; UX</span>
-										<span class="skill-items"
-											>User interviews, usability evaluation, accessibility,
-											engagement</span
-										>
-									</li>
+									{#each skills as skill}
+										<li class="type-line">
+											<span class="skill-group">{skill.group}</span>
+											<span class="skill-items">{skill.items}</span>
+										</li>
+									{/each}
 								</ul>
 							{:else}
 								<p class="type-line">
-									{topics.find((t) => t.key === activeTopic)?.label}
+									{activeTopicLabel}
 								</p>
 							{/if}
 						</div>
@@ -193,6 +195,7 @@
 		padding: 1.4rem 1.6rem 2.2rem;
 		overflow: visible;
 	}
+
 
 	.portrait-wrap {
 		flex: 0 0 auto;

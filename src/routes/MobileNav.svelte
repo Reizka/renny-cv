@@ -5,26 +5,37 @@
 
 	let showNav = false;
 	let showPortfolio = false;
-	let showNarrative = false;
+	let menuEl;
+	let toggleEl;
 
 	function toggle() {
 		showNav = !showNav;
 		if (!showNav) {
 			showPortfolio = false;
-			showNarrative = false;
+		}
+	}
+
+	function handleOutsideClick(event) {
+		if (!showNav) return;
+		const path = event.composedPath ? event.composedPath() : [];
+		if (menuEl && !path.includes(menuEl) && toggleEl && !path.includes(toggleEl)) {
+			showNav = false;
+			showPortfolio = false;
 		}
 	}
 
 	export let links = /** @type {{ href: string; text: string }[]} */ ([]);
 </script>
 
+<svelte:window on:click={handleOutsideClick} />
+
 <div class="mobile-nav">
-	<button class="mobile-toggle" on:click={() => toggle()}>
+	<button class="mobile-toggle" on:click={() => toggle()} bind:this={toggleEl}>
 		<FaBars />
 	</button>
 
 	{#if showNav}
-		<div class="mobile-menu">
+		<div class="mobile-menu" bind:this={menuEl}>
 			<ul class="mobile-menu-list">
 				{#each links as { href, text }}
 					{#if href !== "/portfolio"}
@@ -56,87 +67,25 @@
 							<a href="/portfolio/ux-research" on:click={() => toggle()}
 								>UX Research</a
 							>
+							<a
+								href="/portfolio/ux-research/case-studies"
+								on:click={() => toggle()}
+								>Case Studies</a
+							>
 							<a href="/portfolio/game-design" on:click={() => toggle()}
 								>Game Design</a
 							>
 							<a href="/portfolio/publications" on:click={() => toggle()}
 								>Publications</a
 							>
-							<button
-								class="menu-toggle submenu-toggle"
-								on:click={() => (showNarrative = !showNarrative)}
-								type="button"
-								aria-expanded={showNarrative}
+							<a href="/portfolio/narrative-design" on:click={() => toggle()}
+								>Narrative Design</a
 							>
-								Narrative Design
-								<span class="chevron">{showNarrative ? "–" : "+"}</span>
-							</button>
-							{#if showNarrative}
-								<div class="submenu nested">
-									<div class="submenu-group">
-										<span>About</span>
-										<a
-											href="/portfolio/narrative-design"
-											on:click={() => toggle()}
-											>Overview</a
-										>
-									</div>
-									<div class="submenu-group">
-										<span>Dungeons &amp; Dragons</span>
-										<a
-											href="/portfolio/narrative-design/dungeons-and-dragons/one-shots/big-trouble-in-littlefare"
-											on:click={() => toggle()}
-											>Big Trouble in Littlefare</a
-										>
-										<a
-											href="/portfolio/narrative-design/dungeons-and-dragons/one-shots/something-waits-below"
-											on:click={() => toggle()}
-											>Something Waits Below</a
-										>
-										<a
-											href="/portfolio/narrative-design/dungeons-and-dragons/campaigns/wheel-of-fortune-remix"
-											on:click={() => toggle()}
-											>Wheel of Fortune - remix</a
-										>
-										<a
-											href="/portfolio/narrative-design/dungeons-and-dragons/campaigns/phandalver-below-the-shattered-obelisk-remix"
-											on:click={() => toggle()}
-											>Phandalver and Below the Shattered Obelisk REMIX</a
-										>
-									</div>
-									<div class="submenu-group">
-										<span>Call of Cthulhu</span>
-										<a
-											href="/portfolio/narrative-design/call-of-cthulhu/one-shots/echoes-from-carcosa"
-											on:click={() => toggle()}
-											>Echoes from Carcosa</a
-										>
-										<a
-											href="/portfolio/narrative-design/call-of-cthulhu/campaigns/what-lurks-below"
-											on:click={() => toggle()}
-											>What Lurks Below?</a
-										>
-									</div>
-									<div class="submenu-group">
-										<span>Cyberpunk Red</span>
-										<a
-											href="/portfolio/narrative-design/cyberpunk-red/one-shots/volatile-cargo"
-											on:click={() => toggle()}
-											>Volatile Cargo</a
-										>
-										<a
-											href="/portfolio/narrative-design/cyberpunk-red/one-shots/intellectual-property"
-											on:click={() => toggle()}
-											>Intellectual Property</a
-										>
-										<a
-											href="/portfolio/narrative-design/cyberpunk-red/one-shots/dead-signal"
-											on:click={() => toggle()}
-											>Dead Signal</a
-										>
-									</div>
-								</div>
-							{/if}
+							<a
+								href="/portfolio/narrative-design/scenarios"
+								on:click={() => toggle()}
+								>RPG Scenarios</a
+							>
 							<a href="/portfolio/prototypes" on:click={() => toggle()}
 								>Prototypes</a
 							>
