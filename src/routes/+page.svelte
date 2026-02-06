@@ -35,6 +35,7 @@
 	];
 
 	const travels = [
+		{ name: "Finland", duration: "24(ish) years", flag: "🇫🇮" },
 		{ name: "Australia", duration: "1.5 years", flag: "🇦🇺" },
 		{ name: "Thailand", duration: "10 months", highlight: true, flag: "🇹🇭" },
 		{ name: "Vietnam", duration: "1 year", flag: "🇻🇳" },

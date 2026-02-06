@@ -14,9 +14,9 @@
 
 <main>
     <div class="flex flex-col justify-center items-center">
-        <div class="grid grid-cols-1 gap-6 lg:w-2/3 w-full">
+        <div class="grid grid-cols-1 gap-8 lg:w-2/3 w-full px-2">
             {#each resume.work as job}
-                <div class="p-4 rounded-lg shadow-lg">
+                <div class="p-6 rounded-2xl shadow-lg bg-white/80">
                     <div class="flex items-center mb-4">
                         <img
                             src={"/images/" + job.image + ".png"}

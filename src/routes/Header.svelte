@@ -282,7 +282,7 @@
 
 <style>
 	.site-header {
-		background: linear-gradient(180deg, #f9f7f2 0%, #f3f1ec 100%);
+		background: linear-gradient(180deg, #f6f1e9 0%, #eee6db 100%);
 		padding: 2.5rem 1.5rem 1.25rem;
 		position: relative;
 		overflow: hidden;
