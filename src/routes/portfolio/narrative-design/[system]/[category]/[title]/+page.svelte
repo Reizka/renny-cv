@@ -9,19 +9,17 @@
 </script>
 
 <div class="story-layout">
-	<aside class="story-toc">
-		<p class="toc-title">On this page</p>
-		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#summary">Story Summary</a></li>
-			<li><a href="#scenarios">Scenarios</a></li>
-			<li><a href="#act-1">Act I</a></li>
-			<li><a href="#act-2">Act II</a></li>
-			<li><a href="#act-3">Act III</a></li>
-		</ul>
-	</aside>
-
 	<section class="detail-section">
+		<nav class="story-toc">
+			<p class="toc-title">Quick Jump</p>
+			<ul>
+				<li><a href="#intro">Introduction</a></li>
+				<li><a href="#summary">Story Summary</a></li>
+				<li><a href="#act-1">Act I</a></li>
+				<li><a href="#act-2">Act II</a></li>
+				<li><a href="#act-3">Act III</a></li>
+			</ul>
+		</nav>
 		<p class="eyebrow">Narrative Design</p>
 		<h1>{item?.name || "Story"}</h1>
 		<p class="meta">{system?.name} · {group?.name}</p>
@@ -184,7 +182,6 @@
 			</p>
 		</div>
 
-		<h2 id="scenarios">Scenarios</h2>
 		<h4 id="act-1" class="act-title">ACT I – The Road to Littlefare</h4>
 		<h5 class="act-subtitle">Overview</h5>
 		<p class="body">
@@ -1077,22 +1074,21 @@
 
 <style>
 	.story-layout {
-		display: grid;
-		grid-template-columns: minmax(160px, 220px) 1fr;
-		gap: 2rem;
-		align-items: start;
-		max-width: 980px;
+		display: block;
+		max-width: 1040px;
 		margin: 0 auto;
 	}
 
 	.story-toc {
 		position: sticky;
-		top: 1.5rem;
-		align-self: start;
-		background: rgba(255, 255, 255, 0.55);
+		top: 0.75rem;
+		z-index: 2;
+		background: rgba(255, 255, 255, 0.92);
+		backdrop-filter: blur(8px);
 		border-radius: 14px;
-		padding: 0.9rem 1rem;
-		box-shadow: 0 10px 22px rgba(31, 28, 22, 0.08);
+		padding: 0.65rem 0.9rem;
+		box-shadow: 0 12px 24px rgba(31, 28, 22, 0.1);
+		margin-bottom: 1rem;
 	}
 
 	.toc-title {
@@ -1108,8 +1104,8 @@
 		padding: 0;
 		margin: 0;
 		display: flex;
-		flex-direction: column;
-		gap: 0.4rem;
+		flex-wrap: wrap;
+		gap: 0.35rem 0.8rem;
 	}
 
 	.story-toc a {
@@ -1126,6 +1122,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.6rem;
+		max-width: 760px;
+		margin: 0 auto;
 		background: linear-gradient(180deg, #fbf4e4 0%, #f2e4cc 100%);
 		border-radius: 18px;
 		padding: 1.4rem 1.5rem;
@@ -1152,10 +1150,15 @@
 		scroll-margin-top: 120px;
 	}
 
-	h3 {
+h3 {
 		font-size: 1rem;
 		margin: 1rem 0 0.4rem;
 		color: #4c4740;
+		scroll-margin-top: 120px;
+	}
+
+	h4,
+	h5 {
 		scroll-margin-top: 120px;
 	}
 
@@ -1349,12 +1352,8 @@
 	}
 
 	@media (max-width: 900px) {
-		.story-layout {
-			grid-template-columns: 1fr;
-		}
-
 		.story-toc {
-			position: static;
+			top: 0.5rem;
 		}
 	}
 </style>
