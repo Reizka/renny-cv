@@ -6,13 +6,27 @@
 	$: system = data.systems.find((s) => s.slug === params.system);
 	$: group = system?.groups.find((g) => g.slug === params.category);
 	$: item = group?.items.find((i) => i.slug === params.title);
+	$: slug = params?.title;
+
+	const locationModules = import.meta.glob("/src/lib/narrative-design/locations/*.svelte", { eager: true });
+	const locationsBySlug = Object.fromEntries(
+		Object.entries(locationModules).map(([path, mod]) => [
+			path.split("/").pop().replace(".svelte", ""),
+			mod.default
+		])
+	);
+	$: LocationsComponent = slug ? locationsBySlug[slug] : null;
 </script>
 
 <section class="detail-section">
 	<p class="eyebrow">Narrative Design</p>
 	<h1>{item?.name || "Locations"}</h1>
 	<p class="meta">{system?.name} · {group?.name}</p>
-	<p class="body">Locations content coming soon.</p>
+	{#if LocationsComponent}
+		<svelte:component this={LocationsComponent} />
+	{:else}
+		<p class="body">Locations content coming soon.</p>
+	{/if}
 </section>
 
 <style>
